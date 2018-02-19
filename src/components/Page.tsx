@@ -43,9 +43,9 @@ export default class Page extends React.Component<any, any> {
                 <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 s-6 m-6 l-6 xl-6 gap-1 gap-bottom"/>
                 <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 s-6 m-6 l-6 xl-6 gap-1 gap-bottom"/>
 
-                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-4 m-4 l-4 xl-4 gap-2 gap-bottom"/>
-                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-4 m-4 l-4 xl-4 gap-2 gap-bottom"/>
-                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-4 m-4 l-4 xl-4 gap-2 gap-bottom"/>
+                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-6 m-6 l-4 xl-4 gap-1 gap-2 gap-bottom"/>
+                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-6 m-6 l-4 xl-4 gap-1 gap-2 gap-bottom"/>
+                <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-12 m-12 l-4 xl-4 gap-2 gap-bottom"/>
 
                 <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-3 m-3 l-3 xl-3 gap-3 gap-bottom"/>
                 <Teaser ref={(ref) => { this.divRefs.push(ref); }} className="xs-12 xs-hide s-3 m-3 l-3 xl-3 gap-3 gap-bottom"/>
