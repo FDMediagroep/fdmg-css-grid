@@ -5,7 +5,7 @@
 FDMG CSS Grid with Flexbox fallback. Gap-size is `1rem`.
 
 # Installation
-`npm i --save fdmg-css-grid`
+* `npm i --save @fdmg/css-grid`
 
 # Usage
 
