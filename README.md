@@ -2,6 +2,8 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-css-grid.svg)](https://greenkeeper.io/)
 
 # fdmg-css-grid
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-css-grid.svg)](https://greenkeeper.io/)
 FDMG CSS Grid with Flexbox fallback. Gap-size is `1rem`.
 
 # Installation
