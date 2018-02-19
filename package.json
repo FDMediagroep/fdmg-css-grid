@@ -1,7 +1,7 @@
 {
-  "name": "grid",
+  "name": "@fdmg/css-grid",
   "version": "1.0.0",
-  "description": "",
+  "description": "FDMG CSS Grid with Flexbox fallback",
   "style": "dist/css/grid.css",
   "scripts": {
     "build": "npm run clean && npm run lint && tsc && webpack && npm run sass",
@@ -21,6 +21,13 @@
   },
   "author": "Willem Liu",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FDMediagroep/fdmg-css-grid.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
