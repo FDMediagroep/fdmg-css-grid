@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- node
+addons:
+  apt:
+    packages:
+    - nodejs-legacy
+install:
+- npm install -g typescript
+- npm install
+script:
+- npm run test
+- npm run lint
+after_success:
+- cat ./dist/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

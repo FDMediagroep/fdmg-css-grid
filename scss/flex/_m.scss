@@ -1,0 +1,40 @@
+@media only screen and (min-width: #{$mMinWidth}px) {
+  .m-hide { display: none; }
+
+  .m-1 {
+    @include columns(1);
+  }
+  .m-2 {
+    @include columns(2);
+  }
+  .m-3 {
+    @include columns(3);
+  }
+  .m-4 {
+    @include columns(4);
+  }
+  .m-5 {
+    @include columns(5);
+  }
+  .m-6 {
+    @include columns(6);
+  }
+  .m-7 {
+    @include columns(7);
+  }
+  .m-8 {
+    @include columns(8);
+  }
+  .m-9 {
+    @include columns(9);
+  }
+  .m-10 {
+    @include columns(10);
+  }
+  .m-11 {
+    @include columns(11);
+  }
+  .m-12 {
+    @include columns(12);
+  }
+}

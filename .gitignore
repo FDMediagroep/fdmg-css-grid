@@ -1,0 +1,7 @@
+.idea
+dist/components
+dist/js
+dist/routes
+dist/*.*
+node_modules
+*.iml

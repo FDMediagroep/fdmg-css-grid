@@ -1,0 +1,40 @@
+@media only screen and (min-width: #{$mMinWidth}px) {
+  .m-hide { display: none; }
+
+  .m-1 {
+    grid-column-end: span 1;
+  }
+  .m-2 {
+    grid-column-end: span 2;
+  }
+  .m-3 {
+    grid-column-end: span 3;
+  }
+  .m-4 {
+    grid-column-end: span 4;
+  }
+  .m-5 {
+    grid-column-end: span 5;
+  }
+  .m-6 {
+    grid-column-end: span 6;
+  }
+  .m-7 {
+    grid-column-end: span 7;
+  }
+  .m-8 {
+    grid-column-end: span 8;
+  }
+  .m-9 {
+    grid-column-end: span 9;
+  }
+  .m-10 {
+    grid-column-end: span 10;
+  }
+  .m-11 {
+    grid-column-end: span 11;
+  }
+  .m-12 {
+    grid-column-end: span 12;
+  }
+}
