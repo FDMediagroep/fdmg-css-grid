@@ -1,5 +1,6 @@
 @media only screen and (min-width: #{$xlMinWidth}px) {
   .xl-hide { display: none; }
+  .xl-show { display: inherit; }
 
   .xl-1 {
     @include columns(1);
@@ -37,4 +38,8 @@
   .xl-12 {
     @include columns(12);
   }
+}
+
+@media only screen and (max-width: #{$xlMinWidth}px) {
+  .xl-and-smaller-hide { display: none; }
 }

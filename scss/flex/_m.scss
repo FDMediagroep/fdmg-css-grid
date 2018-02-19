@@ -1,5 +1,6 @@
 @media only screen and (min-width: #{$mMinWidth}px) {
   .m-hide { display: none; }
+  .m-show { display: inherit; }
 
   .m-1 {
     @include columns(1);
@@ -37,4 +38,8 @@
   .m-12 {
     @include columns(12);
   }
+}
+
+@media only screen and (max-width: #{$mMinWidth}px) {
+  .m-and-smaller-hide { display: none; }
 }

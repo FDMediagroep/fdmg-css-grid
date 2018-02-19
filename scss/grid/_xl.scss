@@ -1,5 +1,7 @@
 @media only screen and (min-width: #{$xlMinWidth}px) {
   .xl-hide { display: none; }
+  .xl-show { display: inherit; }
+
   .xl-1 {
     grid-column-end: span 1;
   }
@@ -36,4 +38,8 @@
   .xl-12 {
     grid-column-end: span 12;
   }
+}
+
+@media only screen and (max-width: #{$xlMinWidth}px) {
+  .xl-and-smaller-hide { display: none; }
 }

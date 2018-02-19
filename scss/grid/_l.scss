@@ -1,5 +1,6 @@
 @media only screen and (min-width: #{$lMinWidth}px) {
   .l-hide { display: none; }
+  .l-show { display: inherit; }
 
   .l-1 {
     grid-column-end: span 1;
@@ -37,4 +38,8 @@
   .l-12 {
     grid-column-end: span 12;
   }
+}
+
+@media only screen and (max-width: #{$lMinWidth}px) {
+  .l-and-smaller-hide { display: none; }
 }
