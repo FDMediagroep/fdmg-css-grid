@@ -7,7 +7,7 @@ module.exports = {
 
         // First application
         {
-            name        : 'CSS Grid',
+            name        : '[3008] CSS Grid',
             script      : 'dist/index.js',
             watch       : ['dist'],
             env: {
