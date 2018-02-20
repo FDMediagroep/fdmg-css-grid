@@ -79,4 +79,4 @@ override when the last column turns full width.
 ## Known issues
 There are many issues regarding the FlexBox fallback. It does not mirror all features available with CSS Grid.
 One of such issues is the gap. When you want to implement a more advanced responsive layout I.e. 4 columns becomes
-3 columns or even less and you want to hide the extraneous column the gap space will not be shown correctly.
+3 columns or even less and you want to hide the extraneous column then the gap space will not be shown correctly.
