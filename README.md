@@ -80,3 +80,29 @@ override when the last column turns full width.
 There are many issues regarding the FlexBox fallback. It does not mirror all features available with CSS Grid.
 One of such issues is the gap. When you want to implement a more advanced responsive layout I.e. 4 columns becomes
 3 columns or even less and you want to hide the extraneous column then the gap space will not be shown correctly.
+
+## Demo
+The demo will run on `localhost:3008`.
+
+### Build and run demo page
+1. `npm install`
+1. `npm run build`
+1. `npm run start`
+#### Stop demo
+You need to stop the demo manually or it will keep running until you reboot.
+1. `npm run stop`
+
+### Make adjustments to the demo
+You may want to play around with the demo. When you do that you probably want the demo to auto-transpile and reload.
+For this you can start a few watches which auto-transpiles your server and client code:
+1. `npm run watch-client`
+1. `npm run watch-server`
+1. `npm run start` - start the server
+When you've followed the above steps whenever you change the TypeScript files it will auto-transpile and the server will
+reload with the new assets.
+
+### Compile release code
+The following will transpile the demo page with the `production` flag.
+1. `npm run release`
+or to only transpile the TypeScript for release:
+1. `npm run compile-release`
