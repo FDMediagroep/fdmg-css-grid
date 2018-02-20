@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && npm run lint && tsc && webpack && npm run sass",
     "compile-release": "tsc && cross-env NODE_ENV=production webpack --env production",
-    "clean": "rm dist -rf",
+    "clean": "rimraf dist",
     "mkdir": "mkdirp dist/css",
     "lint": "tslint -p .",
     "release": "npm update && npm install && yarn && npm run clean && npm run lint && npm run compile-release && npm run sass",
@@ -48,6 +48,7 @@
     "preact-compat": "^3.18.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2",
     "tslint": "^5.9.1",
     "tslint-react": "^3.4.0",
     "typescript": "^2.7.1",
