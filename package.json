@@ -4,8 +4,8 @@
   "description": "FDMG CSS Grid with Flexbox fallback",
   "style": "dist/css/grid.css",
   "scripts": {
-    "build": "npm run clean && npm run lint && tsc && webpack && npm run sass",
-    "compile-release": "tsc && cross-env NODE_ENV=production webpack --mode production",
+    "build": "npm run clean && npm run lint && tsc && webpack --mode development && npm run sass",
+    "compile-release": "tsc && webpack --mode production",
     "clean": "rimraf dist",
     "mkdir": "mkdirp dist/css",
     "lint": "tslint -p .",
@@ -16,7 +16,7 @@
     "stop": "pm2 stop ecosystem.config.js",
     "start": "pm2 start ecosystem.config.js --watch",
     "test": "echo \"No tests specified\" && exit 0",
-    "watch-client": "webpack --watch",
+    "watch-client": "webpack --mode development --watch",
     "watch-server": "tsc --watch"
   },
   "author": "Willem Liu",
@@ -32,7 +32,6 @@
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
     "awesome-typescript-loader": "^3.5.0",
-    "cross-env": "^5.1.3",
     "fs-extra": "^5.0.0",
     "koa": "^2.4.1",
     "koa-compress": "^2.0.0",
