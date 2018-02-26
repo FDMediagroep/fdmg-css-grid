@@ -1,11 +1,11 @@
 {
   "name": "@fdmg/css-grid",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "FDMG CSS Grid with Flexbox fallback",
   "style": "dist/css/grid.css",
   "scripts": {
     "build": "npm run clean && npm run lint && tsc && webpack && npm run sass",
-    "compile-release": "tsc && cross-env NODE_ENV=production webpack --env production",
+    "compile-release": "tsc && cross-env NODE_ENV=production webpack --mode production",
     "clean": "rimraf dist",
     "mkdir": "mkdirp dist/css",
     "lint": "tslint -p .",
@@ -52,7 +52,8 @@
     "tslint": "^5.9.1",
     "tslint-react": "^3.4.0",
     "typescript": "^2.7.1",
-    "webpack": "^4.0.0"
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9"
   },
   "dependencies": {}
 }
