@@ -1,8 +1,8 @@
 @media only screen and (max-width: #{$xsMaxWidth}px) {
   .xs-hide {
-    display: none;
+    display: none!important;
   }
-  .xs-show { display: inherit; }
+  .xs-show { display: inherit!important; }
 }
 
 .xs-1 {

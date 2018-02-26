@@ -1,6 +1,6 @@
 @media only screen and (min-width: #{$sMinWidth}px) {
-  .s-hide { display: none; }
-  .s-show { display: inherit; }
+  .s-hide { display: none!important; }
+  .s-show { display: inherit!important; }
 
   .s-1 {
     grid-column-end: span 1;
@@ -41,5 +41,5 @@
 }
 
 @media only screen and (max-width: #{$sMinWidth}px) {
-  .s-and-smaller-hide { display: none; }
+  .s-and-smaller-hide { display: none!important; }
 }
