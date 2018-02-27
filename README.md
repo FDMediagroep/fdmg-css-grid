@@ -18,7 +18,10 @@ Import both if you need FlexBox fallback otherwise only include the Grid.
 * FlexBox: `@import 'node_modules/@fdmg/css-grid/scss/flex';`
 
 ## Usage
-
+### Set default size in your project
+To maximize accessabilty there is no default (font) size set as we want to use the browsers' default default size.
+Setting the root font-size in your project to 62.5% will result in 1rem = 10px. Then define your font-size for your
+project (i.e.) as 1.6rem for 16px. This will ensure proper scaling of units.
 ### Full-width column
 ```html
 <div class="grid">
