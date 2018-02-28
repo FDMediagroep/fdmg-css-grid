@@ -101,8 +101,7 @@ You may want to play around with the demo. When you do that you probably want th
 For this you can start a few watches which auto-transpiles your server and client code:
 1. `npm run watch-client`
 1. `npm run watch-server`
-1. `npm run start` - start the server
-When you've followed the above steps whenever you change the TypeScript files it will auto-transpile and the server will
+1. `npm run start` - start the server. When you've followed the above steps whenever you change the TypeScript files it will auto-transpile and the server will
 reload with the new assets.
 
 ### Compile release code
