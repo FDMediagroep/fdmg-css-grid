@@ -31,7 +31,7 @@
   "devDependencies": {
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
-    "awesome-typescript-loader": "^3.5.0",
+    "awesome-typescript-loader": "^4.0.0",
     "fs-extra": "^5.0.0",
     "koa": "^2.4.1",
     "koa-compress": "^2.0.0",
