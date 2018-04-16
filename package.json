@@ -34,7 +34,7 @@
     "awesome-typescript-loader": "^5.0.0",
     "fs-extra": "^5.0.0",
     "koa": "^2.4.1",
-    "koa-compress": "^2.0.0",
+    "koa-compress": "^3.0.0",
     "koa-json": "^2.0.2",
     "koa-mount": "^3.0.0",
     "koa-router": "^7.4.0",
