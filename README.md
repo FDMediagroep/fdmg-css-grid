@@ -80,6 +80,25 @@ override when the last column turns full width.
 
 * Note: the `*gap*` CSS classes are only necessary when using the FlexBox fallback.
 
+### Show & Hide CSS classes
+You can show/hide elements for their respective screensizes using `xs-hide`, `xs-show`, `s-hide` and `s-show` etc.
+Special case `xs-hide` and `xs-show` will set display `none !important` or `inherit !important` only for screen sizes with a `max-width` of `XS`. So it will not affect other screen sizes.
+For instance:
+```html
+...
+<div class="xs-12 xs-hide s-12">Will still show on screens larger than XS</div>
+...
+```
+All other show/hide classes are calculated through `min-width` so will affect larger screen sizes.
+For instance:
+```html
+...
+<div class="xs-12 s-12 s-hide">Will not show on screens larger than XS</div>
+<div class="xs-12 s-12 s-hide xl-show">Will not show on screens larger than XS and smaller than XL</div>
+<div class="xs-12 s-12 s-hide l-show">Will not show on screens larger than XS and smaller than L</div>
+...
+```
+
 ## Known issues
 There are many issues regarding the FlexBox fallback. It does not mirror all features available with CSS Grid.
 One of such issues is the gap. When you want to implement a more advanced responsive layout I.e. 4 columns becomes
