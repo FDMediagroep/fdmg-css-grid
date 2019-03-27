@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {RoutesConfig} from "../components/Route";
 import Error from "../components/Error";
 import Page from "../components/Page";

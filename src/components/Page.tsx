@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Teaser from "./Teaser";
 
 export default class Page extends React.Component<any, any> {

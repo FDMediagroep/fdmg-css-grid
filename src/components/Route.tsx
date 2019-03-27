@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as pathToRegexp from "path-to-regexp";
 import Error from "./Error";
 
