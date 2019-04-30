@@ -9,7 +9,7 @@
     "clean": "rimraf dist",
     "mkdir": "mkdirp dist/css",
     "lint": "tslint -p .",
-    "release": "npm update && npm install && yarn && npm run clean && npm run lint && npm run compile-release && npm run sass",
+    "release": "npm update && npm install && npm run clean && npm run lint && npm run compile-release && npm run sass",
     "sass": "npm run sass-grid && npm run sass-flex",
     "sass-grid": "npm run mkdir && node-sass --output-style=compressed scss/grid.scss -o dist/css",
     "sass-flex": "npm run mkdir && node-sass --output-style=compressed scss/flex.scss -o dist/css",
@@ -29,8 +29,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/react": "^16.8.8",
-    "@types/react-dom": "^16.8.3",
+    "@types/react": "^16.8.15",
+    "@types/react-dom": "^16.8.4",
     "awesome-typescript-loader": "^5.0.0",
     "fs-extra": "^7.0.0",
     "koa": "^2.7.0",
@@ -40,18 +40,18 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "path-to-regexp": "^2.4.0",
-    "pm2": "^3.4.1",
+    "pm2": "^3.5.0",
     "preact": "^8.4.2",
-    "preact-compat": "^3.18.4",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "preact-compat": "^3.18.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "rimraf": "^2.6.3",
-    "tslint": "^5.14.0",
+    "tslint": "^5.16.0",
     "tslint-react": "^4.0.0",
-    "typescript": "^3.3.4000",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
