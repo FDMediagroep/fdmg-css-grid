@@ -29,7 +29,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/react": "^16.8.15",
+    "@types/react": "^16.8.16",
     "@types/react-dom": "^16.8.4",
     "awesome-typescript-loader": "^5.0.0",
     "fs-extra": "^7.0.0",
