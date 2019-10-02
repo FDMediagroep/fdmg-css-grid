@@ -1,5 +1,5 @@
-import React from 'react';
-import * as pathToRegexp from "path-to-regexp";
+import React from "react";
+import pathToRegexp from "path-to-regexp";
 import Error from "./Error";
 
 export interface RoutesConfig {
@@ -19,23 +19,32 @@ export default class Route extends React.Component<Props, any> {
     private obs;
 
     constructor(props: Props) {
-        super (props);
+        super(props);
         this.props = props;
-        this.state = {children: this.resolve(this.props.route)};
+        this.state = { children: this.resolve(this.props.route) };
         this.addListeners = this.addListeners.bind(this);
         this.goTo = this.goTo.bind(this);
         this.handleClick = this.handleClick.bind(this);
-        if (typeof MutationObserver !== 'undefined') { this.obs = new MutationObserver(this.addListeners); }
+        if (typeof MutationObserver !== "undefined") {
+            this.obs = new MutationObserver(this.addListeners);
+        }
     }
 
     componentDidMount() {
         this.addListeners();
-        if (this.obs) { this.obs.observe(this.el, {childList: true}); }
+        if (this.obs) {
+            this.obs.observe(this.el, { childList: true });
+        }
     }
 
     render() {
         return (
-            <div ref={(el) => { this.el = el; }} className='router'>
+            <div
+                ref={(el) => {
+                    this.el = el;
+                }}
+                className="router"
+            >
                 {this.state.children}
             </div>
         );
@@ -46,8 +55,13 @@ export default class Route extends React.Component<Props, any> {
      * @param e
      */
     private handleClick(e) {
-        if (e.currentTarget.getAttribute('href').startsWith('http')) {
-            console.info('Navigate to', e.currentTarget.pathname, e.currentTarget.href, e.currentTarget);
+        if (e.currentTarget.getAttribute("href").startsWith("http")) {
+            console.info(
+                "Navigate to",
+                e.currentTarget.pathname,
+                e.currentTarget.href,
+                e.currentTarget
+            );
             return;
         }
         e.preventDefault();
@@ -55,23 +69,23 @@ export default class Route extends React.Component<Props, any> {
     }
 
     private addListeners() {
-        const links = Array.prototype.slice.call(this.el.querySelectorAll('a'));
+        const links = Array.prototype.slice.call(this.el.querySelectorAll("a"));
         links.forEach((link) => {
-            link.addEventListener('click', this.handleClick);
+            link.addEventListener("click", this.handleClick);
         });
 
-        window.addEventListener('popstate', () => {
+        window.addEventListener("popstate", () => {
             this.back(window.location.pathname);
         });
     }
 
     private back(path) {
-        this.setState({children: this.resolve(path) });
+        this.setState({ children: this.resolve(path) });
     }
 
     private goTo(text, path) {
         history.pushState(null, text, path);
-        this.setState({children: this.resolve(path) });
+        this.setState({ children: this.resolve(path) });
     }
 
     /**
@@ -80,8 +94,8 @@ export default class Route extends React.Component<Props, any> {
      * @param path
      * @returns {JSX.Element | null}
      */
-    private resolve(path): JSX.Element|null {
-        let result: JSX.Element = <Error/>;
+    private resolve(path): JSX.Element | null {
+        let result: JSX.Element = <Error />;
         let specificity = 0;
         for (const route of this.props.routes) {
             const keys = [];
@@ -89,7 +103,11 @@ export default class Route extends React.Component<Props, any> {
             const res = regexp.exec(path);
             if (res && res.length > specificity) {
                 specificity = res.length;
-                result = route.action({ regexp, path, ...this.keysToProps(this.mapValueToKeys(keys, res)) });
+                result = route.action({
+                    regexp,
+                    path,
+                    ...this.keysToProps(this.mapValueToKeys(keys, res))
+                });
             }
         }
         return result;

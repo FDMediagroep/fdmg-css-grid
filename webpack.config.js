@@ -1,31 +1,29 @@
 const webpack = require("webpack");
-const path = require('path');
+const path = require("path");
 
-console.info('process.env.NODE_ENV', JSON.stringify(process.env.NODE_ENV));
+console.info("process.env.NODE_ENV", JSON.stringify(process.env.NODE_ENV));
 
 module.exports = {
     devtool: "source-map",
     entry: {
-        main: [
-            "./src/main.tsx?"
-        ]
+        main: ["./src/main.tsx?"]
     },
     output: {
-        path       : path.join(__dirname, 'dist/js/'),
-        filename   : '[name].js',
-        publicPath : './dist/js/'
+        path: path.join(__dirname, "dist/js/"),
+        filename: "[name].js",
+        publicPath: "./dist/js/"
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
         alias: {
-            'react': 'preact-compat',
-            'react-dom': 'preact-compat'
+            react: "preact",
+            "react-dom": "preact"
         }
     },
     plugins: [
         new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+            "process.env": {
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV)
             }
         }),
         new webpack.LoaderOptionsPlugin({
@@ -36,7 +34,7 @@ module.exports = {
     module: {
         rules: [
             // all files with a `.ts` or `.tsx` extension will be handled by a TypeScript loader
-            { test: /\.tsx?$/, loader: 'awesome-typescript-loader' }
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" }
         ]
     },
     externals: {}
