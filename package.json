@@ -43,7 +43,7 @@
         "koa-compress": "^3.0.0",
         "koa-json": "^2.0.2",
         "koa-mount": "^3.0.0",
-        "koa-router": "^7.4.0",
+        "koa-router": "^8.0.6",
         "koa-static": "^5.0.0",
         "mkdirp": "^0.5.1",
         "node-sass": "^4.12.0",
