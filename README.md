@@ -1,6 +1,6 @@
 # fdmg-css-grid
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-css-grid.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-css-grid)
-[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-css-grid.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/%40fdmg%2Fcss-grid.svg)](https://badge.fury.io/js/%40fdmg%2Fcss-grid)
 
 FDMG CSS Grid with Flexbox fallback. Gap-size is `1rem`.
