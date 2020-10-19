@@ -34,7 +34,7 @@
         "eslint-plugin-react": "^7.21.4",
         "next": "^9.5.5",
         "prettier": "^2.1.2",
-        "react": "^16.10.1",
+        "react": "^16.14.0",
         "react-dom": "^16.10.1",
         "sass": "^1.27.0",
         "typescript": "^3.6.3",
