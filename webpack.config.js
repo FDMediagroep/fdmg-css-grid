@@ -14,7 +14,7 @@ module.exports = {
         minimize: true,
     },
     entry: {
-        Teaser: ['./src/components/teaser'],
+        Teaser: ['./src/components/Teaser'],
     },
     output: {
         path: path.join(__dirname, '/dist'),
