@@ -1,5 +1,6 @@
 .idea
 .next
+dist
 dist*
 node_modules
 *.iml
