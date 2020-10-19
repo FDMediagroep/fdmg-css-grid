@@ -38,6 +38,6 @@
         "react-dom": "^16.10.1",
         "sass": "^1.27.0",
         "typescript": "^3.6.3",
-        "webpack-cli": "^3.3.9"
+        "webpack-cli": "^4.1.0"
     }
 }
