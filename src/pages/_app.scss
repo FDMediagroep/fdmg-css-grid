@@ -1,0 +1,10 @@
+.app-main {
+    display: flex;
+    > main {
+        flex: 1 1 auto;
+    }
+    > aside {
+        flex-shrink: 0;
+        flex-basis: 300px;
+    }
+}
