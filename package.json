@@ -5,12 +5,14 @@
     "style": "dist/css/grid.css",
     "scripts": {
         "build": "next build",
-        "build:ci": "npm run release:grid && npm run release:flex",
+        "build:ci": "npm run webpack:prod && npm run release:grid && npm run release:flex && npm run copy:dts",
+        "copy:dts": "npx cpx -v \"./dist.d.ts/src/**/*.d.ts\" \"./dist\"",
         "dev": "next dev",
         "release:grid": "sass --no-source-map --style=compressed scss/grid.scss dist/css/grid.css",
         "release:flex": "sass --no-source-map --style=compressed scss/flex.scss dist/css/flex.css",
         "start": "next start",
-        "test": "echo \"No tests specified\" && exit 0"
+        "test": "echo \"No tests specified\" && exit 0",
+        "webpack:prod": "npx cross-env NODE_ENV=production webpack --mode=production"
     },
     "author": "Willem Liu",
     "license": "ISC",
@@ -28,6 +30,9 @@
         "@typescript-eslint/eslint-plugin": "^4.4.1",
         "@typescript-eslint/parser": "^4.4.1",
         "@typescript-eslint/typescript-estree": "^4.4.1",
+        "copy-webpack-plugin": "^6.2.1",
+        "cpx": "^1.5.0",
+        "cross-env": "^7.0.2",
         "eslint": "^7.11.0",
         "eslint-config-prettier": "^6.13.0",
         "eslint-plugin-prettier": "^3.1.4",
@@ -37,6 +42,7 @@
         "react": "^16.14.0",
         "react-dom": "^16.10.1",
         "sass": "^1.27.0",
+        "ts-loader": "^8.0.5",
         "typescript": "^3.6.3",
         "webpack-cli": "^4.1.0"
     }
