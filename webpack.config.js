@@ -64,7 +64,7 @@ module.exports = {
                         return JSON.stringify(
                             {
                                 ...packageJson,
-                                name: '@fdmediagroep/design-system',
+                                name: '@fdmediagroep/css-grid',
                                 version: process.env.RELEASE_VERSION
                                     ? process.env.RELEASE_VERSION.replace(
                                           'v',
