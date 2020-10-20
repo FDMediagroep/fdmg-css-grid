@@ -42,7 +42,7 @@
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
         "sass": "^1.27.0",
-        "ts-loader": "^8.0.5",
+        "ts-loader": "^8.0.6",
         "typescript": "^3.6.3",
         "webpack-cli": "^4.1.0"
     }
