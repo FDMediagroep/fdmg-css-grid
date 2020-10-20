@@ -14,7 +14,7 @@ module.exports = {
         minimize: true,
     },
     entry: {
-        Teaser: ['./src/components/Teaser'],
+        GridContainer: ['./src/components/GridContainer'],
     },
     output: {
         path: path.join(__dirname, '/dist'),
