@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import '../../scss/grid.scss';
-import '../../scss/flex.scss';
+import '../../scss/flex.scss'; // IE11
 import './_app.scss';
 
 export default function App({ Component, pageProps }) {
@@ -13,14 +13,7 @@ export default function App({ Component, pageProps }) {
                     content="width=device-width,initial-scale=1,viewport-fit=cover"
                 />
             </Head>
-            <section className="app-main">
-                <main>
-                    <Component {...pageProps} />
-                </main>
-                <aside>
-                    <div>AD</div>
-                </aside>
-            </section>
+            <Component {...pageProps} />
         </>
     );
 }

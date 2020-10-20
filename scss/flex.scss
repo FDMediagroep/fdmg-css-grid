@@ -1,8 +1,11 @@
-@import 'base';
-@import 'flex/vars';
-@import 'flex/flexBase';
-@import 'flex/xs';
-@import 'flex/s';
-@import 'flex/m';
-@import 'flex/l';
-@import 'flex/xl';
+// IE11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    @import 'base';
+    @import 'flex/vars';
+    @import 'flex/flexBase';
+    @import 'flex/xs';
+    @import 'flex/s';
+    @import 'flex/m';
+    @import 'flex/l';
+    @import 'flex/xl';
+}
