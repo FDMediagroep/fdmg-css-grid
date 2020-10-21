@@ -11,7 +11,7 @@ export default function Page() {
             <section className="app-main max-width-1024">
                 <main>
                     <GridContainer
-                        className={`${styles.stockTicker} ${styles.content}`}
+                        className={`${styles.stockTicker}`}
                         attributes={['grid']}
                     >
                         <span className="dummy-element">AEX</span>
@@ -38,52 +38,92 @@ export default function Page() {
                         >
                             <GridContainer attributes={['xs-12', 'grid']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-6', 'gap-1']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-6',
+                                        'gap-1',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     opening 1
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-6', 'gap-1']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-6',
+                                        'gap-1',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     opening 2
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 1
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 2
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 3
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 4
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 5
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
-                                    attributes={['xs-12', 'm-4', 'gap-2']}
+                                    className={`dummy-element`}
+                                    attributes={[
+                                        'xs-12',
+                                        'm-4',
+                                        'gap-2',
+                                        'gap-bottom',
+                                    ]}
                                 >
                                     desked 6
                                 </GridContainer>
@@ -96,11 +136,7 @@ export default function Page() {
                             <div className={`dummy-element ${styles.content}`}>
                                 latest news
                             </div>
-                            <div
-                                className={`dummy-element sticky  ${styles.content}`}
-                            >
-                                Ad
-                            </div>
+                            <div className={`dummy-element sticky`}>Ad</div>
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
@@ -109,97 +145,105 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -213,49 +257,53 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -269,49 +317,53 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -325,49 +377,53 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -381,49 +437,53 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -437,49 +497,53 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element ${styles.content}`}
+                                    className={`dummy-element`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
                                         'l-3',
                                         'gap-1',
                                         'gap-3',
+                                        'gap-bottom',
                                     ]}
                                 >
                                     card
@@ -488,8 +552,51 @@ export default function Page() {
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
-                            <GridContainer attributes={['xs-12']}>
+                            <GridContainer
+                                className={`dummy-element`}
+                                attributes={['xs-12']}
+                            >
                                 <h1>Dagoverzicht</h1>
+                                <GridContainer attributes={['grid', 'xs-12']}>
+                                    <GridContainer
+                                        attributes={[
+                                            'xs-12',
+                                            'm-6',
+                                            'l-4',
+                                            'gap-1',
+                                            'gap-2',
+                                            'gap-bottom',
+                                        ]}
+                                    >
+                                        <h2>Algemeen</h2>
+                                    </GridContainer>
+                                    <GridContainer
+                                        attributes={[
+                                            'xs-12',
+                                            'm-6',
+                                            'l-4',
+                                            'gap-1',
+                                            'gap-2',
+                                            'gap-bottom',
+                                        ]}
+                                    >
+                                        <h2>Achtergrond</h2>
+                                        <h2>Beurs</h2>
+                                        <h2>Columns &amp; Opinie</h2>
+                                    </GridContainer>
+                                    <GridContainer
+                                        attributes={[
+                                            'xs-12',
+                                            'l-4',
+                                            'gap-1',
+                                            'gap-2',
+                                            'gap-bottom',
+                                        ]}
+                                    >
+                                        <h2>Tech &amp; Innovatie</h2>
+                                        <h2>FD Persoonlijk</h2>
+                                    </GridContainer>
+                                </GridContainer>
                             </GridContainer>
                         </GridContainer>
                     </GridContainer>
