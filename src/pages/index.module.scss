@@ -1,5 +1,17 @@
 .stockTicker {
-    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > span {
+        flex: 1 1 auto;
+        // IE11
+        @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+        }
+    }
 }
 
 .content {
