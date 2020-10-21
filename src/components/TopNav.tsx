@@ -13,6 +13,9 @@ function TopNav() {
             <Link href="/article2">
                 <a>Article 2</a>
             </Link>
+            <Link href="/article3">
+                <a>Article 3</a>
+            </Link>
         </nav>
     );
 }

@@ -43,6 +43,11 @@ body {
 
     > main {
         flex: 1 1 auto;
+        // IE11
+        @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            max-width: 100%;
+        }
     }
     > aside {
         margin-left: 1rem;

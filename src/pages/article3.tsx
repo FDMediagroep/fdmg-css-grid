@@ -8,8 +8,8 @@ export default function Page() {
         <>
             <TopNav />
 
-            <section className={`app-main ${styles.intro}`}>
-                <main className={styles.main}>
+            <section className={`app-main ${styles.intro} ${styles.main}`}>
+                <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
                             debug={true}
@@ -40,8 +40,8 @@ export default function Page() {
                 </main>
                 <aside className="xs-hide s-hide l-show">placeholder</aside>
             </section>
-            <section className={`app-main`}>
-                <main className={styles.main}>
+            <section className={`app-main ${styles.main}`}>
+                <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
                             className="sticky"
