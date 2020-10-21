@@ -10,12 +10,12 @@ body {
 }
 
 .app-menu {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
-    > a {
-        margin: 0 1rem;
-        &:first-child {
-            margin-left: 0;
-        }
+    justify-content: space-evenly;
+    a {
+        padding: 0 1rem;
     }
 }
 

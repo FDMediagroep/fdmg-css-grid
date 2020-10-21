@@ -16,6 +16,9 @@ function TopNav() {
             <Link href="/article3">
                 <a>Article 3</a>
             </Link>
+            <Link href="/article4">
+                <a>Article 4 (gridless)</a>
+            </Link>
         </nav>
     );
 }
