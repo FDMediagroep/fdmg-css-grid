@@ -1,421 +1,318 @@
 import React from 'react';
 import { GridContainer } from '../components/GridContainer';
 import { TopNav } from '../components/TopNav';
+import styles from './index.module.scss';
 
 export default function Page() {
     return (
         <>
             <TopNav />
 
+            <section className="app-main xs-hide s-hide m-show">
+                <div
+                    className={`dummy-element ${styles.stockTicker} ${styles.content}`}
+                >
+                    stock ticker
+                </div>
+            </section>
+
             <section className="app-main">
                 <main>
-                    <GridContainer attributes={['grid']}>
+                    <GridContainer
+                        className="top-content"
+                        attributes={['grid']}
+                    >
                         <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-12',
-                                'm-12',
-                                'l-12',
-                                'xl-12',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-6',
-                                'm-6',
-                                'l-6',
-                                'xl-6',
-                                'gap-1',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-6',
-                                'm-6',
-                                'l-6',
-                                'xl-6',
-                                'gap-1',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-6',
-                                'm-6',
-                                'l-4',
-                                'xl-4',
-                                'gap-1',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-6',
-                                'm-6',
-                                'l-4',
-                                'xl-4',
-                                'gap-1',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-12',
-                                'm-12',
-                                'l-4',
-                                'xl-4',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                'xs-hide',
-                                's-12',
-                                'm-12',
-                                'l-12',
-                                'xl-12',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-6',
-                                'm-6',
-                                'l-6',
-                                'xl-6',
-                                'gap-1',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-6',
-                                'm-6',
-                                'l-6',
-                                'xl-6',
-                                'gap-1',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-4',
-                                'm-4',
-                                'l-4',
-                                'xl-4',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-4',
-                                'm-4',
-                                'l-4',
-                                'xl-4',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-4',
-                                'm-4',
-                                'l-4',
-                                'xl-4',
-                                'gap-2',
-                                'gap-bottom',
-                            ]}
-                        />
-
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
-                        />
-                        <GridContainer
-                            attributes={[
-                                'grid',
-                                'xs-12',
-                                's-3',
-                                'm-3',
-                                'l-3',
-                                'xl-3',
-                                'gap-3',
-                                'gap-bottom',
-                            ]}
+                            className="editorial-content"
+                            attributes={['l-9', 'gap-1', 'gap-bottom']}
                         >
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-12',
-                                    'm-12',
-                                    'l-12',
-                                    'xl-12',
-                                    'gap-bottom',
-                                ]}
-                            />
+                            <GridContainer attributes={['xs-12', 'grid']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-6']}
+                                >
+                                    opening 1
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-6']}
+                                >
+                                    opening 2
+                                </GridContainer>
 
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-6',
-                                    'm-6',
-                                    'l-6',
-                                    'xl-6',
-                                    'gap-1',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-6',
-                                    'm-6',
-                                    'l-6',
-                                    'xl-6',
-                                    'gap-1',
-                                    'gap-bottom',
-                                ]}
-                            />
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 1
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 2
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 3
+                                </GridContainer>
 
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-4',
-                                    'm-4',
-                                    'l-4',
-                                    'xl-4',
-                                    'gap-2',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-4',
-                                    'm-4',
-                                    'l-4',
-                                    'xl-4',
-                                    'gap-2',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-4',
-                                    'm-4',
-                                    'l-4',
-                                    'xl-4',
-                                    'gap-2',
-                                    'gap-bottom',
-                                ]}
-                            />
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 4
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 5
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-4']}
+                                >
+                                    desked 6
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+                        <GridContainer
+                            className="side-content full-height"
+                            attributes={['l-3', 'gap-1', 'gap-bottom']}
+                        >
+                            <div className={`dummy-element ${styles.content}`}>
+                                latest news
+                            </div>
+                            <div
+                                className={`dummy-element sticky  ${styles.content}`}
+                            >
+                                Ad
+                            </div>
+                        </GridContainer>
 
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-3',
-                                    'm-3',
-                                    'l-3',
-                                    'xl-3',
-                                    'gap-3',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-3',
-                                    'm-3',
-                                    'l-3',
-                                    'xl-3',
-                                    'gap-3',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-3',
-                                    'm-3',
-                                    'l-3',
-                                    'xl-3',
-                                    'gap-3',
-                                    'gap-bottom',
-                                ]}
-                            />
-                            <GridContainer
-                                debug={true}
-                                className="dummy-element"
-                                attributes={[
-                                    'xs-12',
-                                    's-3',
-                                    'm-3',
-                                    'l-3',
-                                    'xl-3',
-                                    'gap-3',
-                                    'gap-bottom',
-                                ]}
-                            />
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Nieuws</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Achtergrond</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Beurs</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Columns &amp; Opinie</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Tech &amp; Innovatie</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>FD Persoonlijk</h1>
+                            </GridContainer>
+                            <GridContainer attributes={['grid', 'xs-12']}>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                                <GridContainer
+                                    className={`dummy-element ${styles.content}`}
+                                    attributes={['xs-3']}
+                                >
+                                    card
+                                </GridContainer>
+                            </GridContainer>
+                        </GridContainer>
+
+                        <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer attributes={['xs-12']}>
+                                <h1>Dagoverzicht</h1>
+                            </GridContainer>
                         </GridContainer>
                     </GridContainer>
                 </main>

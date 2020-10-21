@@ -22,7 +22,7 @@ export default function Page() {
 
             <section className={`app-main`}>
                 <section
-                    className={`xs-hide s-hide m-show ${styles.leftSection}`}
+                    className={`app-toolbar xs-hide s-hide m-show ${styles.leftSection}`}
                 >
                     <div className="sticky left dummy-element">toolbar</div>
                 </section>

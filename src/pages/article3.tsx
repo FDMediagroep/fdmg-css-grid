@@ -44,7 +44,7 @@ export default function Page() {
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
-                            className="sticky"
+                            className="sticky app-toolbar"
                             attributes={[
                                 'm-2',
                                 'xl-3',

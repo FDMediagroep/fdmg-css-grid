@@ -23,7 +23,6 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1rem;
     box-sizing: border-box;
-    height: 100%;
 }
 
 .app-main {
@@ -47,6 +46,7 @@ body {
         @media screen and (-ms-high-contrast: active),
             (-ms-high-contrast: none) {
             max-width: 100%;
+            overflow: hidden;
         }
     }
     > aside {
@@ -54,6 +54,10 @@ body {
         flex-shrink: 0;
         flex-basis: 300px;
     }
+}
+
+.app-toolbar {
+    display: inline-block;
 }
 
 .debug {
@@ -79,4 +83,8 @@ body {
 }
 .right {
     float: right;
+}
+
+.full-height {
+    height: 100%;
 }
