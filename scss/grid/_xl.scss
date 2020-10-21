@@ -1,45 +1,51 @@
 @media only screen and (min-width: #{$xlMinWidth}px) {
-  .xl-hide { display: none!important; }
-  .xl-show { display: inherit!important; }
+    .xl-hide {
+        display: none !important;
+    }
+    .xl-show {
+        display: initial !important;
+    }
 
-  .xl-1 {
-    grid-column-end: span 1;
-  }
-  .xl-2 {
-    grid-column-end: span 2;
-  }
-  .xl-3 {
-    grid-column-end: span 3;
-  }
-  .xl-4 {
-    grid-column-end: span 4;
-  }
-  .xl-5 {
-    grid-column-end: span 5;
-  }
-  .xl-6 {
-    grid-column-end: span 6;
-  }
-  .xl-7 {
-    grid-column-end: span 7;
-  }
-  .xl-8 {
-    grid-column-end: span 8;
-  }
-  .xl-9 {
-    grid-column-end: span 9;
-  }
-  .xl-10 {
-    grid-column-end: span 10;
-  }
-  .xl-11 {
-    grid-column-end: span 11;
-  }
-  .xl-12 {
-    grid-column-end: span 12;
-  }
+    .xl-1 {
+        grid-column-end: span 1;
+    }
+    .xl-2 {
+        grid-column-end: span 2;
+    }
+    .xl-3 {
+        grid-column-end: span 3;
+    }
+    .xl-4 {
+        grid-column-end: span 4;
+    }
+    .xl-5 {
+        grid-column-end: span 5;
+    }
+    .xl-6 {
+        grid-column-end: span 6;
+    }
+    .xl-7 {
+        grid-column-end: span 7;
+    }
+    .xl-8 {
+        grid-column-end: span 8;
+    }
+    .xl-9 {
+        grid-column-end: span 9;
+    }
+    .xl-10 {
+        grid-column-end: span 10;
+    }
+    .xl-11 {
+        grid-column-end: span 11;
+    }
+    .xl-12 {
+        grid-column-end: span 12;
+    }
 }
 
 @media only screen and (max-width: #{$xlMinWidth}px) {
-  .xl-and-smaller-hide { display: none!important; }
+    .xl-and-smaller-hide {
+        display: none !important;
+    }
 }

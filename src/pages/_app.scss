@@ -1,11 +1,21 @@
+@import '../utils/map-deep-get.scss';
+@import '../design-tokens/media.scss';
+
 html {
     width: 100%;
+}
+
+body {
+    margin: 0;
 }
 
 .app-menu {
     margin-bottom: 1rem;
     > a {
         margin: 0 1rem;
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
@@ -19,6 +29,17 @@ html {
 .app-main {
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
+    margin: 0 auto;
+    @media screen and (min-width: #{map-deep-get($media, 'sizes', 's-min-width')}px) {
+        padding: 0 1.5rem;
+    }
+    @media screen and (min-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px) {
+        padding: 0 4rem;
+    }
+    @media screen and (min-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px) {
+        padding: 0 6rem;
+    }
 
     > main {
         flex: 1 1 auto;
@@ -46,4 +67,11 @@ html {
 .dummy-ad-300-600 {
     height: 600px;
     width: 300px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
 }

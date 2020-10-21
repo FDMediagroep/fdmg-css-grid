@@ -8,7 +8,7 @@ export default function Page() {
         <>
             <TopNav />
 
-            <section className={`app-main ${styles.intro} ${styles.main}`}>
+            <section className={`app-main ${styles.main2}`}>
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
@@ -20,6 +20,8 @@ export default function Page() {
                                 's-hide',
                                 'm-show',
                                 'gap-1',
+                                'gap-2',
+                                'gap-bottom',
                             ]}
                         />
                         <GridContainer
@@ -29,20 +31,28 @@ export default function Page() {
                                 'xs-12',
                                 's-12',
                                 'm-10',
-                                'xl-9',
+                                'l-6',
+                                'xl-5',
                                 'gap-1',
+                                'gap-2',
+                                'gap-bottom',
                             ]}
                             style={{ height: '250px' }}
                         >
                             Intro
                         </GridContainer>
-                    </GridContainer>
-                </main>
-                <aside className="xs-hide s-hide l-show">placeholder</aside>
-            </section>
-            <section className={`app-main ${styles.main}`}>
-                <main>
-                    <GridContainer attributes={['grid']}>
+                        <GridContainer
+                            debug={true}
+                            attributes={[
+                                'l-4',
+                                'xs-hide',
+                                's-hide',
+                                'l-show',
+                                'gap-2',
+                                'gap-bottom',
+                            ]}
+                        />
+
                         <GridContainer
                             className="sticky"
                             attributes={[
@@ -51,6 +61,7 @@ export default function Page() {
                                 'xs-hide',
                                 's-hide',
                                 'm-show',
+                                'gap-1',
                                 'gap-2',
                             ]}
                         >
@@ -63,7 +74,8 @@ export default function Page() {
                                 'xs-12',
                                 's-12',
                                 'm-10',
-                                'xl-9',
+                                'l-6',
+                                'xl-5',
                                 'gap-1',
                                 'gap-2',
                             ]}
@@ -87,13 +99,22 @@ export default function Page() {
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
+                        <GridContainer
+                            className="sticky"
+                            attributes={[
+                                'l-4',
+                                'xs-hide',
+                                's-hide',
+                                'l-show',
+                                'gap-2',
+                            ]}
+                        >
+                            <div className="dummy-element dummy-ad-300-600 right">
+                                Ad
+                            </div>
+                        </GridContainer>
                     </GridContainer>
                 </main>
-                <aside className="xs-hide s-hide l-show">
-                    <div className="sticky dummy-element dummy-ad-300-600">
-                        AD
-                    </div>
-                </aside>
             </section>
         </>
     );

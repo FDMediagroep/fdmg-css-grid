@@ -1,43 +1,45 @@
 @media only screen and (max-width: #{$xsMaxWidth}px) {
-  .xs-hide {
-    display: none!important;
-  }
-  .xs-show { display: inherit!important; }
+    .xs-hide {
+        display: none !important;
+    }
+    .xs-show {
+        display: initial !important;
+    }
 }
 
 .xs-1 {
-  @include columns(1);
+    @include columns(1);
 }
 .xs-2 {
-  @include columns(2);
+    @include columns(2);
 }
 .xs-3 {
-  @include columns(3);
+    @include columns(3);
 }
 .xs-4 {
-  @include columns(4);
+    @include columns(4);
 }
 .xs-5 {
-  @include columns(5);
+    @include columns(5);
 }
 .xs-6 {
-  @include columns(6);
+    @include columns(6);
 }
 .xs-7 {
-  @include columns(7);
+    @include columns(7);
 }
 .xs-8 {
-  @include columns(8);
+    @include columns(8);
 }
 .xs-9 {
-  @include columns(9);
+    @include columns(9);
 }
 .xs-10 {
-  @include columns(10);
+    @include columns(10);
 }
 .xs-11 {
-  @include columns(11);
+    @include columns(11);
 }
 .xs-12 {
-  @include columns(12);
+    @include columns(12);
 }

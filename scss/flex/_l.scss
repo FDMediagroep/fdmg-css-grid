@@ -1,45 +1,51 @@
 @media only screen and (min-width: #{$lMinWidth}px) {
-  .l-hide { display: none!important; }
-  .l-show { display: inherit!important; }
+    .l-hide {
+        display: none !important;
+    }
+    .l-show {
+        display: initial !important;
+    }
 
-  .l-1 {
-    @include columns(1);
-  }
-  .l-2 {
-    @include columns(2);
-  }
-  .l-3 {
-    @include columns(3);
-  }
-  .l-4 {
-    @include columns(4);
-  }
-  .l-5 {
-    @include columns(5);
-  }
-  .l-6 {
-    @include columns(6);
-  }
-  .l-7 {
-    @include columns(7);
-  }
-  .l-8 {
-    @include columns(8);
-  }
-  .l-9 {
-    @include columns(9);
-  }
-  .l-10 {
-    @include columns(10);
-  }
-  .l-11 {
-    @include columns(11);
-  }
-  .l-12 {
-    @include columns(12);
-  }
+    .l-1 {
+        @include columns(1);
+    }
+    .l-2 {
+        @include columns(2);
+    }
+    .l-3 {
+        @include columns(3);
+    }
+    .l-4 {
+        @include columns(4);
+    }
+    .l-5 {
+        @include columns(5);
+    }
+    .l-6 {
+        @include columns(6);
+    }
+    .l-7 {
+        @include columns(7);
+    }
+    .l-8 {
+        @include columns(8);
+    }
+    .l-9 {
+        @include columns(9);
+    }
+    .l-10 {
+        @include columns(10);
+    }
+    .l-11 {
+        @include columns(11);
+    }
+    .l-12 {
+        @include columns(12);
+    }
 }
 
 @media only screen and (max-width: #{$lMinWidth}px) {
-  .l-and-smaller-hide { display: none!important; }
+    .l-and-smaller-hide {
+        display: none !important;
+    }
 }

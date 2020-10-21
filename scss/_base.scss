@@ -1,8 +1,11 @@
+@import '../src/utils/map-deep-get.scss';
+@import '../src/design-tokens/media.scss';
+
 /**
  * Grid vars
  */
-$xsMaxWidth: 599;
-$sMinWidth: 600;
-$mMinWidth: 768;
-$lMinWidth: 1280;
-$xlMinWidth: 1920;
+$xsMaxWidth: map-deep-get($media, 'sizes', 'xs-max-width');
+$sMinWidth: map-deep-get($media, 'sizes', 's-min-width');
+$mMinWidth: map-deep-get($media, 'sizes', 'm-min-width');
+$lMinWidth: map-deep-get($media, 'sizes', 'l-min-width');
+$xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');

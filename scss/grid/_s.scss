@@ -1,45 +1,51 @@
 @media only screen and (min-width: #{$sMinWidth}px) {
-  .s-hide { display: none!important; }
-  .s-show { display: inherit!important; }
+    .s-hide {
+        display: none !important;
+    }
+    .s-show {
+        display: initial !important;
+    }
 
-  .s-1 {
-    grid-column-end: span 1;
-  }
-  .s-2 {
-    grid-column-end: span 2;
-  }
-  .s-3 {
-    grid-column-end: span 3;
-  }
-  .s-4 {
-    grid-column-end: span 4;
-  }
-  .s-5 {
-    grid-column-end: span 5;
-  }
-  .s-6 {
-    grid-column-end: span 6;
-  }
-  .s-7 {
-    grid-column-end: span 7;
-  }
-  .s-8 {
-    grid-column-end: span 8;
-  }
-  .s-9 {
-    grid-column-end: span 9;
-  }
-  .s-10 {
-    grid-column-end: span 10;
-  }
-  .s-11 {
-    grid-column-end: span 11;
-  }
-  .s-12 {
-    grid-column-end: span 12;
-  }
+    .s-1 {
+        grid-column-end: span 1;
+    }
+    .s-2 {
+        grid-column-end: span 2;
+    }
+    .s-3 {
+        grid-column-end: span 3;
+    }
+    .s-4 {
+        grid-column-end: span 4;
+    }
+    .s-5 {
+        grid-column-end: span 5;
+    }
+    .s-6 {
+        grid-column-end: span 6;
+    }
+    .s-7 {
+        grid-column-end: span 7;
+    }
+    .s-8 {
+        grid-column-end: span 8;
+    }
+    .s-9 {
+        grid-column-end: span 9;
+    }
+    .s-10 {
+        grid-column-end: span 10;
+    }
+    .s-11 {
+        grid-column-end: span 11;
+    }
+    .s-12 {
+        grid-column-end: span 12;
+    }
 }
 
 @media only screen and (max-width: #{$sMinWidth}px) {
-  .s-and-smaller-hide { display: none!important; }
+    .s-and-smaller-hide {
+        display: none !important;
+    }
 }
