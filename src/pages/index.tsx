@@ -419,9 +419,6 @@ export default function Page() {
                         </GridContainer>
                     </GridContainer>
                 </main>
-                <aside>
-                    <div className="dummy-element dummy-ad-300-600">AD</div>
-                </aside>
             </section>
         </>
     );
