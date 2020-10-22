@@ -1,9 +1,13 @@
 @media only screen and (min-width: #{$lMinWidth}px) {
     .l-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
     .l-show {
-        display: inherit;
+        &#{&} {
+            display: inherit;
+        }
     }
 
     .l-1 {
@@ -46,6 +50,8 @@
 
 @media only screen and (max-width: #{$lMinWidth}px) {
     .l-and-smaller-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
 }

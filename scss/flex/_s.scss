@@ -1,9 +1,13 @@
 @media only screen and (min-width: #{$sMinWidth}px) {
     .s-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
     .s-show {
-        display: inherit;
+        &#{&} {
+            display: inherit;
+        }
     }
 
     .s-1 {
@@ -46,6 +50,8 @@
 
 @media only screen and (max-width: #{$sMinWidth}px) {
     .s-and-smaller-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
 }

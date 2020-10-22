@@ -1,9 +1,13 @@
 @media only screen and (min-width: #{$xlMinWidth}px) {
     .xl-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
     .xl-show {
-        display: inherit;
+        &#{&} {
+            display: inherit;
+        }
     }
 
     .xl-1 {
@@ -46,6 +50,8 @@
 
 @media only screen and (max-width: #{$xlMinWidth}px) {
     .xl-and-smaller-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
 }

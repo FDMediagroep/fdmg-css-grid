@@ -1,9 +1,13 @@
 @media only screen and (min-width: #{$mMinWidth}px) {
     .m-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
     .m-show {
-        display: inherit;
+        &#{&} {
+            display: inherit;
+        }
     }
 
     .m-1 {
@@ -46,6 +50,8 @@
 
 @media only screen and (max-width: #{$mMinWidth}px) {
     .m-and-smaller-hide {
-        display: none;
+        &#{&} {
+            display: none;
+        }
     }
 }
