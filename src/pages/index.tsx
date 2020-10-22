@@ -38,7 +38,7 @@ export default function Page() {
                         >
                             <GridContainer attributes={['xs-12', 'grid']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -49,7 +49,7 @@ export default function Page() {
                                     opening 1
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -61,7 +61,7 @@ export default function Page() {
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -72,7 +72,7 @@ export default function Page() {
                                     desked 1
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -83,7 +83,7 @@ export default function Page() {
                                     desked 2
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -95,7 +95,7 @@ export default function Page() {
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -106,7 +106,7 @@ export default function Page() {
                                     desked 4
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -117,7 +117,7 @@ export default function Page() {
                                     desked 5
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -133,7 +133,7 @@ export default function Page() {
                             className="side-content full-height"
                             attributes={['xs-12', 'l-3', 'gap-1', 'gap-bottom']}
                         >
-                            <div className={`dummy-element ${styles.content}`}>
+                            <div className={`dummy-card ${styles.content}`}>
                                 latest news
                             </div>
                             <div
@@ -149,7 +149,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -162,7 +162,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -175,7 +175,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -188,7 +188,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -201,7 +201,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -214,7 +214,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -227,7 +227,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -240,7 +240,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -261,7 +261,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -274,7 +274,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -287,7 +287,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -300,7 +300,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -321,7 +321,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -334,7 +334,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -347,7 +347,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -360,7 +360,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -381,7 +381,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -394,7 +394,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -407,7 +407,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -420,7 +420,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -441,7 +441,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -454,7 +454,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -467,7 +467,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -480,7 +480,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -501,7 +501,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -514,7 +514,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -527,7 +527,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -540,7 +540,7 @@ export default function Page() {
                                     card
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-element`}
+                                    className={`dummy-card`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
