@@ -1,26 +1,28 @@
 import React from 'react';
 import { GridContainer } from '../components/GridContainer';
 import { TopNav } from '../components/TopNav';
-import styles from './article.module.scss';
 import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
+import styles from './article5.module.scss';
 
 export default function Page() {
     return (
         <>
             <TopNav />
 
-            <section className="app-main article">
-                <h1>Grid + Fixed aside + max-width main</h1>
+            <section className={`app-main article`}>
+                <h1>
+                    Grid + Fixed aside + centered article content + max-width
+                    article content
+                </h1>
             </section>
 
             <section className={`app-main article ${styles.intro}`}>
-                <main className={styles.main}>
+                <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
                             debug={true}
                             attributes={[
                                 'm-2',
-                                'xl-3',
                                 'xs-hide',
                                 's-hide',
                                 'm-show',
@@ -29,30 +31,33 @@ export default function Page() {
                         />
                         <GridContainer
                             debug={true}
-                            className="dummy-element"
-                            attributes={[
-                                'xs-12',
-                                's-12',
-                                'm-10',
-                                'xl-9',
-                                'gap-1',
-                            ]}
-                            style={{ height: '250px' }}
+                            attributes={['xs-12', 's-12', 'm-10', 'gap-1']}
                         >
-                            Intro
+                            <GridContainer
+                                className={styles.content}
+                                attributes={['grid']}
+                            >
+                                <GridContainer
+                                    debug={true}
+                                    className={`dummy-element`}
+                                    attributes={['xs-12', 'gap-bottom']}
+                                    style={{ height: '250px' }}
+                                >
+                                    Intro
+                                </GridContainer>
+                            </GridContainer>
                         </GridContainer>
                     </GridContainer>
                 </main>
                 <aside className="xs-hide s-hide l-show">placeholder</aside>
             </section>
             <section className={`app-main article`}>
-                <main className={styles.main}>
+                <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
-                            className={`sticky app-toolbar`}
+                            className="sticky app-toolbar"
                             attributes={[
                                 'm-2',
-                                'xl-3',
                                 'xs-hide',
                                 's-hide',
                                 'm-show',
@@ -67,16 +72,12 @@ export default function Page() {
                             />
                         </GridContainer>
                         <GridContainer
-                            attributes={[
-                                'xs-12',
-                                's-12',
-                                'm-10',
-                                'xl-9',
-                                'gap-1',
-                                'gap-2',
-                            ]}
+                            attributes={['xs-12', 's-12', 'm-10', 'gap-1']}
                         >
-                            <GridContainer attributes={['grid']}>
+                            <GridContainer
+                                className={styles.content}
+                                attributes={['grid']}
+                            >
                                 <GridContainer
                                     debug={true}
                                     className="dummy-element"

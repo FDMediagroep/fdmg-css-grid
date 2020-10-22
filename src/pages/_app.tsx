@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import '../../scss/grid.scss';
 import '../../scss/flex.scss'; // IE11
 import './_app.scss';
+import '@fdmg/design-system/components/design-tokens/design-tokens.css';
+import '@fdmg/design-system/components/toolbar/VerticalToolbar.css';
+import { Themes } from '../components/Themes';
 
 export default function App({ Component, pageProps }) {
+    useEffect(() => {
+        require('@webcomponents/webcomponentsjs');
+    }, []);
+
     return (
         <>
             <Head>
@@ -14,6 +21,7 @@ export default function App({ Component, pageProps }) {
                 />
             </Head>
             <Component {...pageProps} />
+            <Themes />
         </>
     );
 }

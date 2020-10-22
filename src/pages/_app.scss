@@ -1,8 +1,15 @@
 @import '../utils/map-deep-get.scss';
 @import '../design-tokens/media.scss';
+@import '../design-tokens/colors.scss';
 
 html {
     width: 100%;
+    background-color: var(--product-background-2);
+    // IE11
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        color: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+        display: none;
+    }
 }
 
 body {
