@@ -8,11 +8,11 @@ export default function Page() {
         <>
             <TopNav />
 
-            <section className="app-main">
+            <section className="app-main article">
                 <h1>Grid + Fixed aside + max-width main</h1>
             </section>
 
-            <section className={`app-main ${styles.intro}`}>
+            <section className={`app-main article ${styles.intro}`}>
                 <main className={styles.main}>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
@@ -44,7 +44,7 @@ export default function Page() {
                 </main>
                 <aside className="xs-hide s-hide l-show">placeholder</aside>
             </section>
-            <section className={`app-main`}>
+            <section className={`app-main article`}>
                 <main className={styles.main}>
                     <GridContainer attributes={['grid']}>
                         <GridContainer

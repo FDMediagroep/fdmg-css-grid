@@ -7,12 +7,12 @@ export default function Page() {
         <>
             <TopNav />
 
-            <section className="app-main">
+            <section className="app-main article">
                 <h1>No grid</h1>
             </section>
 
             <section
-                className={`app-main ${styles.content}`}
+                className={`app-main article ${styles.content}`}
                 style={{ height: '250px' }}
             >
                 <section
@@ -24,7 +24,7 @@ export default function Page() {
                 <aside className="xs-hide s-hide l-show" />
             </section>
 
-            <section className={`app-main`}>
+            <section className={`app-main article`}>
                 <section
                     className={`app-toolbar xs-hide s-hide m-show ${styles.leftSection}`}
                 >

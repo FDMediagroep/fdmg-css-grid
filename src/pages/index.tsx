@@ -8,7 +8,7 @@ export default function Page() {
         <>
             <TopNav />
 
-            <section className="app-main max-width-1024">
+            <section className="app-main section">
                 <main>
                     <GridContainer
                         className={`${styles.stockTicker}`}
@@ -26,7 +26,7 @@ export default function Page() {
                 </main>
             </section>
 
-            <section className="app-main max-width-1024">
+            <section className="app-main section">
                 <main>
                     <GridContainer
                         className="top-content"
@@ -136,7 +136,11 @@ export default function Page() {
                             <div className={`dummy-element ${styles.content}`}>
                                 latest news
                             </div>
-                            <div className={`dummy-element sticky`}>Ad</div>
+                            <div
+                                className={`dummy-element sticky dummy-ad-300 xs-hide s-hide xl-show`}
+                            >
+                                Ad
+                            </div>
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
