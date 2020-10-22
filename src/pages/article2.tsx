@@ -57,6 +57,7 @@ export default function Page() {
                             className="sticky app-toolbar"
                             attributes={[
                                 'm-2',
+                                'l-2',
                                 'xl-3',
                                 'xs-hide',
                                 's-hide',
@@ -100,7 +101,7 @@ export default function Page() {
                             </GridContainer>
                         </GridContainer>
                         <GridContainer
-                            className="sticky"
+                            className={`sticky ${styles.aside2}`}
                             attributes={[
                                 'l-4',
                                 'xs-hide',

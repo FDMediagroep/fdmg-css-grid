@@ -9,3 +9,9 @@
 .main2 {
     max-width: 1600px;
 }
+
+.aside2 {
+    &#{&} {
+        display: inline-block;
+    }
+}
