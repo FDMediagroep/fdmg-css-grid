@@ -6,7 +6,8 @@
     }
     .m-show {
         &#{&} {
-            display: initial; // IE11
+            display: initial;
+            // IE11
             @media screen and (-ms-high-contrast: active),
                 (-ms-high-contrast: none) {
                 display: inherit;
@@ -54,6 +55,14 @@
 
 @media only screen and (max-width: #{$mMinWidth}px) {
     .m-and-smaller-hide {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: #{$mMinWidth - 1}px) {
+    .m-smaller-hide {
         &#{&} {
             display: none;
         }

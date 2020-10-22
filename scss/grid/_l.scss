@@ -60,3 +60,11 @@
         }
     }
 }
+
+@media only screen and (max-width: #{$lMinWidth - 1}px) {
+    .l-smaller-hide {
+        &#{&} {
+            display: none;
+        }
+    }
+}

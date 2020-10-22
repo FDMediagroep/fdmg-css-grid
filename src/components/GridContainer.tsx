@@ -50,7 +50,8 @@ type SAttributes =
     | 's-12'
     | 's-hide'
     | 's-show'
-    | 's-and-smaller-hide';
+    | 's-and-smaller-hide'
+    | 's-smaller-hide';
 
 type MAttributes =
     | 'm-1'
@@ -67,7 +68,8 @@ type MAttributes =
     | 'm-12'
     | 'm-hide'
     | 'm-show'
-    | 'm-and-smaller-hide';
+    | 'm-and-smaller-hide'
+    | 'm-smaller-hide';
 
 type LAttributes =
     | 'l-1'
@@ -84,7 +86,8 @@ type LAttributes =
     | 'l-12'
     | 'l-hide'
     | 'l-show'
-    | 'l-and-smaller-hide';
+    | 'l-and-smaller-hide'
+    | 'l-smaller-hide';
 
 type XLAttributes =
     | 'xl-1'
@@ -101,7 +104,8 @@ type XLAttributes =
     | 'xl-12'
     | 'xl-hide'
     | 'xl-show'
-    | 'xl-and-smaller-hide';
+    | 'xl-and-smaller-hide'
+    | 'xl-smaller-hide';
 
 interface Props {
     attributes: (

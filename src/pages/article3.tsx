@@ -1,13 +1,16 @@
-import React from 'react';
+import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
+import React, { useEffect } from 'react';
+import { Ad300x600 } from '../components/article/Ad300x600';
 import { GridContainer } from '../components/GridContainer';
-import { TopNav } from '../components/TopNav';
 import styles from './article.module.scss';
 
 export default function Page() {
+    useEffect(() => {
+        document.documentElement.classList.add('article');
+    }, []);
+
     return (
         <>
-            <TopNav />
-
             <section className={`app-main article ${styles.main}`}>
                 <h1>Grid + Fixed aside + max-width all</h1>
             </section>
@@ -50,19 +53,20 @@ export default function Page() {
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
-                            className="sticky app-toolbar"
+                            className="app-toolbar full-height"
                             attributes={[
                                 'm-2',
                                 'xl-3',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
+                                'm-smaller-hide',
                                 'gap-2',
                             ]}
                         >
-                            <div className="dummy-element left">
-                                Tool&shy;bar
-                            </div>
+                            <VerticalToolbar
+                                id="12345"
+                                className="left sticky"
+                                bookmarked={false}
+                                onClick={console.log}
+                            />
                         </GridContainer>
                         <GridContainer
                             attributes={[
@@ -95,10 +99,8 @@ export default function Page() {
                         </GridContainer>
                     </GridContainer>
                 </main>
-                <aside className="xs-hide s-hide l-show">
-                    <div className="sticky dummy-element dummy-ad-300-600">
-                        AD
-                    </div>
+                <aside className="m-smaller-hide">
+                    <Ad300x600 />
                 </aside>
             </section>
         </>

@@ -1,13 +1,16 @@
-import React from 'react';
+import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
+import React, { useEffect } from 'react';
+import { Ad300x600 } from '../components/article/Ad300x600';
 import { GridContainer } from '../components/GridContainer';
-import { TopNav } from '../components/TopNav';
 import styles from './article.module.scss';
 
 export default function Page() {
+    useEffect(() => {
+        document.documentElement.classList.add('article');
+    }, []);
+
     return (
         <>
-            <TopNav />
-
             <section className="app-main article">
                 <h1>All in grid</h1>
             </section>
@@ -58,21 +61,22 @@ export default function Page() {
                         />
 
                         <GridContainer
-                            className="sticky app-toolbar"
+                            className="app-toolbar full-height"
                             attributes={[
                                 'm-2',
                                 'l-2',
                                 'xl-3',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
+                                'm-smaller-hide',
                                 'gap-1',
                                 'gap-2',
                             ]}
                         >
-                            <div className="dummy-element left">
-                                Tool&shy;bar
-                            </div>
+                            <VerticalToolbar
+                                id="12345"
+                                className="left sticky"
+                                bookmarked={false}
+                                onClick={console.log}
+                            />
                         </GridContainer>
                         <GridContainer
                             attributes={[
@@ -106,17 +110,9 @@ export default function Page() {
                         </GridContainer>
                         <GridContainer
                             className={`sticky ${styles.aside2}`}
-                            attributes={[
-                                'l-4',
-                                'xs-hide',
-                                's-hide',
-                                'l-show',
-                                'gap-2',
-                            ]}
+                            attributes={['l-4', 'm-smaller-hide', 'gap-2']}
                         >
-                            <div className="dummy-element dummy-ad-300-600 right">
-                                Ad
-                            </div>
+                            <Ad300x600 />
                         </GridContainer>
                     </GridContainer>
                 </main>

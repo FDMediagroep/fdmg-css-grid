@@ -1,12 +1,15 @@
-import React from 'react';
-import { TopNav } from '../components/TopNav';
+import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
+import React, { useEffect } from 'react';
+import { Ad300x600 } from '../components/article/Ad300x600';
 import styles from './article4.module.scss';
 
 export default function Page() {
+    useEffect(() => {
+        document.documentElement.classList.add('article');
+    }, []);
+
     return (
         <>
-            <TopNav />
-
             <section className="app-main article">
                 <h1>No grid</h1>
             </section>
@@ -26,9 +29,14 @@ export default function Page() {
 
             <section className={`app-main article`}>
                 <section
-                    className={`app-toolbar xs-hide s-hide m-show ${styles.leftSection}`}
+                    className={`app-toolbar m-smaller-hide ${styles.leftSection}`}
                 >
-                    <div className="sticky left dummy-element">toolbar</div>
+                    <VerticalToolbar
+                        id="12345"
+                        className="left sticky"
+                        bookmarked={false}
+                        onClick={console.log}
+                    />
                 </section>
                 <main className={styles.main}>
                     <div
@@ -44,10 +52,8 @@ export default function Page() {
                         body
                     </div>
                 </main>
-                <aside className="xs-hide s-hide l-show">
-                    <div className="sticky dummy-element dummy-ad-300-600">
-                        AD
-                    </div>
+                <aside className="m-smaller-hide">
+                    <Ad300x600 />
                 </aside>
             </section>
         </>

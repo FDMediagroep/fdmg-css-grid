@@ -1,12 +1,9 @@
 import React from 'react';
 import { GridContainer } from '../components/GridContainer';
-import { TopNav } from '../components/TopNav';
 
 export default function Page() {
     return (
         <>
-            <TopNav />
-
             <section className="app-main">
                 <main>
                     <GridContainer attributes={['grid']}>

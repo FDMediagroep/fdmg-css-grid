@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Ad300x300 } from '../components/article/Ad300x300';
 import { GridContainer } from '../components/GridContainer';
-import { TopNav } from '../components/TopNav';
 import styles from './index.module.scss';
 
 export default function Page() {
+    useEffect(() => {
+        document.documentElement.classList.remove('article');
+    }, []);
+
     return (
         <>
-            <TopNav />
-
             <section className="app-main section">
                 <main>
                     <GridContainer
@@ -136,16 +138,13 @@ export default function Page() {
                             <div className={`dummy-card ${styles.content}`}>
                                 latest news
                             </div>
-                            <div
-                                className={`dummy-element sticky dummy-ad-300 xs-hide s-hide xl-show`}
-                            >
-                                Ad
-                            </div>
+                            <Ad300x300 className="s-smaller-hide" />
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>Nieuws</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -258,6 +257,7 @@ export default function Page() {
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>Achtergrond</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -318,6 +318,7 @@ export default function Page() {
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>Beurs</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -378,6 +379,7 @@ export default function Page() {
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>Columns &amp; Opinie</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -438,6 +440,7 @@ export default function Page() {
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>Tech &amp; Innovatie</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -498,6 +501,7 @@ export default function Page() {
                         <GridContainer attributes={['grid', 'xs-12']}>
                             <GridContainer attributes={['xs-12']}>
                                 <h1>FD Persoonlijk</h1>
+                                <hr />
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
@@ -556,11 +560,9 @@ export default function Page() {
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
-                            <GridContainer
-                                className={`dummy-element`}
-                                attributes={['xs-12']}
-                            >
+                            <GridContainer attributes={['xs-12']}>
                                 <h1>Dagoverzicht</h1>
+                                <hr />
                                 <GridContainer attributes={['grid', 'xs-12']}>
                                     <GridContainer
                                         attributes={[
