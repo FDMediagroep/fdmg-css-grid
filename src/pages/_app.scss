@@ -76,9 +76,7 @@ body {
 }
 
 .app-toolbar {
-    &#{&} {
-        display: inline-block;
-    }
+    display: inline-block;
 }
 
 .debug {

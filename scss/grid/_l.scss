@@ -6,7 +6,12 @@
     }
     .l-show {
         &#{&} {
-            display: inherit;
+            display: initial;
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                display: inherit;
+            }
         }
     }
 
