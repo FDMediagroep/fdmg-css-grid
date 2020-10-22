@@ -7,6 +7,10 @@ export default function Page() {
         <>
             <TopNav />
 
+            <section className="app-main">
+                <h1>No grid</h1>
+            </section>
+
             <section
                 className={`app-main ${styles.content}`}
                 style={{ height: '250px' }}

@@ -8,6 +8,10 @@ export default function Page() {
         <>
             <TopNav />
 
+            <section className="app-main">
+                <h1>Grid + Fixed aside + max-width main</h1>
+            </section>
+
             <section className={`app-main ${styles.intro}`}>
                 <main className={styles.main}>
                     <GridContainer attributes={['grid']}>
