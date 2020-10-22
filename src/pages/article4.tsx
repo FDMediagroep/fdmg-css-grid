@@ -15,7 +15,7 @@ export default function Page() {
                     className={`xs-hide s-hide m-show ${styles.leftSection}`}
                 />
                 <main className={styles.main}>
-                    <div className="dummy-element">intro</div>
+                    <div className="dummy-element full-height">intro</div>
                 </main>
                 <aside className="xs-hide s-hide l-show" />
             </section>
