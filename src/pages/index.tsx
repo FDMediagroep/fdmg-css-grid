@@ -78,7 +78,7 @@ export default function Page() {
                         >
                             <GridContainer attributes={['xs-12', 'grid']}>
                                 <GridContainer
-                                    className={`ie11-full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -99,7 +99,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
-                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -123,7 +123,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
-                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
 
@@ -148,7 +148,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
-                                        url="https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -172,7 +172,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
-                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -197,7 +197,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
-                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
 
@@ -222,7 +222,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
-                                        url="https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -246,7 +246,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
-                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -271,7 +271,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
-                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -315,7 +315,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -336,7 +336,7 @@ export default function Page() {
                                         label="Markten"
                                         onBookmark={console.log}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -361,7 +361,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -384,7 +384,7 @@ export default function Page() {
                                         readingTime={11}
                                         title="Bulk van de werklozen komt in de komende maanden"
                                         intro=""
-                                        url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -406,7 +406,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -427,7 +427,7 @@ export default function Page() {
                                         label="Markten"
                                         onBookmark={console.log}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -452,7 +452,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -475,7 +475,7 @@ export default function Page() {
                                         readingTime={11}
                                         title="Bulk van de werklozen komt in de komende maanden"
                                         intro=""
-                                        url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -510,7 +510,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -536,7 +536,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -562,7 +562,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -588,7 +588,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -623,7 +623,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -649,7 +649,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -675,7 +675,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -701,7 +701,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -736,7 +736,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -762,7 +762,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -788,7 +788,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -814,7 +814,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -849,7 +849,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -875,7 +875,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -901,7 +901,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -927,7 +927,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
@@ -962,7 +962,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
-                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -988,7 +988,7 @@ export default function Page() {
                                         onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
-                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        url="/all-grid"
                                         variant="variant-1"
                                     />
                                 </GridContainer>
@@ -1014,7 +1014,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -1040,7 +1040,7 @@ export default function Page() {
                                         readingTime={7}
                                         theme="theme-7"
                                         title="Hoogovens of KLM?"
-                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                        url="/all-grid"
                                     />
                                 </GridContainer>
                             </GridContainer>
