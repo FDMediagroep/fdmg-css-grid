@@ -14,7 +14,7 @@ export default function Page() {
 
     return (
         <>
-            <section className="app-main section">
+            <section className={`app-main section`}>
                 <main>
                     <StockTicker
                         className={styles.stockTicker}
@@ -277,10 +277,12 @@ export default function Page() {
                             </GridContainer>
                         </GridContainer>
                         <GridContainer
-                            className="side-content full-height"
+                            className={`${styles.sideContent} full-height`}
                             attributes={['xs-12', 'l-3', 'gap-1', 'gap-bottom']}
                         >
-                            <div className={`dummy-card ${styles.content}`}>
+                            <div
+                                className={`dummy-card full-width ${styles.content}`}
+                            >
                                 latest news
                             </div>
                             <Ad300x300 className="xs-hide s-show" />

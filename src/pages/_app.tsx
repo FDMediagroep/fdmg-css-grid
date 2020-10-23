@@ -27,10 +27,10 @@ export default function App({ Component, pageProps }) {
 
             <Menu
                 className={styles.menu}
+                contentClassName={styles.menuContent}
                 ariaLabel="Main menu"
                 menuItems={[
                     {
-                        text: 'Home',
                         component: (
                             <Link href="/">
                                 <a>Home</a>
@@ -42,7 +42,6 @@ export default function App({ Component, pageProps }) {
                         isToggle: true,
                         menuItems: [
                             {
-                                text: 'Fixed ad',
                                 component: (
                                     <Link href="/fixed-ad">
                                         <a>Fixed ad</a>
@@ -50,7 +49,6 @@ export default function App({ Component, pageProps }) {
                                 ),
                             },
                             {
-                                text: 'All grid',
                                 component: (
                                     <Link href="/all-grid">
                                         <a>All grid</a>
@@ -58,7 +56,6 @@ export default function App({ Component, pageProps }) {
                                 ),
                             },
                             {
-                                text: 'No ad',
                                 component: (
                                     <Link href="/no-ad">
                                         <a>No ad</a>
@@ -66,7 +63,6 @@ export default function App({ Component, pageProps }) {
                                 ),
                             },
                             {
-                                text: 'No grid',
                                 component: (
                                     <Link href="/no-grid">
                                         <a>No grid</a>
@@ -82,7 +78,6 @@ export default function App({ Component, pageProps }) {
                         isToggle: true,
                         menuItems: [
                             {
-                                text: 'GitHub',
                                 component: (
                                     <a
                                         href="https://github.com/FDMediagroep/fdmg-css-grid"
@@ -112,7 +107,6 @@ export default function App({ Component, pageProps }) {
                                 ),
                             },
                             {
-                                text: 'Themes',
                                 component: (
                                     <Themes
                                         className={styles.themes}
