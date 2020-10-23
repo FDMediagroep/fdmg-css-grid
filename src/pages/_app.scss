@@ -57,17 +57,6 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1rem;
-    &.article {
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 's-min-width')}px) {
-            padding: 0 1.5rem;
-        }
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px) {
-            padding: 0 4rem;
-        }
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px) {
-            padding: 0 6rem;
-        }
-    }
 
     &.section {
         @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) {

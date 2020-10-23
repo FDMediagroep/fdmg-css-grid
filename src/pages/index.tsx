@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { Ad300x300 } from '../components/article/Ad300x300';
 import { GridContainer } from '../components/GridContainer';
+import { StockTicker } from '@fdmg/design-system/components/stockticker/StockTicker';
+import { HybridCard1 } from '@fdmg/design-system/components/card/HybridCard1';
+import { HybridCard2 } from '@fdmg/design-system/components/card/HybridCard2';
+import { VerticalCard1 } from '@fdmg/design-system/components/card/VerticalCard1';
 import styles from './index.module.scss';
 
 export default function Page() {
@@ -12,19 +16,53 @@ export default function Page() {
         <>
             <section className="app-main section">
                 <main>
-                    <GridContainer
-                        className={`${styles.stockTicker}`}
-                        attributes={['grid']}
-                    >
-                        <span className="dummy-element">AEX</span>
-                        <span className="dummy-element">AMX</span>
-                        <span className="dummy-element">ASCX</span>
-                        <span className="dummy-element">S&amp;P FUT</span>
-                        <span className="dummy-element">&euro;/$;</span>
-                        <span className="dummy-element xs-hide s-hide l-show">
-                            OLIE
-                        </span>
-                    </GridContainer>
+                    <StockTicker
+                        className={styles.stockTicker}
+                        stocks={[
+                            {
+                                href: '/',
+                                name: 'AEX',
+                                open: true,
+                                percentage: -0.14,
+                                price: 465.59,
+                            },
+                            {
+                                href: '/',
+                                name: 'AMX',
+                                open: true,
+                                percentage: -1.67,
+                                price: 633.16,
+                            },
+                            {
+                                href: '/',
+                                name: 'AScX',
+                                open: true,
+                                percentage: 0.88,
+                                price: 652.66,
+                            },
+                            {
+                                href: '/',
+                                name: 'S&P Fut',
+                                open: false,
+                                percentage: 0.46,
+                                price: 2536.5,
+                            },
+                            {
+                                href: '/',
+                                name: '€/$',
+                                open: true,
+                                percentage: 0.77,
+                                price: 1.1038,
+                            },
+                            {
+                                href: '/',
+                                name: 'Olie',
+                                open: true,
+                                percentage: 9.42,
+                                price: 20.48,
+                            },
+                        ]}
+                    />
                 </main>
             </section>
 
@@ -40,7 +78,7 @@ export default function Page() {
                         >
                             <GridContainer attributes={['xs-12', 'grid']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -48,10 +86,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    opening 1
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1357440"
+                                        imageUrl="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlL="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
+                                        isRead
+                                        label="Fiscaal"
+                                        onBookmark={console.log}
+                                        readingTime={2}
+                                        title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
+                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -59,11 +111,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    opening 2
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1321841"
+                                        imageUrl="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlL="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
+                                        label="Detailhandel"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
+                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                    />
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -71,10 +136,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 1
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1345422"
+                                        imageUrl="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlL="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        intro="Scherpe stijging met 17% tot 292.000 uitkeringen, blijkt uit cijfers van het UWV. Tijdens de kredietcrisis in 2008 liep de werkloosheid veel geleidelijker op."
+                                        label="Arbeidsmarkt"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
+                                        url="https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -82,10 +160,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 2
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1321841"
+                                        imageUrl="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlL="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
+                                        label="Detailhandel"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
+                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -93,11 +184,25 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 3
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1357440"
+                                        imageUrl="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlL="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
+                                        isRead
+                                        label="Fiscaal"
+                                        onBookmark={console.log}
+                                        readingTime={2}
+                                        title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
+                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                    />
                                 </GridContainer>
 
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -105,10 +210,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 4
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1345422"
+                                        imageUrl="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlL="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        intro="Scherpe stijging met 17% tot 292.000 uitkeringen, blijkt uit cijfers van het UWV. Tijdens de kredietcrisis in 2008 liep de werkloosheid veel geleidelijker op."
+                                        label="Arbeidsmarkt"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
+                                        url="https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -116,10 +234,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 5
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1321841"
+                                        imageUrl="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlL="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0637898686679174%2c.9999999999999999%2c.8442776735459663&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
+                                        label="Detailhandel"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
+                                        url="https://fd.nl/ondernemen/1321841/den-haag-zet-druk-op-pandeigenaren-om-huurverlaging-winkeliers-te-slikken"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className="full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -127,7 +258,21 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    desked 6
+                                    <VerticalCard1
+                                        className="full-height"
+                                        id="1357440"
+                                        imageUrl="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlL="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/yDQG_K45XE2ZIJOmE57wc1FIbcM.jpg?fit=crop&crop=faces&auto=format,compress&q=45&w=599&h=399"
+                                        intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
+                                        isRead
+                                        label="Fiscaal"
+                                        onBookmark={console.log}
+                                        readingTime={2}
+                                        title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
+                                        url="https://fd.nl/economie-politiek/1357440/europees-arrest-dividendbelasting-kost-schatkist-910-mln"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -138,7 +283,7 @@ export default function Page() {
                             <div className={`dummy-card ${styles.content}`}>
                                 latest news
                             </div>
-                            <Ad300x300 className="s-smaller-hide" />
+                            <Ad300x300 className="xs-hide s-show" />
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
@@ -148,7 +293,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -158,10 +303,19 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className="full-height"
+                                        id="1345386"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -171,10 +325,19 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className={`full-height`}
+                                        id="1345186"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -184,10 +347,21 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -197,10 +371,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className={`full-height`}
+                                        id="1345444"
+                                        isRead
+                                        label="Arbeidsmarkt"
+                                        onBookmark={console.log}
+                                        readingTime={11}
+                                        title="Bulk van de werklozen komt in de komende maanden"
+                                        intro=""
+                                        url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -210,10 +394,19 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className="full-height"
+                                        id="1345386"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -223,10 +416,19 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className={`full-height`}
+                                        id="1345186"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -236,10 +438,21 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -249,7 +462,17 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard2
+                                        className={`full-height`}
+                                        id="1345444"
+                                        isRead
+                                        label="Arbeidsmarkt"
+                                        onBookmark={console.log}
+                                        readingTime={11}
+                                        title="Bulk van de werklozen komt in de komende maanden"
+                                        intro=""
+                                        url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -261,7 +484,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -271,10 +494,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345386"
+                                        imageUrl="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -284,10 +520,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345186"
+                                        imageUrl="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -297,10 +547,22 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -310,7 +572,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        isRead
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -322,7 +597,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -332,10 +607,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345386"
+                                        imageUrl="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -345,10 +633,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345186"
+                                        imageUrl="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -358,10 +660,22 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -371,7 +685,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        isRead
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -383,7 +710,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -393,10 +720,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345386"
+                                        imageUrl="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -406,10 +746,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345186"
+                                        imageUrl="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -419,10 +773,22 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -432,7 +798,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        isRead
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -444,7 +823,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -454,10 +833,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345386"
+                                        imageUrl="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -467,10 +859,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345186"
+                                        imageUrl="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -480,10 +886,22 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -493,7 +911,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        isRead
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -505,7 +936,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -515,10 +946,23 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345386"
+                                        imageUrl="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={3}
+                                        title="'Beleggers verwachten nieuwe klap op beurzen'"
+                                        url="https://fd.nl/beurs/1345386/amerikaanse-technologiebeurs-nasdaq-wordt-mogelijk-strenger-dan-euronext"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -528,10 +972,24 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        className={`full-height`}
+                                        id="1345186"
+                                        imageUrl="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        imageUrlL="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
+                                        imageUrlM="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.095%2c.1069418386491557%2c.79625%2c.7954971857410882&fit=crop&crop=faces&auto=format&q=45&w=351&h=234"
+                                        imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
+                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
+                                        label="Markten"
+                                        onBookmark={console.log}
+                                        readingTime={5}
+                                        title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
+                                        url="https://fd.nl/profiel/1345186/deloitte-krijgt-met-rianne-jans-een-onverstoorbare-cfo-in-huis"
+                                        variant="variant-1"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -541,10 +999,22 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`dummy-card`}
+                                    className={`full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -554,7 +1024,20 @@ export default function Page() {
                                         'gap-bottom',
                                     ]}
                                 >
-                                    card
+                                    <HybridCard1
+                                        caption="Ed Groot"
+                                        className={`full-height`}
+                                        id="1345406"
+                                        imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
+                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
+                                        isRead
+                                        label="Kleintje Groot"
+                                        onBookmark={console.log}
+                                        readingTime={7}
+                                        theme="theme-7"
+                                        title="Hoogovens of KLM?"
+                                        url="https://fd.nl/opinie/1345406/hoogovens-of-klm"
+                                    />
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>

@@ -1,7 +1,11 @@
 import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
+import Head from 'next/head';
 import React, { useEffect } from 'react';
 import { Ad300x600 } from '../components/article/Ad300x600';
 import styles from './article4.module.scss';
+
+const metaTitle = 'No grid';
+const metaDescription = 'Article page layout freely styled without a grid';
 
 export default function Page() {
     useEffect(() => {
@@ -10,6 +14,20 @@ export default function Page() {
 
     return (
         <>
+            <Head>
+                <title>
+                    {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
+                </title>
+                <meta name="description" content={metaDescription} />
+                <meta property="og:title" content={metaTitle} />
+                <meta property="og:description" content={metaDescription} />
+                <meta property="twitter:title" content={metaTitle} />
+                <meta
+                    property="twitter:description"
+                    content={metaDescription}
+                />
+            </Head>
+
             <section className="app-main article">
                 <h1>No grid</h1>
             </section>
@@ -29,7 +47,7 @@ export default function Page() {
 
             <section className={`app-main article`}>
                 <section
-                    className={`app-toolbar m-smaller-hide ${styles.leftSection}`}
+                    className={`app-toolbar xs-hide s-hide m-show ${styles.leftSection}`}
                 >
                     <VerticalToolbar
                         id="12345"
@@ -52,7 +70,7 @@ export default function Page() {
                         body
                     </div>
                 </main>
-                <aside className="m-smaller-hide">
+                <aside className="xs-hide s-hide l-show">
                     <Ad300x600 />
                 </aside>
             </section>

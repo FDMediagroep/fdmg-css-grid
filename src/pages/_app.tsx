@@ -5,8 +5,12 @@ import '../../scss/flex.scss'; // IE11
 import './_app.scss';
 import styles from './_app.module.scss';
 import '@fdmg/design-system/components/design-tokens/design-tokens.css';
+import '@fdmg/design-system/components/card/HybridCard1.css';
+import '@fdmg/design-system/components/card/HybridCard2.css';
+import '@fdmg/design-system/components/card/VerticalCard1.css';
 import '@fdmg/design-system/components/toolbar/VerticalToolbar.css';
 import '@fdmg/design-system/components/menu/Menu.css';
+import '@fdmg/design-system/components/stockticker/StockTicker.css';
 import { Menu } from '@fdmg/design-system/components/menu/Menu';
 import { Themes } from '../components/Themes';
 import Link from 'next/link';
@@ -38,42 +42,34 @@ export default function App({ Component, pageProps }) {
                         isToggle: true,
                         menuItems: [
                             {
-                                text: 'Article 1',
+                                text: 'Fixed ad',
                                 component: (
-                                    <Link href="/article">
-                                        <a>Article 1</a>
+                                    <Link href="/fixed-ad">
+                                        <a>Fixed ad</a>
                                     </Link>
                                 ),
                             },
                             {
-                                text: 'Article 2',
+                                text: 'All grid',
                                 component: (
-                                    <Link href="/article2">
-                                        <a>Article 2</a>
+                                    <Link href="/all-grid">
+                                        <a>All grid</a>
                                     </Link>
                                 ),
                             },
                             {
-                                text: 'Article 3',
+                                text: 'No ad',
                                 component: (
-                                    <Link href="/article3">
-                                        <a>Article 3</a>
+                                    <Link href="/no-ad">
+                                        <a>No ad</a>
                                     </Link>
                                 ),
                             },
                             {
-                                text: 'Article 4',
+                                text: 'No grid',
                                 component: (
-                                    <Link href="/article4">
-                                        <a>Article 4</a>
-                                    </Link>
-                                ),
-                            },
-                            {
-                                text: 'Article 5',
-                                component: (
-                                    <Link href="/article5">
-                                        <a>Article 5</a>
+                                    <Link href="/no-grid">
+                                        <a>No grid</a>
                                     </Link>
                                 ),
                             },

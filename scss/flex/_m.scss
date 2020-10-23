@@ -52,19 +52,3 @@
         @include columns(12);
     }
 }
-
-@media only screen and (max-width: #{$mMinWidth}px) {
-    .m-and-smaller-hide {
-        &#{&} {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (max-width: #{$mMinWidth - 1}px) {
-    .m-smaller-hide {
-        &#{&} {
-            display: none;
-        }
-    }
-}
