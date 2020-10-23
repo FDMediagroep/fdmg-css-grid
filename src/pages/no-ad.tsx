@@ -41,6 +41,7 @@ export default function Page() {
                                 'm-1',
                                 'hide-lt-m',
                                 'gap-1',
+                                'gap-2',
                                 'gap-bottom',
                             ]}
                         />
@@ -48,8 +49,9 @@ export default function Page() {
                             attributes={[
                                 'xs-12',
                                 's-12',
-                                'm-11',
+                                'm-10',
                                 'gap-1',
+                                'gap-2',
                                 'gap-bottom',
                             ]}
                         >
@@ -67,6 +69,16 @@ export default function Page() {
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
+                        <GridContainer
+                            debug={true}
+                            attributes={[
+                                'm-1',
+                                'hide-lt-m',
+                                'gap-1',
+                                'gap-2',
+                                'gap-bottom',
+                            ]}
+                        />
 
                         <GridContainer
                             className="app-toolbar full-height"
@@ -80,7 +92,7 @@ export default function Page() {
                             />
                         </GridContainer>
                         <GridContainer
-                            attributes={['xs-12', 's-12', 'm-11', 'gap-1']}
+                            attributes={['xs-12', 's-12', 'm-10', 'gap-1']}
                         >
                             <GridContainer
                                 className={styles.content}
@@ -104,6 +116,16 @@ export default function Page() {
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
+                        <GridContainer
+                            debug={true}
+                            attributes={[
+                                'm-1',
+                                'hide-lt-m',
+                                'gap-1',
+                                'gap-2',
+                                'gap-bottom',
+                            ]}
+                        />
                     </GridContainer>
                 </main>
             </section>

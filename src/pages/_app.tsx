@@ -67,6 +67,8 @@ function isIE() {
 export default function App({ Component, pageProps }) {
     useEffect(() => {
         if (isIE) {
+            require('@webcomponents/webcomponentsjs');
+
             window.addEventListener(
                 'resize',
                 debounce.bind(
@@ -186,7 +188,9 @@ export default function App({ Component, pageProps }) {
                         ],
                     },
                 ]}
-            />
+            >
+                <span>Placeholder</span>
+            </Menu>
 
             <Component {...pageProps} />
         </>
