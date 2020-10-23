@@ -57,18 +57,19 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1rem;
+    max-width: 1280px;
 
-    &.section {
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) {
-            max-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px;
-        }
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px) {
-            max-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px;
-        }
-        @media screen and (min-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px) {
-            max-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px;
-        }
-    }
+    // &.section {
+    //     @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) {
+    //         max-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px;
+    //     }
+    //     @media screen and (min-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px) {
+    //         max-width: #{map-deep-get($media, 'sizes', 'l-min-width')}px;
+    //     }
+    //     @media screen and (min-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px) {
+    //         max-width: #{map-deep-get($media, 'sizes', 'xl-min-width')}px;
+    //     }
+    // }
 
     > main {
         flex: 1 1 auto;
