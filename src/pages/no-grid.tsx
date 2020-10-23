@@ -32,15 +32,15 @@ export default function Page() {
                 <h1>No grid</h1>
             </section>
 
-            <section
-                className={`app-main article ${styles.content}`}
-                style={{ height: '250px' }}
-            >
+            <section className={`app-main article`}>
                 <section
                     className={`xs-hide s-hide m-show ${styles.leftSection}`}
                 />
                 <main>
-                    <div className={`dummy-element full-height ${styles.main}`}>
+                    <div
+                        className={`dummy-element full-height ${styles.content}`}
+                        style={{ height: '250px' }}
+                    >
                         intro
                     </div>
                 </main>
@@ -60,13 +60,13 @@ export default function Page() {
                 </section>
                 <main>
                     <div
-                        className={`dummy-element ${styles.content} ${styles.main}`}
+                        className={`dummy-element ${styles.content}`}
                         style={{ height: '300px' }}
                     >
                         afbeelding
                     </div>
                     <div
-                        className={`dummy-element ${styles.content} ${styles.main}`}
+                        className={`dummy-element ${styles.content}`}
                         style={{ height: '1000px' }}
                     >
                         body
