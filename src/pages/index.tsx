@@ -78,7 +78,7 @@ export default function Page() {
                         >
                             <GridContainer attributes={['xs-12', 'grid']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie11-full-height`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -103,7 +103,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         'm-6',
@@ -128,7 +128,7 @@ export default function Page() {
                                 </GridContainer>
 
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -152,7 +152,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -176,7 +176,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -202,7 +202,7 @@ export default function Page() {
                                 </GridContainer>
 
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -226,7 +226,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -250,7 +250,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className="full-height"
+                                    className="ie-full-height"
                                     attributes={[
                                         'xs-12',
                                         'm-4',
@@ -297,7 +297,7 @@ export default function Page() {
                                 attributes={['grid', 'xs-12', 'gap-bottom']}
                             >
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -319,7 +319,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -341,7 +341,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -365,7 +365,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -387,12 +387,8 @@ export default function Page() {
                                         url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
                                     />
                                 </GridContainer>
-                            </GridContainer>
-                            <GridContainer
-                                attributes={['grid', 'xs-12', 'gap-bottom']}
-                            >
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -414,7 +410,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -436,7 +432,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -460,7 +456,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -492,7 +488,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -518,7 +514,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -545,7 +541,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -570,7 +566,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -605,7 +601,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -631,7 +627,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -658,7 +654,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -683,7 +679,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -718,7 +714,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -744,7 +740,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -771,7 +767,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -796,7 +792,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -831,7 +827,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -857,7 +853,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -884,7 +880,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -909,7 +905,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -944,7 +940,7 @@ export default function Page() {
                             </GridContainer>
                             <GridContainer attributes={['grid', 'xs-12']}>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -970,7 +966,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -997,7 +993,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',
@@ -1022,7 +1018,7 @@ export default function Page() {
                                     />
                                 </GridContainer>
                                 <GridContainer
-                                    className={`full-height`}
+                                    className={`ie-full-height`}
                                     attributes={[
                                         'xs-12',
                                         's-6',

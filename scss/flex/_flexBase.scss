@@ -3,10 +3,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    // IE11
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        align-items: stretch;
-    }
 }
 
 .grid * {

@@ -132,7 +132,7 @@ export function GridContainer(props: Props) {
             style={props.style}
         >
             {props?.debug && (
-                <span className="debug">
+                <span>
                     {props?.className ?? ''}
                     {props?.attributes?.length
                         ? ` ${props?.attributes.join(' ')}`

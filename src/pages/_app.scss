@@ -86,14 +86,6 @@ body {
     display: inline-block;
 }
 
-.debug {
-    font-size: 0.5rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .sticky {
     position: sticky;
     top: 71px;
@@ -114,10 +106,6 @@ body {
 
 .full-height {
     height: 100%;
-    // IE11
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        align-items: stretch;
-    }
 }
 .full-width {
     width: 100%;

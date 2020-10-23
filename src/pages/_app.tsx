@@ -14,8 +14,60 @@ import '@fdmg/design-system/components/stockticker/StockTicker.css';
 import { Menu } from '@fdmg/design-system/components/menu/Menu';
 import { Themes } from '../components/Themes';
 import Link from 'next/link';
+import { debounce } from '../utils/debounce';
+
+declare let document: any;
+
+/**
+ * Make sibling elements same height as its tallest sibling with the given CSS Class Name.
+ */
+function handleIE11FullHeight(cssClassName: string) {
+    console.debug('handleIE11FullHeight');
+    [].slice
+        .call(document.querySelectorAll(`.${cssClassName}`))
+        .forEach((el: HTMLElement) => {
+            el.style.height = 'auto';
+        });
+    debounce(resizeSiblings.bind(null, cssClassName), 300);
+}
+
+function resizeSiblings(cssClassName: string) {
+    console.debug('resizeSiblings');
+    [].slice
+        .call(document.querySelectorAll(`.${cssClassName}`))
+        .forEach((el: HTMLElement) => {
+            let siblingHeight = 0;
+            const siblings: HTMLElement[] = [];
+            [].slice.call(el.parentElement.childNodes).forEach((child) => {
+                if (child.classList.contains(cssClassName)) {
+                    siblingHeight = Math.max(
+                        siblingHeight,
+                        child.getBoundingClientRect().height
+                    );
+                    siblings.push(child);
+                }
+            });
+            siblings.forEach((child) => {
+                if (child.classList.contains(cssClassName)) {
+                    child.style.height = `${siblingHeight}px`;
+                }
+            });
+        });
+}
 
 export default function App({ Component, pageProps }) {
+    useEffect(() => {
+        window.addEventListener(
+            'resize',
+            debounce.bind(
+                null,
+                () => handleIE11FullHeight('ie-full-height'),
+                100
+            )
+        );
+        handleIE11FullHeight('ie-full-height');
+    }, []);
+
     return (
         <>
             <Head>
