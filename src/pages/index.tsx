@@ -285,7 +285,7 @@ export default function Page() {
                             >
                                 latest news
                             </div>
-                            <Ad300x300 className="xs-hide s-show" />
+                            <Ad300x300 className="hide-lt-xl" />
                         </GridContainer>
 
                         <GridContainer attributes={['grid', 'xs-12']}>
