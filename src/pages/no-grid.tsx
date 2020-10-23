@@ -33,9 +33,7 @@ export default function Page() {
             </section>
 
             <section className={`app-main article`}>
-                <section
-                    className={`xs-hide s-hide m-show ${styles.leftSection}`}
-                />
+                <section className={`hide-lt-m ${styles.leftSection}`} />
                 <main>
                     <div
                         className={`dummy-element full-height ${styles.noGridContent}`}
@@ -44,12 +42,12 @@ export default function Page() {
                         intro
                     </div>
                 </main>
-                <aside className="xs-hide s-hide l-show" />
+                <aside className="hide-lt-l" />
             </section>
 
             <section className={`app-main article`}>
                 <section
-                    className={`app-toolbar xs-hide s-hide m-show ${styles.leftSection}`}
+                    className={`app-toolbar hide-lt-m ${styles.leftSection}`}
                 >
                     <VerticalToolbar
                         id="12345"
@@ -72,7 +70,7 @@ export default function Page() {
                         body
                     </div>
                 </main>
-                <aside className="xs-hide s-hide l-show">
+                <aside className="hide-lt-l">
                     <Ad300x600 />
                 </aside>
             </section>

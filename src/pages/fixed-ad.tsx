@@ -42,13 +42,7 @@ export default function Page() {
                     <GridContainer attributes={['grid']}>
                         <GridContainer
                             debug={true}
-                            attributes={[
-                                'm-2',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
-                                'gap-1',
-                            ]}
+                            attributes={['m-2', 'hide-lt-m', 'gap-1']}
                         />
                         <GridContainer
                             debug={true}
@@ -70,20 +64,14 @@ export default function Page() {
                         </GridContainer>
                     </GridContainer>
                 </main>
-                <aside className="xs-hide s-hide l-show">placeholder</aside>
+                <aside className="hide-lt-l">placeholder</aside>
             </section>
             <section className={`app-main article`}>
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
                             className="app-toolbar full-height"
-                            attributes={[
-                                'm-2',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
-                                'gap-2',
-                            ]}
+                            attributes={['m-2', 'hide-lt-m', 'gap-2']}
                         >
                             <VerticalToolbar
                                 id="12345"
@@ -119,7 +107,7 @@ export default function Page() {
                         </GridContainer>
                     </GridContainer>
                 </main>
-                <aside className="xs-hide s-hide l-show">
+                <aside className="hide-lt-l">
                     <Ad300x600 />
                 </aside>
             </section>

@@ -39,9 +39,7 @@ export default function Page() {
                             debug={true}
                             attributes={[
                                 'm-1',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
+                                'hide-lt-m',
                                 'gap-1',
                                 'gap-bottom',
                             ]}
@@ -72,13 +70,7 @@ export default function Page() {
 
                         <GridContainer
                             className="app-toolbar full-height"
-                            attributes={[
-                                'm-1',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
-                                'gap-1',
-                            ]}
+                            attributes={['m-1', 'hide-lt-m', 'gap-1']}
                         >
                             <VerticalToolbar
                                 id="12345"

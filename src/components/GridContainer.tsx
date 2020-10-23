@@ -99,6 +99,13 @@ type XLAttributes =
     | 'xl-hide'
     | 'xl-show';
 
+type HideAttributes =
+    | 'hide-lt-xs'
+    | 'hide-lt-s'
+    | 'hide-lt-m'
+    | 'hide-lt-l'
+    | 'hide-lt-xl';
+
 interface Props {
     attributes: (
         | 'grid'
@@ -108,6 +115,7 @@ interface Props {
         | MAttributes
         | LAttributes
         | XLAttributes
+        | HideAttributes
     )[];
     debug?: boolean;
     [x: string]: any;

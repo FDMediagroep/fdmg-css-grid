@@ -9,3 +9,39 @@ $sMinWidth: map-deep-get($media, 'sizes', 's-min-width');
 $mMinWidth: map-deep-get($media, 'sizes', 'm-min-width');
 $lMinWidth: map-deep-get($media, 'sizes', 'l-min-width');
 $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
+
+@media only screen and (max-width: #{$xsMaxWidth - 0.02}px) {
+    .hide-lt-xs {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: #{$sMinWidth - 0.02}px) {
+    .hide-lt-s {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: #{$mMinWidth - 0.02}px) {
+    .hide-lt-m {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: #{$lMinWidth - 0.02}px) {
+    .hide-lt-l {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: #{$xlMinWidth - 0.02}px) {
+    .hide-lt-xl {
+        &#{&} {
+            display: none;
+        }
+    }
+}

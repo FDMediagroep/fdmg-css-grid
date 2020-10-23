@@ -40,9 +40,7 @@ export default function Page() {
                             debug={true}
                             attributes={[
                                 'm-1',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
+                                'hide-lt-m',
                                 'gap-1',
                                 'gap-2',
                                 'gap-bottom',
@@ -77,9 +75,7 @@ export default function Page() {
                             debug={true}
                             attributes={[
                                 'l-4',
-                                'xs-hide',
-                                's-hide',
-                                'l-show',
+                                'hide-lt-l',
                                 'gap-2',
                                 'gap-bottom',
                             ]}
@@ -87,14 +83,7 @@ export default function Page() {
 
                         <GridContainer
                             className="app-toolbar full-height"
-                            attributes={[
-                                'm-1',
-                                'xs-hide',
-                                's-hide',
-                                'm-show',
-                                'gap-1',
-                                'gap-2',
-                            ]}
+                            attributes={['m-1', 'hide-lt-m', 'gap-1', 'gap-2']}
                         >
                             <VerticalToolbar
                                 id="12345"
@@ -137,13 +126,7 @@ export default function Page() {
                         </GridContainer>
                         <GridContainer
                             className={`sticky`}
-                            attributes={[
-                                'l-4',
-                                'xs-hide',
-                                's-hide',
-                                'l-show',
-                                'gap-2',
-                            ]}
+                            attributes={['l-4', 'hide-lt-l', 'gap-2']}
                         >
                             <Ad300x600 className="right" />
                         </GridContainer>
