@@ -2,6 +2,10 @@ import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/Vertical
 import Head from 'next/head';
 import React, { useEffect } from 'react';
 import { Ad300x600 } from '../components/article/Ad300x600';
+import {
+    addProgressBar,
+    removeProgressBar,
+} from '../components/article/FDArticleProgressBar';
 import { GridContainer } from '../components/GridContainer';
 import styles from './article.module.scss';
 
@@ -11,6 +15,18 @@ const metaDescription = 'Article page using a grid';
 export default function Page() {
     useEffect(() => {
         document.documentElement.classList.add('article');
+
+        const containerElement = document.querySelector(`.menu`);
+        const trackedElement = document.querySelector(
+            '.articleProgressTrack'
+        ) as HTMLElement;
+
+        console.log(containerElement);
+        addProgressBar(containerElement, trackedElement);
+
+        return () => {
+            removeProgressBar();
+        };
     }, []);
 
     return (
@@ -33,7 +49,7 @@ export default function Page() {
                 <h1>All in grid</h1>
             </section>
 
-            <section className={`app-main article`}>
+            <section className={`app-main article articleProgressTrack`}>
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer

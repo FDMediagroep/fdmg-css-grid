@@ -11,6 +11,7 @@ import '@fdmg/design-system/components/card/VerticalCard1.css';
 import '@fdmg/design-system/components/toolbar/VerticalToolbar.css';
 import '@fdmg/design-system/components/menu/Menu.css';
 import '@fdmg/design-system/components/stockticker/StockTicker.css';
+import '../components/article/fd-article-progress-bar.scss';
 import { Menu } from '@fdmg/design-system/components/menu/Menu';
 import { Themes } from '../components/Themes';
 import Link from 'next/link';
@@ -93,7 +94,7 @@ export default function App({ Component, pageProps }) {
             <div className="dummy-menu" />
 
             <Menu
-                className={styles.menu}
+                className={`${styles.menu} menu`}
                 contentClassName={styles.menuContent}
                 ariaLabel="Main menu"
                 menuItems={[

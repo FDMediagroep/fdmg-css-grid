@@ -1,0 +1,37 @@
+@import '../../utils/map-deep-get.scss';
+@import '../../design-tokens/colors.scss';
+@import '../../design-tokens/media.scss';
+
+html.article .fd-article-progress-bar {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transition: 0.3s;
+    @media screen and (min-width: map-deep-get($media, 'sizes', 'm')) {
+        bottom: -3px;
+        height: 3px;
+    }
+    background-color: var(--progress-bar);
+    // IE11
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-color: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    }
+
+    .fd-article-progression-bar {
+        background-color: var(--progression-bar);
+        // IE11
+        @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            background-color: #{map-deep-get($colors, 'colors', 'primary', 75)};
+        }
+        height: 2px;
+        @media screen and (min-width: map-deep-get($media, 'sizes', 'm')) {
+            height: 3px;
+        }
+        position: relative;
+        left: 0;
+        width: 0;
+    }
+}
