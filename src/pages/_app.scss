@@ -24,14 +24,9 @@ body {
     margin: 0;
 }
 
-.app-menu {
-    display: flex;
-    flex-wrap: wrap;
+.dummy-menu {
+    height: 55px;
     margin-bottom: 1rem;
-    justify-content: space-evenly;
-    a {
-        padding: 0 1rem;
-    }
 }
 
 .dummy-card {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import '../../scss/grid.scss';
 import '../../scss/flex.scss'; // IE11
@@ -24,6 +24,8 @@ export default function App({ Component, pageProps }) {
                     content="width=device-width,initial-scale=1,viewport-fit=cover"
                 />
             </Head>
+
+            <div className="dummy-menu" />
 
             <Menu
                 className={styles.menu}
