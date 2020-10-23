@@ -293,7 +293,9 @@ export default function Page() {
                                 <h1>Nieuws</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                attributes={['grid', 'xs-12', 'gap-bottom']}
+                            >
                                 <GridContainer
                                     className={`full-height`}
                                     attributes={[
@@ -385,6 +387,10 @@ export default function Page() {
                                         url="https://fd.nl/economie-politiek/1345444/grootste-toename-werkloosheid-sinds-2003"
                                     />
                                 </GridContainer>
+                            </GridContainer>
+                            <GridContainer
+                                attributes={['grid', 'xs-12', 'gap-bottom']}
+                            >
                                 <GridContainer
                                     className={`full-height`}
                                     attributes={[
