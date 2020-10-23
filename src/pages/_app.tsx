@@ -21,15 +21,6 @@ declare let document: any;
 /**
  * Make sibling elements same height as its tallest sibling with the given CSS Class Name.
  */
-function handleIE11FullHeight(cssClassName: string) {
-    console.debug('handleIE11FullHeight');
-    [].slice
-        .call(document.querySelectorAll(`.${cssClassName}`))
-        .forEach((el: HTMLElement) => {
-            el.style.height = 'auto';
-        });
-    debounce(resizeSiblings.bind(null, cssClassName), 300);
-}
 
 function resizeSiblings(cssClassName: string) {
     console.debug('resizeSiblings');
@@ -55,17 +46,37 @@ function resizeSiblings(cssClassName: string) {
         });
 }
 
+function handleIE11FullHeight(cssClassName: string) {
+    console.debug('handleIE11FullHeight');
+    [].slice
+        .call(document.querySelectorAll(`.${cssClassName}`))
+        .forEach((el: HTMLElement) => {
+            el.style.height = 'auto';
+        });
+    debounce(resizeSiblings.bind(null, cssClassName), 300);
+}
+
+function isIE() {
+    const ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
+    const msie = ua.indexOf('MSIE '); // IE 10 or older
+    const trident = ua.indexOf('Trident/'); //IE 11
+
+    return msie > 0 || trident > 0;
+}
+
 export default function App({ Component, pageProps }) {
     useEffect(() => {
-        window.addEventListener(
-            'resize',
-            debounce.bind(
-                null,
-                () => handleIE11FullHeight('ie-full-height'),
-                100
-            )
-        );
-        handleIE11FullHeight('ie-full-height');
+        if (isIE) {
+            window.addEventListener(
+                'resize',
+                debounce.bind(
+                    null,
+                    () => handleIE11FullHeight('ie-full-height'),
+                    300
+                )
+            );
+            handleIE11FullHeight('ie-full-height');
+        }
     }, []);
 
     return (
