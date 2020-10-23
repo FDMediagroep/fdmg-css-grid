@@ -39,8 +39,10 @@ export default function Page() {
                 <section
                     className={`xs-hide s-hide m-show ${styles.leftSection}`}
                 />
-                <main className={styles.main}>
-                    <div className="dummy-element full-height">intro</div>
+                <main>
+                    <div className={`dummy-element full-height ${styles.main}`}>
+                        intro
+                    </div>
                 </main>
                 <aside className="xs-hide s-hide l-show" />
             </section>
@@ -56,15 +58,15 @@ export default function Page() {
                         onClick={console.log}
                     />
                 </section>
-                <main className={styles.main}>
+                <main>
                     <div
-                        className={`dummy-element ${styles.content}`}
+                        className={`dummy-element ${styles.content} ${styles.main}`}
                         style={{ height: '300px' }}
                     >
                         afbeelding
                     </div>
                     <div
-                        className={`dummy-element ${styles.content}`}
+                        className={`dummy-element ${styles.content} ${styles.main}`}
                         style={{ height: '1000px' }}
                     >
                         body
