@@ -16,7 +16,16 @@
     }
 }
 
+.noGridContent,
 .content {
     max-width: 700px;
     margin: 0 auto;
+}
+.noGridContent {
+    margin-bottom: 1rem;
+}
+
+.leftSection {
+    width: 78px;
+    margin-right: 1rem;
 }

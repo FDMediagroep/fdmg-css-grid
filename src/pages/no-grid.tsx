@@ -2,7 +2,7 @@ import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/Vertical
 import Head from 'next/head';
 import React, { useEffect } from 'react';
 import { Ad300x600 } from '../components/article/Ad300x600';
-import styles from './article4.module.scss';
+import styles from './article.module.scss';
 
 const metaTitle = 'No grid';
 const metaDescription = 'Article page layout freely styled without a grid';
@@ -38,7 +38,7 @@ export default function Page() {
                 />
                 <main>
                     <div
-                        className={`dummy-element full-height ${styles.content}`}
+                        className={`dummy-element full-height ${styles.noGridContent}`}
                         style={{ height: '250px' }}
                     >
                         intro
@@ -60,13 +60,13 @@ export default function Page() {
                 </section>
                 <main>
                     <div
-                        className={`dummy-element ${styles.content}`}
+                        className={`dummy-element ${styles.noGridContent}`}
                         style={{ height: '300px' }}
                     >
                         afbeelding
                     </div>
                     <div
-                        className={`dummy-element ${styles.content}`}
+                        className={`dummy-element ${styles.noGridContent}`}
                         style={{ height: '1000px' }}
                     >
                         body
