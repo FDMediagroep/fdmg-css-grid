@@ -121,3 +121,20 @@ hr {
     border-top: 5px solid var(--dividers);
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 640px) {
+    .grid.no-gap-bottom-s {
+        grid-gap: 0 1rem;
+        & > .gap-bottom {
+            margin-bottom: 0rem;
+            &:not(:last-child) article {
+                border-bottom: 1px solid var(--dividers);
+                // IE11
+                @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                    border-bottom: 1px solid #cdbeb4;
+                }
+            }
+        }
+    }
+}

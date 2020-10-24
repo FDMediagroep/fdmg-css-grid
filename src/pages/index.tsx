@@ -294,6 +294,7 @@ export default function Page() {
                                 <hr />
                             </GridContainer>
                             <GridContainer
+                                className="no-gap-bottom-s"
                                 attributes={['grid', 'xs-12', 'gap-bottom']}
                             >
                                 <GridContainer
@@ -486,7 +487,10 @@ export default function Page() {
                                 <h1>Achtergrond</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                className="no-gap-bottom-s"
+                                attributes={['grid', 'xs-12']}
+                            >
                                 <GridContainer
                                     className={`ie-full-height`}
                                     attributes={[
@@ -599,7 +603,10 @@ export default function Page() {
                                 <h1>Beurs</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                className="no-gap-bottom-s"
+                                attributes={['grid', 'xs-12']}
+                            >
                                 <GridContainer
                                     className={`ie-full-height`}
                                     attributes={[
@@ -712,7 +719,10 @@ export default function Page() {
                                 <h1>Columns &amp; Opinie</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                className="no-gap-bottom-s"
+                                attributes={['grid', 'xs-12']}
+                            >
                                 <GridContainer
                                     className={`ie-full-height`}
                                     attributes={[
@@ -825,7 +835,10 @@ export default function Page() {
                                 <h1>Tech &amp; Innovatie</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                className="no-gap-bottom-s"
+                                attributes={['grid', 'xs-12']}
+                            >
                                 <GridContainer
                                     className={`ie-full-height`}
                                     attributes={[
@@ -938,7 +951,10 @@ export default function Page() {
                                 <h1>FD Persoonlijk</h1>
                                 <hr />
                             </GridContainer>
-                            <GridContainer attributes={['grid', 'xs-12']}>
+                            <GridContainer
+                                className="no-gap-bottom-s"
+                                attributes={['grid', 'xs-12']}
+                            >
                                 <GridContainer
                                     className={`ie-full-height`}
                                     attributes={[
