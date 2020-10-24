@@ -67,7 +67,7 @@ function isIE() {
 
 export default function App({ Component, pageProps }) {
     useEffect(() => {
-        if (isIE) {
+        if (isIE()) {
             require('@webcomponents/webcomponentsjs');
 
             window.addEventListener(
