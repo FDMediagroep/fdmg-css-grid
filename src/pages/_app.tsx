@@ -3,6 +3,7 @@ import Head from 'next/head';
 import '../../scss/grid.scss';
 import '../../scss/flex.scss'; // IE11
 import './_app.scss';
+import './index.scss';
 import styles from './_app.module.scss';
 import '@fdmg/design-system/components/design-tokens/design-tokens.css';
 import '@fdmg/design-system/components/card/HybridCard1.css';
