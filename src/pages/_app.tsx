@@ -12,6 +12,23 @@ import '@fdmg/design-system/components/card/VerticalCard1.css';
 import '@fdmg/design-system/components/toolbar/VerticalToolbar.css';
 import '@fdmg/design-system/components/menu/Menu.css';
 import '@fdmg/design-system/components/stockticker/StockTicker.css';
+/**
+ * Article styles
+ */
+import '@fdmg/design-system/components/article-image/ArticleImage.css';
+import '@fdmg/design-system/components/infographic/Infographic.css';
+import '@fdmg/design-system/components/article-image/InfographicExtended.css';
+import '@fdmg/design-system/components/NumberFrame/NumberFrame.css';
+import '@fdmg/design-system/components/Quote/Quote.css';
+import '@fdmg/design-system/components/ReadMore/ReadMore.css';
+import '@fdmg/design-system/components/wordframe/WordFrame.css';
+import '@fdmg/design-system/components/article-summary/Summary.css';
+import '@fdmg/design-system/components/textframe/TextFrame.css';
+import '@fdmg/design-system/components/article-link-block/LinkBlock.css';
+import '@fdmg/design-system/components/vimeo/Vimeo.css';
+import '@fdmg/design-system/components/youtube/Youtube.css';
+import '@fdmg/design-system/components/bullet-point/BulletPoint.css';
+
 import '../components/article/fd-article-progress-bar.scss';
 import { Menu } from '@fdmg/design-system/components/menu/Menu';
 import { Themes } from '../components/Themes';

@@ -1,20 +1,58 @@
 import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
 import Head from 'next/head';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Ad300x600 } from '../components/article/Ad300x600';
 import {
     addProgressBar,
     removeProgressBar,
 } from '../components/article/FDArticleProgressBar';
+import { DOMParser } from 'xmldom';
 import { GridContainer } from '../components/GridContainer';
+import { mergeInlineContent } from '../utils/articleContent';
+import { OEmbedLoader } from '../utils/OEmbedLoader';
+import { getPayload } from './api/[section]/[id]/[title]';
+import { ArticleMeta } from '@fdmg/design-system/components/article-meta/ArticleMeta';
 import styles from './article.module.scss';
 
 const metaTitle = 'All grid';
 const metaDescription = 'Article page using a grid';
 
-export default function Page() {
+interface Props {
+    section: string;
+    id: number;
+    title: string;
+    authors: any;
+    article: any;
+    articleXml: string;
+    data: string;
+    formattedPublicationDate: string;
+}
+
+export default function Page(props: Props) {
+    const [jsxContent] = useState(
+        mergeInlineContent(
+            new DOMParser().parseFromString(props.articleXml, 'text/xml')
+        )
+    );
+
     useEffect(() => {
         document.documentElement.classList.add('article');
+
+        new OEmbedLoader(
+            '.soundcloud-embed',
+            'jsonp',
+            'https://soundcloud.com/oembed?format=js&url='
+        );
+        new OEmbedLoader(
+            '.twitter-embed',
+            'jsonp',
+            'https://api.twitter.com/1/statuses/oembed.json?url='
+        );
+        new OEmbedLoader(
+            '.instagram-embed',
+            'json',
+            'https://api.instagram.com/oembed?url='
+        );
 
         const containerElement = document.querySelector(`.menu`);
         const trackedElement = document.querySelector(
@@ -78,12 +116,21 @@ export default function Page() {
                                 attributes={['grid']}
                             >
                                 <GridContainer
-                                    debug={true}
-                                    className="dummy-element"
                                     attributes={['xs-12', 'gap-bottom']}
-                                    style={{ height: '300px' }}
                                 >
-                                    Intro
+                                    <header>
+                                        <ArticleMeta
+                                            authors={props.authors}
+                                            date={
+                                                props.formattedPublicationDate
+                                            }
+                                        />
+
+                                        <h1>{props.article.title}</h1>
+                                        <p className={styles.intro}>
+                                            {props.article.intro}
+                                        </p>
+                                    </header>
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -123,20 +170,9 @@ export default function Page() {
                                 attributes={['grid']}
                             >
                                 <GridContainer
-                                    debug={true}
-                                    className="dummy-element"
                                     attributes={['xs-12', 'gap-bottom']}
-                                    style={{ height: '300px' }}
                                 >
-                                    Afbeelding
-                                </GridContainer>
-                                <GridContainer
-                                    debug={true}
-                                    className="dummy-element"
-                                    attributes={['xs-12', 'gap-bottom']}
-                                    style={{ height: '1000px' }}
-                                >
-                                    Article body
+                                    {jsxContent}
                                 </GridContainer>
                             </GridContainer>
                         </GridContainer>
@@ -151,4 +187,33 @@ export default function Page() {
             </section>
         </>
     );
+}
+
+export async function getServerSideProps({ params }) {
+    const data = await getPayload(params);
+    let article: any;
+    let authors: any[] = [];
+    let formattedPublicationDate: string;
+
+    try {
+        article = data.accessModel.pageContext.analyticsParameters.article;
+        authors = data.articleDetailsModel.authorInfoList;
+        formattedPublicationDate =
+            data.articleDetailsModel.formattedPublicationDate;
+    } catch (e) {
+        console.error(e);
+    }
+
+    return {
+        props: {
+            // section: params?.section,
+            // id: params?.id,
+            // title: params?.title,
+            data,
+            formattedPublicationDate,
+            authors,
+            article: article ?? null,
+            articleXml: `<xml>${article?.content}</xml>`,
+        },
+    };
 }
