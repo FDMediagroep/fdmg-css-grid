@@ -11,7 +11,7 @@
 
 .noGridContent,
 .content {
-    max-width: 640px;
+    max-width: 680px;
     @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) and (max-width: 900px) {
         max-width: 580px;
     }
