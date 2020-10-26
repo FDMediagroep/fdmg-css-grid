@@ -6,19 +6,13 @@
     max-width: 1024px;
 }
 
-.main2 {
-    max-width: 1600px;
-}
-
-.aside2 {
-    &#{&} {
-        display: inline-block;
-    }
-}
-
 .noGridContent,
 .content {
-    max-width: 640px;
+    max-width: 580px;
+    @media screen and (min-width: 900px) {
+        max-width: 640px;
+    }
+
     margin: 0 auto;
 }
 .noGridContent {
