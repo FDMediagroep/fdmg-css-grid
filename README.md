@@ -162,14 +162,11 @@ There are many issues regarding the FlexBox fallback. It does not mirror all fea
 One of such issues is the gap. When you want to implement a more advanced responsive layout I.e. 4 columns becomes
 3 columns or even less and you want to hide the extraneous column then the gap space will not be shown correctly.
 
-## Demo
-
-The demo will run on `localhost:3008`.
-
 ### Build and run demo page
 
 1. `npm install`
 1. `npm run dev`
+    - The demo will run on `localhost:3008`
 
 ### Compile CSS
 
