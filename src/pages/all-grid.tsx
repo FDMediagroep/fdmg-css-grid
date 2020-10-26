@@ -153,7 +153,8 @@ export default function Page(props: Props) {
                                 'xs-12',
                                 's-12',
                                 'm-11',
-                                'l-7',
+                                'l-6',
+                                'xl-7',
                                 'gap-1',
                                 'gap-2',
                             ]}
@@ -172,7 +173,7 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             className={`sticky`}
-                            attributes={['l-4', 'hide-lt-l', 'gap-2']}
+                            attributes={['l-5', 'xl-4', 'hide-lt-l', 'gap-2']}
                         >
                             <Ad300x600 className="right" />
                         </GridContainer>
