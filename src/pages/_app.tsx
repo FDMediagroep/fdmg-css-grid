@@ -15,6 +15,7 @@ import '@fdmg/design-system/components/stockticker/StockTicker.css';
 /**
  * Article styles
  */
+import '@fdmg/design-system/components/article-meta/ArticleMeta.css';
 import '@fdmg/design-system/components/article-image/ArticleImage.css';
 import '@fdmg/design-system/components/infographic/Infographic.css';
 import '@fdmg/design-system/components/article-image/InfographicExtended.css';
