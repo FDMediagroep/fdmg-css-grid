@@ -96,8 +96,8 @@ export default function Page(props: Props) {
                         />
                         <GridContainer
                             attributes={[
-                                'xs-11',
-                                's-11',
+                                'xs-12',
+                                's-12',
                                 'm-10',
                                 'l-6',
                                 'xl-7',
@@ -131,7 +131,8 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             attributes={[
-                                'xs-1',
+                                'hide-lt-m',
+                                'm-1',
                                 'l-5',
                                 'xl-4',
                                 'gap-2',
@@ -152,8 +153,8 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             attributes={[
-                                'xs-11',
-                                's-11',
+                                'xs-12',
+                                's-12',
                                 'm-10',
                                 'l-6',
                                 'xl-7',
@@ -180,7 +181,13 @@ export default function Page(props: Props) {
                             <Ad300x600 className="right" />
                         </GridContainer>
                         <GridContainer
-                            attributes={['xs-1', 'l-hide', 'xl-hide', 'gap-2']}
+                            attributes={[
+                                'hide-lt-m',
+                                'm-1',
+                                'l-hide',
+                                'xl-hide',
+                                'gap-2',
+                            ]}
                         />
                     </GridContainer>
                 </main>
