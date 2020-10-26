@@ -3,8 +3,8 @@ import { ArticleImage } from '@fdmg/design-system/components/article-image/Artic
 import { Infographic } from '@fdmg/design-system/components/infographic/Infographic';
 import { InfographicExtended } from '@fdmg/design-system/components/article-image/InfographicExtended';
 import { NumberFrame } from '@fdmg/design-system/components/numberframe/NumberFrame';
-import { Quote } from '@fdmg/design-system/components/Quote/Quote';
-import { ReadMore } from '@fdmg/design-system/components/ReadMore/ReadMore';
+import { Quote } from '@fdmg/design-system/components/quote/Quote';
+import { ReadMore } from '@fdmg/design-system/components/readmore/ReadMore';
 import { WordFrame } from '@fdmg/design-system/components/wordframe/WordFrame';
 import { Summary } from '@fdmg/design-system/components/article-summary/Summary';
 import { TextFrame } from '@fdmg/design-system/components/textframe/TextFrame';
