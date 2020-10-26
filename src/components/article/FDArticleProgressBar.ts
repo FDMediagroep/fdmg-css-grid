@@ -23,7 +23,7 @@ let prevScrollHandler;
 
 export function addProgressBar(
     containerElement: Element,
-    trackedElement: HTMLElement
+    trackedElement: Element
 ) {
     removeProgressBar();
     const progressBar = document.createElement('div');

@@ -55,9 +55,7 @@ export default function Page(props: Props) {
         );
 
         const containerElement = document.querySelector(`.menu`);
-        const trackedElement = document.querySelector(
-            '.articleProgressTrack'
-        ) as HTMLElement;
+        const trackedElement = document.querySelector('.articleProgressTrack');
 
         console.log(containerElement);
         addProgressBar(containerElement, trackedElement);
@@ -83,15 +81,10 @@ export default function Page(props: Props) {
                 />
             </Head>
 
-            <section className="app-main article">
-                <h1>All in grid</h1>
-            </section>
-
             <section className={`app-main article articleProgressTrack`}>
                 <main>
                     <GridContainer attributes={['grid']}>
                         <GridContainer
-                            debug={true}
                             attributes={[
                                 'm-1',
                                 'hide-lt-m',
@@ -135,7 +128,6 @@ export default function Page(props: Props) {
                             </GridContainer>
                         </GridContainer>
                         <GridContainer
-                            debug={true}
                             attributes={[
                                 'l-4',
                                 'hide-lt-l',
