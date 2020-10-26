@@ -13,6 +13,7 @@ import { mergeInlineContent } from '../utils/articleContent';
 import { OEmbedLoader } from '../utils/OEmbedLoader';
 import { getPayload } from './api/[section]/[id]/[title]';
 import styles from './article.module.scss';
+import articleStyles from '../components/article/Article.module.scss';
 
 const metaTitle = 'No grid';
 const metaDescription = 'Article page layout freely styled without a grid';
@@ -55,9 +56,7 @@ export default function Page(props: Props) {
         );
 
         const containerElement = document.querySelector(`.menu`);
-        const trackedElement = document.querySelector(
-            '.articleProgressTrack'
-        ) as HTMLElement;
+        const trackedElement = document.querySelector('.articleProgressTrack');
 
         addProgressBar(containerElement, trackedElement);
 
@@ -67,7 +66,7 @@ export default function Page(props: Props) {
     }, []);
 
     return (
-        <>
+        <div className={articleStyles.article}>
             <Head>
                 <title>
                     {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
@@ -94,7 +93,7 @@ export default function Page(props: Props) {
                                 />
 
                                 <h1>{props.article.title}</h1>
-                                <p className={styles.intro}>
+                                <p className={articleStyles.intro}>
                                     {props.article.intro}
                                 </p>
                             </header>
@@ -113,14 +112,18 @@ export default function Page(props: Props) {
                         />
                     </section>
                     <main>
-                        <div className={styles.noGridContent}>{jsxContent}</div>
+                        <div
+                            className={`${articleStyles.articleBody} ${styles.noGridContent}`}
+                        >
+                            {jsxContent}
+                        </div>
                     </main>
                     <aside className="hide-lt-l">
                         <Ad300x600 />
                     </aside>
                 </section>
             </div>
-        </>
+        </div>
     );
 }
 

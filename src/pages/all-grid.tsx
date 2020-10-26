@@ -13,6 +13,7 @@ import { OEmbedLoader } from '../utils/OEmbedLoader';
 import { getPayload } from './api/[section]/[id]/[title]';
 import { ArticleMeta } from '@fdmg/design-system/components/article-meta/ArticleMeta';
 import styles from './article.module.scss';
+import articleStyles from '../components/article/Article.module.scss';
 
 const metaTitle = 'All grid';
 const metaDescription = 'Article page using a grid';
@@ -66,7 +67,7 @@ export default function Page(props: Props) {
     }, []);
 
     return (
-        <>
+        <div className={articleStyles.article}>
             <Head>
                 <title>
                     {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
@@ -120,7 +121,7 @@ export default function Page(props: Props) {
                                         />
 
                                         <h1>{props.article.title}</h1>
-                                        <p className={styles.intro}>
+                                        <p className={articleStyles.intro}>
                                             {props.article.intro}
                                         </p>
                                     </header>
@@ -162,6 +163,7 @@ export default function Page(props: Props) {
                                 attributes={['grid']}
                             >
                                 <GridContainer
+                                    className={articleStyles.articleBody}
                                     attributes={['xs-12', 'gap-bottom']}
                                 >
                                     {jsxContent}
@@ -177,7 +179,7 @@ export default function Page(props: Props) {
                     </GridContainer>
                 </main>
             </section>
-        </>
+        </div>
     );
 }
 

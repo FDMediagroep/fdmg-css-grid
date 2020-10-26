@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { GridContainer } from '../components/GridContainer';
 import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
 import styles from './article.module.scss';
+import articleStyles from '../components/article/Article.module.scss';
 import { Ad300x600 } from '../components/article/Ad300x600';
 import Head from 'next/head';
 import {
@@ -67,7 +68,7 @@ export default function Page(props: Props) {
     }, []);
 
     return (
-        <>
+        <div className={articleStyles.article}>
             <Head>
                 <title>
                     {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
@@ -108,7 +109,7 @@ export default function Page(props: Props) {
                                             />
 
                                             <h1>{props.article.title}</h1>
-                                            <p className={styles.intro}>
+                                            <p className={articleStyles.intro}>
                                                 {props.article.intro}
                                             </p>
                                         </header>
@@ -141,6 +142,7 @@ export default function Page(props: Props) {
                                     attributes={['grid']}
                                 >
                                     <GridContainer
+                                        className={articleStyles.articleBody}
                                         attributes={['xs-12', 'gap-bottom']}
                                     >
                                         {jsxContent}
@@ -154,7 +156,7 @@ export default function Page(props: Props) {
                     </aside>
                 </section>
             </div>
-        </>
+        </div>
     );
 }
 
