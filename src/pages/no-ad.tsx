@@ -139,7 +139,7 @@ export default function Page(props: Props) {
                         />
 
                         <GridContainer
-                            className="app-toolbar full-height"
+                            className="full-height"
                             attributes={['m-1', 'hide-lt-m', 'gap-1']}
                         >
                             <VerticalToolbar

@@ -52,7 +52,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1rem;
-    max-width: 1280px;
+    max-width: 1248px;
 
     // &.section {
     //     @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) {
@@ -82,10 +82,6 @@ body {
     }
 }
 
-.app-toolbar {
-    display: inline-block;
-}
-
 .sticky {
     position: sticky;
     top: 71px;
@@ -110,10 +106,6 @@ body {
 }
 .full-width {
     width: 100%;
-}
-
-.max-width-1024 {
-    max-width: 1024px;
 }
 
 hr {

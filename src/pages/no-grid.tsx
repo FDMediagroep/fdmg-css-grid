@@ -104,9 +104,7 @@ export default function Page(props: Props) {
                 </section>
 
                 <section className={`app-main article`}>
-                    <section
-                        className={`app-toolbar hide-lt-m ${styles.leftSection}`}
-                    >
+                    <section className={`hide-lt-m ${styles.leftSection}`}>
                         <VerticalToolbar
                             id="12345"
                             className="left sticky"
