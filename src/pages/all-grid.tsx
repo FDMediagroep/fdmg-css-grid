@@ -96,9 +96,9 @@ export default function Page(props: Props) {
                         />
                         <GridContainer
                             attributes={[
-                                'xs-12',
-                                's-12',
-                                'm-11',
+                                'xs-11',
+                                's-11',
+                                'm-10',
                                 'l-6',
                                 'xl-7',
                                 'gap-1',
@@ -131,9 +131,9 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             attributes={[
+                                'xs-1',
                                 'l-5',
                                 'xl-4',
-                                'hide-lt-l',
                                 'gap-2',
                                 'gap-bottom',
                             ]}
@@ -152,9 +152,9 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             attributes={[
-                                'xs-12',
-                                's-12',
-                                'm-11',
+                                'xs-11',
+                                's-11',
+                                'm-10',
                                 'l-6',
                                 'xl-7',
                                 'gap-1',
@@ -179,6 +179,9 @@ export default function Page(props: Props) {
                         >
                             <Ad300x600 className="right" />
                         </GridContainer>
+                        <GridContainer
+                            attributes={['xs-1', 'l-hide', 'xl-hide', 'gap-2']}
+                        />
                     </GridContainer>
                 </main>
             </section>
