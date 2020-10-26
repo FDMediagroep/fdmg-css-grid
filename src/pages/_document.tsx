@@ -25,6 +25,11 @@ export default class MyDocument extends Document<any> {
                         content="/assets/images/default-share.png"
                     />
 
+                    <link
+                        href="https://design-system.fd.nl/assets/fonts/style.css"
+                        rel="stylesheet"
+                    />
+
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `try {
