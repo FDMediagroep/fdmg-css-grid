@@ -2,7 +2,7 @@ import React from 'react';
 import { ArticleImage } from '@fdmg/design-system/components/article-image/ArticleImage';
 import { Infographic } from '@fdmg/design-system/components/infographic/Infographic';
 import { InfographicExtended } from '@fdmg/design-system/components/article-image/InfographicExtended';
-import { NumberFrame } from '@fdmg/design-system/components/NumberFrame/NumberFrame';
+import { NumberFrame } from '@fdmg/design-system/components/numberframe/NumberFrame';
 import { Quote } from '@fdmg/design-system/components/Quote/Quote';
 import { ReadMore } from '@fdmg/design-system/components/ReadMore/ReadMore';
 import { WordFrame } from '@fdmg/design-system/components/wordframe/WordFrame';
