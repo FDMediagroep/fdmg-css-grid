@@ -99,7 +99,8 @@ export default function Page(props: Props) {
                                 'xs-12',
                                 's-12',
                                 'm-11',
-                                'l-7',
+                                'l-6',
+                                'xl-7',
                                 'gap-1',
                                 'gap-2',
                                 'gap-bottom',
@@ -130,7 +131,8 @@ export default function Page(props: Props) {
                         </GridContainer>
                         <GridContainer
                             attributes={[
-                                'l-4',
+                                'l-5',
+                                'xl-4',
                                 'hide-lt-l',
                                 'gap-2',
                                 'gap-bottom',
