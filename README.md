@@ -166,7 +166,7 @@ One of such issues is the gap. When you want to implement a more advanced respon
 
 1. `npm install`
 1. `npm run dev`
-    - The demo will run on `localhost:3008`
+    - The demo will run on `localhost:3000`
 
 ### Compile CSS
 
