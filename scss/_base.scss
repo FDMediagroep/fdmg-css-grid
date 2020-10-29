@@ -5,9 +5,13 @@
  * Grid vars
  */
 $xsMaxWidth: map-deep-get($media, 'sizes', 'xs-max-width');
+$sMaxWidth: map-deep-get($media, 'sizes', 's-min-width') - 0.02;
 $sMinWidth: map-deep-get($media, 'sizes', 's-min-width');
+$mMaxWidth: map-deep-get($media, 'sizes', 'm-min-width') - 0.02;
 $mMinWidth: map-deep-get($media, 'sizes', 'm-min-width');
+$lMaxWidth: map-deep-get($media, 'sizes', 'l-min-width') - 0.02;
 $lMinWidth: map-deep-get($media, 'sizes', 'l-min-width');
+$xlMaxWidth: map-deep-get($media, 'sizes', 'xl-min-width') - 0.02;
 $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
 
 @media only screen and (max-width: #{$xsMaxWidth - 0.02}px) {
@@ -17,28 +21,28 @@ $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
         }
     }
 }
-@media only screen and (max-width: #{$sMinWidth - 0.02}px) {
+@media only screen and (max-width: #{$sMaxWidth}px) {
     .hide-lt-s {
         &#{&} {
             display: none;
         }
     }
 }
-@media only screen and (max-width: #{$mMinWidth - 0.02}px) {
+@media only screen and (max-width: #{$mMaxWidth}px) {
     .hide-lt-m {
         &#{&} {
             display: none;
         }
     }
 }
-@media only screen and (max-width: #{$lMinWidth - 0.02}px) {
+@media only screen and (max-width: #{$lMaxWidth}px) {
     .hide-lt-l {
         &#{&} {
             display: none;
         }
     }
 }
-@media only screen and (max-width: #{$xlMinWidth - 0.02}px) {
+@media only screen and (max-width: #{$xlMaxWidth}px) {
     .hide-lt-xl {
         &#{&} {
             display: none;
