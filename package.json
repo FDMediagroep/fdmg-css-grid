@@ -1,12 +1,12 @@
 {
     "name": "@fdmg/css-grid",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "FDMG CSS Grid with Flexbox fallback",
     "style": "dist/css/grid.css",
     "scripts": {
         "build": "next build",
         "build:ci": "npm run webpack:prod && npm run release:grid && npm run release:flex && npm run copy:dts",
-        "copy:dts": "npx cpx -v \"./dist.d.ts/src/**/*.d.ts\" \"./dist\"",
+        "copy:dts": "npx cpx -v \"./dist.d.ts/components/GridContainer.d.ts\" \"./dist\"",
         "dev": "next dev",
         "json-to-scss": "json-to-scss public/assets/design-tokens/* src/design-tokens",
         "release:grid": "sass --no-source-map --style=compressed scss/grid.scss dist/css/grid.css",
