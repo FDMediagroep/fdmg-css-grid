@@ -1,0 +1,54 @@
+@media only screen and (min-width: #{$xxlMinWidth}px) {
+    .xxl-hide {
+        &#{&} {
+            display: none;
+        }
+    }
+    .xxl-show {
+        &#{&} {
+            display: initial;
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                display: inherit;
+            }
+        }
+    }
+
+    .xxl-1 {
+        grid-column-end: span 1;
+    }
+    .xxl-2 {
+        grid-column-end: span 2;
+    }
+    .xxl-3 {
+        grid-column-end: span 3;
+    }
+    .xxl-4 {
+        grid-column-end: span 4;
+    }
+    .xxl-5 {
+        grid-column-end: span 5;
+    }
+    .xxl-6 {
+        grid-column-end: span 6;
+    }
+    .xxl-7 {
+        grid-column-end: span 7;
+    }
+    .xxl-8 {
+        grid-column-end: span 8;
+    }
+    .xxl-9 {
+        grid-column-end: span 9;
+    }
+    .xxl-10 {
+        grid-column-end: span 10;
+    }
+    .xxl-11 {
+        grid-column-end: span 11;
+    }
+    .xxl-12 {
+        grid-column-end: span 12;
+    }
+}

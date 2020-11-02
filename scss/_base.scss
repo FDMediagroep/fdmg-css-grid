@@ -13,6 +13,8 @@ $lMaxWidth: map-deep-get($media, 'sizes', 'l-min-width') - 0.02;
 $lMinWidth: map-deep-get($media, 'sizes', 'l-min-width');
 $xlMaxWidth: map-deep-get($media, 'sizes', 'xl-min-width') - 0.02;
 $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
+$xxlMaxWidth: map-deep-get($media, 'sizes', 'xxl-min-width') - 0.02;
+$xxlMinWidth: map-deep-get($media, 'sizes', 'xxl-min-width');
 
 @media only screen and (max-width: #{$xsMaxWidth - 0.02}px) {
     .hide-lt-xs {
@@ -44,6 +46,13 @@ $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
 }
 @media only screen and (max-width: #{$xlMaxWidth}px) {
     .hide-lt-xl {
+        &#{&} {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: #{$xxlMaxWidth}px) {
+    .hide-lt-xxl {
         &#{&} {
             display: none;
         }

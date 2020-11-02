@@ -1,0 +1,54 @@
+@media only screen and (min-width: #{$xxlMinWidth}px) {
+    .xxl-hide {
+        &#{&} {
+            display: none;
+        }
+    }
+    .xxl-show {
+        &#{&} {
+            display: initial;
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                display: inherit;
+            }
+        }
+    }
+
+    .xl-1 {
+        @include columns(1);
+    }
+    .xxl-2 {
+        @include columns(2);
+    }
+    .xxl-3 {
+        @include columns(3);
+    }
+    .xxl-4 {
+        @include columns(4);
+    }
+    .xxl-5 {
+        @include columns(5);
+    }
+    .xxl-6 {
+        @include columns(6);
+    }
+    .xxl-7 {
+        @include columns(7);
+    }
+    .xl-8 {
+        @include columns(8);
+    }
+    .xxl-9 {
+        @include columns(9);
+    }
+    .xxl-10 {
+        @include columns(10);
+    }
+    .xxl-11 {
+        @include columns(11);
+    }
+    .xxl-12 {
+        @include columns(12);
+    }
+}

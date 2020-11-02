@@ -12,8 +12,8 @@
 .noGridContent,
 .content {
     max-width: 680px;
-    @media screen and (min-width: #{map-deep-get($media, 'sizes', 'm-min-width')}px) and (max-width: 900px) {
-        max-width: 580px;
+    @media screen and (min-width: #{map-deep-get($media, 'sizes', 's-min-width')}px) and (max-width: #{map-deep-get($media, 'sizes', 'm-min-width') - 0.02}px) {
+        max-width: 565px;
     }
 
     margin: 0 auto;

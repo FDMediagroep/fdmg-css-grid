@@ -4,10 +4,6 @@
 @import '../../design-tokens/typography.scss';
 
 .article {
-    margin: 0 0.5rem;
-    @media screen and (min-width: map-deep-get($media, 'sizes', 's')) {
-        margin: 0 1rem;
-    }
     color: var(--content-copy);
     // IE11
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

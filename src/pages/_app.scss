@@ -52,6 +52,9 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1rem;
+    @media screen and (min-width: map-deep-get($media, 'sizes', 's')) {
+        padding: 0 1.5rem;
+    }
     max-width: 1248px;
 
     // &.section {

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './GridContainer.module.scss';
 
 /**
- * Gap attributes is only for Flex-box.
+ * Gap attributes is only for Flex-box (IE11 support).
  */
 enum GapDict {
     'gap-1',
@@ -111,12 +111,31 @@ enum XLDict {
 }
 type XLAttributes = keyof typeof XLDict;
 
+enum XXLDict {
+    'xxl-1',
+    'xxl-2',
+    'xxl-3',
+    'xxl-4',
+    'xxl-5',
+    'xxl-6',
+    'xxl-7',
+    'xxl-8',
+    'xxl-9',
+    'xxl-10',
+    'xxl-11',
+    'xxl-12',
+    'xxl-hide',
+    'xxl-show',
+}
+type XXLAttributes = keyof typeof XXLDict;
+
 enum HideDict {
     'hide-lt-xs',
     'hide-lt-s',
     'hide-lt-m',
     'hide-lt-l',
     'hide-lt-xl',
+    'hide-lt-xxl',
 }
 type HideAttributes = keyof typeof HideDict;
 
@@ -129,6 +148,7 @@ interface Props {
         | MAttributes
         | LAttributes
         | XLAttributes
+        | XXLAttributes
         | HideAttributes
     )[];
     debug?: boolean;
@@ -167,6 +187,7 @@ function getCssClassNames(): string[] {
         ...Object.keys(MDict),
         ...Object.keys(LDict),
         ...Object.keys(XLDict),
+        ...Object.keys(XXLDict),
         ...Object.keys(HideDict),
     ];
 }
