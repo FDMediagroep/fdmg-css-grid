@@ -2,7 +2,7 @@
     "sizes": {
         "xs-max-width": "640",
         "s-min-width": "768",
-        "m-min-width": "904",
+        "m-min-width": "896",
         "l-min-width": "1024",
         "xl-min-width": "1280",
         "xxl-min-width": "1600"
