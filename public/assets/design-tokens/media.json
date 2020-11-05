@@ -1,6 +1,6 @@
 {
     "sizes": {
-        "xs-max-width": "640",
+        "xs-min-width": "640",
         "s-min-width": "768",
         "m-min-width": "896",
         "l-min-width": "1024",
