@@ -10,19 +10,12 @@ FDMG CSS Grid with Flexbox fallback. Gap-size is `1rem`.
 
 -   `npm i --save @fdmg/css-grid`
 
-## Import as CSS
+## Import as CSS Module
 
 Import both if you need FlexBox fallback otherwise only include the Grid.
 
--   Grid: `@import 'node_modules/@fdmg/css-grid/dist/css/grid';`
--   FlexBox: `@import 'node_modules/@fdmg/css-grid/dist/css/flex';`
-
-## Import as SCSS
-
-Import both if you need FlexBox fallback otherwise only include the Grid.
-
--   Grid: `@import 'node_modules/@fdmg/css-grid/scss/grid';`
--   FlexBox: `@import 'node_modules/@fdmg/css-grid/scss/flex';`
+-   Grid: `import '@fdmg/css-grid/css/grid.css';`
+-   FlexBox: `import '@fdmg/css-grid/css/flex.css';`
 
 ## Usage
 
