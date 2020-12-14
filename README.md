@@ -1,5 +1,6 @@
 ![Build](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Build/badge.svg)
 ![Publish](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Publish/badge.svg)
+![CodeQL](https://github.com/FDMediagroep/fdmg-css-grid/workflows/CodeQL/badge.svg)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Fcss-grid.svg)](https://badge.fury.io/js/%40fdmg%2Fcss-grid)
 
 # fdmg-css-grid
