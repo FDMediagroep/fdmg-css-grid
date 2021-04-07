@@ -28,7 +28,7 @@
         "@fdmg/design-system": "^0.4.40",
         "@types/fetch-jsonp": "^1.0.0",
         "@types/micro-cors": "^0.1.1",
-        "@types/node": "^14.14.35",
+        "@types/node": "^14.14.37",
         "@types/react": "^17.0.3",
         "@types/react-dom": "^17.0.3",
         "@typescript-eslint/eslint-plugin": "^4.21.0",
