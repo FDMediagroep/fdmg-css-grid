@@ -39,7 +39,7 @@
         "copy-webpack-plugin": "^8.1.1",
         "copyfiles": "^2.4.1",
         "cross-env": "^7.0.3",
-        "css-loader": "^5.2.0",
+        "css-loader": "^5.2.1",
         "date-input-polyfill": "^2.14.0",
         "eslint": "^7.23.0",
         "eslint-config-prettier": "^8.2.0",
