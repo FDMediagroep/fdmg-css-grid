@@ -2,9 +2,9 @@
     "name": "@fdmg/css-grid",
     "version": "2.0.10",
     "description": "FDMG CSS Grid with Flexbox fallback",
-    "style": "dist/css/grid.css",
-    "types": "dist/GridContainer.d.ts",
-    "main": "dist/GridContainer.js",
+    "style": "css/grid.css",
+    "types": "GridContainer.d.ts",
+    "main": "GridContainer.js",
     "scripts": {
         "build": "next build",
         "build:ci": "npm run webpack:prod && npm run release:grid && npm run release:flex && npm run copy:dts",

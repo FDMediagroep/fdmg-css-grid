@@ -1,11 +1,13 @@
-$column-width: 100%/12;
+@use "sass:math";
+
+$column-width: math.div(100%, 12);
 
 @function get-column-width($span) {
     @return $span * $column-width;
 }
 
 @function get-column-gap($columnCount) {
-    @return #{$columnCount/($columnCount + 1)}rem;
+    @return #{(math.div($columnCount, $columnCount) + 1)}rem;
 }
 
 @mixin columns($columns) {
