@@ -8,7 +8,7 @@
     "scripts": {
         "build": "next build",
         "build:ci": "npm run webpack:prod && npm run release:grid && npm run release:flex && npm run copy:dts",
-        "copy:dts": "npx copyfiles -V \"./dist.d.ts/components/GridContainer.d.ts\" \"./dist\"",
+        "copy:dts": "npx copyfiles -V -f \"./dist.d.ts/components/GridContainer.d.ts\" \"./dist\"",
         "dev": "next dev",
         "json-to-scss": "json-to-scss public/assets/design-tokens/* src/design-tokens",
         "release:grid": "sass --no-source-map --style=compressed scss/grid.scss dist/css/grid.css",
