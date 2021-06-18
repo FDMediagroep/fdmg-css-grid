@@ -15,6 +15,8 @@ $lMaxWidth: map-deep-get($media, 'sizes', 'xl-min-width') - 0.02;
 $xlMinWidth: map-deep-get($media, 'sizes', 'xl-min-width');
 $xlMaxWidth: map-deep-get($media, 'sizes', 'xxl-min-width') - 0.02;
 $xxlMinWidth: map-deep-get($media, 'sizes', 'xxl-min-width');
+$paddingAtom: 0.25;
+$marginAtom: 0.25;
 
 @media only screen and (max-width: #{$xsMinWidth - 0.02}px) {
     .hide-lt-xs {
