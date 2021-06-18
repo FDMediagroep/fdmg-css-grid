@@ -153,6 +153,38 @@ For instance:
 ...
 ```
 
+## Paddings/Margins system
+
+There is a paddings/margins system in place which allows you to use fixed CSS classes to apply paddings/margins to elements. The naming convention is as follows `<device size>__<padding|margin>-<t-shirt size>`.
+Each increment in t-shirt-size is `+0.25rem`. So if `<device size>__<padding|margin>-xxs` is `0.25rem` then `<device size>__<padding|margin>-xs` is `0.5rem`.
+
+Example:
+
+```
+<div class="s__m-0">sets margin to 0 for device sizes s and up</div>
+
+<div class="l__m-xl">sets margin to xl for device sizes l and up</div>
+
+<div class="s__m-0 l__m-xl">
+    devices smaller than l will have 0 margins otherwise has margin size of xl
+</div>
+
+<div class="xs__pt-l xs__pr-l xs__pb-l xs__pl-l">
+    padding-top, padding-right, padding-bottom, padding-left has size of l
+</div>
+<div class="xs__p-l">all padding has size of l</div>
+```
+
+### Currently available paddings/margins sizes
+
+-   xxs
+-   xs
+-   s
+-   m
+-   l
+-   xl
+-   xxl
+
 ## Known issues
 
 There are many issues regarding the FlexBox fallback. It does not mirror all features available with CSS Grid.

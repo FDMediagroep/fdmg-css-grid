@@ -1,0 +1,184 @@
+@media only screen and (min-width: #{$lMinWidth}px) {
+    /**
+     * BASE
+     */
+    .xl__p-0 {
+        padding: 0;
+    }
+
+    /**
+     * xxs
+     */
+    .xl__p-xxs {
+        padding: $paddingAtom;
+    }
+    .xl__pt-xxs {
+        padding-top: $paddingAtom;
+    }
+    .xl__pr-xxs {
+        padding-right: $paddingAtom;
+    }
+    .xl__pb-xxs {
+        padding-bottom: $paddingAtom;
+    }
+    .xl__pl-xxs {
+        padding-left: $paddingAtom;
+    }
+
+    /**
+     * xs
+     */
+    .xl__p-xs {
+        padding: #{$paddingAtom * 2}rem;
+    }
+    .xl__pt-xs {
+        padding-top: #{$paddingAtom * 2}rem;
+    }
+    .xl__pr-xs {
+        padding-right: #{$paddingAtom * 2}rem;
+    }
+    .xl__pb-xs {
+        padding-bottom: #{$paddingAtom * 2}rem;
+    }
+    .xl__pl-xs {
+        padding-left: #{$paddingAtom * 2}rem;
+    }
+
+    /**
+     * s
+     */
+    .xl__p-s {
+        padding: #{$paddingAtom * 3}rem;
+    }
+    .xl__pt-s {
+        padding-top: #{$paddingAtom * 3}rem;
+    }
+    .xl__pr-s {
+        padding-right: #{$paddingAtom * 3}rem;
+    }
+    .xl__pb-s {
+        padding-bottom: #{$paddingAtom * 3}rem;
+    }
+    .xl__pl-s {
+        padding-left: #{$paddingAtom * 3}rem;
+    }
+
+    /**
+     * m
+     */
+    .xl__p-m {
+        padding: #{$paddingAtom * 4}rem;
+    }
+    .xl__pt-m {
+        padding-top: #{$paddingAtom * 4}rem;
+    }
+    .xl__pr-m {
+        padding-right: #{$paddingAtom * 4}rem;
+    }
+    .xl__pb-m {
+        padding-bottom: #{$paddingAtom * 4}rem;
+    }
+    .xl__pl-m {
+        padding-left: #{$paddingAtom * 4}rem;
+    }
+
+    /**
+     * l
+     */
+    .xl__p-l {
+        padding: #{$paddingAtom * 5}rem;
+    }
+    .xl__pt-l {
+        padding-top: #{$paddingAtom * 5}rem;
+    }
+    .xl__pr-l {
+        padding-right: #{$paddingAtom * 5}rem;
+    }
+    .xl__pb-l {
+        padding-bottom: #{$paddingAtom * 5}rem;
+    }
+    .xl__pl-l {
+        padding-left: #{$paddingAtom * 5}rem;
+    }
+
+    /**
+     * xl
+     */
+    .xl__p-xl {
+        padding: #{$paddingAtom * 6}rem;
+    }
+    .xl__pt-xl {
+        padding-top: #{$paddingAtom * 6}rem;
+    }
+    .xl__pr-xl {
+        padding-right: #{$paddingAtom * 6}rem;
+    }
+    .xl__pb-xl {
+        padding-bottom: #{$paddingAtom * 6}rem;
+    }
+    .xl__pl-xl {
+        padding-left: #{$paddingAtom * 6}rem;
+    }
+
+    /**
+     * xxl
+     */
+    .xl__p-xxl {
+        padding: #{$paddingAtom * 7}rem;
+    }
+    .xl__pt-xxl {
+        padding-top: #{$paddingAtom * 7}rem;
+    }
+    .xl__pr-xxl {
+        padding-right: #{$paddingAtom * 7}rem;
+    }
+    .xl__pb-xxl {
+        padding-bottom: #{$paddingAtom * 7}rem;
+    }
+    .xl__pl-xxl {
+        padding-left: #{$paddingAtom * 7}rem;
+    }
+
+    /**
+     * xxxl
+     */
+    .xl__p-xxxl {
+        padding: #{$paddingAtom * 8}rem;
+    }
+    .xl__pt-xxxl {
+        padding-top: #{$paddingAtom * 8}rem;
+    }
+    .xl__pr-xxxl {
+        padding-right: #{$paddingAtom * 8}rem;
+    }
+    .xl__pb-xxxl {
+        padding-bottom: #{$paddingAtom * 8}rem;
+    }
+    .xl__pl-xxxl {
+        padding-left: #{$paddingAtom * 8}rem;
+    }
+
+    /**
+     * 0
+     */
+    .xl__pt-0 {
+        &#{&} {
+            padding-top: 0;
+        }
+    }
+    .xl__pr-0 {
+        &#{&} {
+            padding-right: 0;
+        }
+    }
+    .xl__pb-0 {
+        &#{&} {
+            padding-bottom: 0;
+        }
+    }
+    .xl__pl-0 {
+        &#{&} {
+            padding-left: 0;
+        }
+    }
+}
