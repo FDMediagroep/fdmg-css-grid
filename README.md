@@ -156,7 +156,7 @@ For instance:
 ## Paddings/Margins system
 
 There is a paddings/margins system in place which allows you to use fixed CSS classes to apply paddings/margins to elements. The naming convention is as follows `<device size>__<padding|margin>[+-]<multiplier>`.
-Each increment is `+0.25rem`. So if `<device size>__<padding|margin>+1` is `0.25rem` then `<device size>__<padding|margin>+2` is `0.5rem` and `<device size>__<padding|margin>-1` is `-0.25rem`.
+Each increment is `+0.25rem`. So if `<device size>__<padding|margin>+1` is `0.25rem` then `<device size>__<padding|margin>+2` is `0.5rem` and `<device size>__m-1` is `-0.25rem`.
 
 Example:
 
