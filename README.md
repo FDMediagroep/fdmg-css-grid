@@ -155,35 +155,51 @@ For instance:
 
 ## Paddings/Margins system
 
-There is a paddings/margins system in place which allows you to use fixed CSS classes to apply paddings/margins to elements. The naming convention is as follows `<device size>__<padding|margin>-<t-shirt size>`.
-Each increment in t-shirt-size is `+0.25rem`. So if `<device size>__<padding|margin>-xxs` is `0.25rem` then `<device size>__<padding|margin>-xs` is `0.5rem`.
+There is a paddings/margins system in place which allows you to use fixed CSS classes to apply paddings/margins to elements. The naming convention is as follows `<device size>__<padding|margin>[+-]<multiplier>`.
+Each increment is `+0.25rem`. So if `<device size>__<padding|margin>+1` is `0.25rem` then `<device size>__<padding|margin>+2` is `0.5rem` and `<device size>__<padding|margin>-1` is `-0.25rem`.
 
 Example:
 
 ```
-<div class="s__m-0">sets margin to 0 for device sizes s and up</div>
+<div class="xs__m-0">sets margin to 0 for device sizes xs and up</div>
 
-<div class="l__m-xl">sets margin to xl for device sizes l and up</div>
+<div class="l__m+6">base margin multiplied by 6 for device sizes l and up</div>
 
-<div class="s__m-0 l__m-xl">
-    devices smaller than l will have 0 margins otherwise has margin size of xl
+<div class="xs__m-0 l__m+6">
+    devices smaller than l will have margin 0 larger devices have a base margin multiplied by 6
 </div>
 
-<div class="xs__pt-l xs__pr-l xs__pb-l xs__pl-l">
-    padding-top, padding-right, padding-bottom, padding-left has size of l
+<div class="xs__pt+5 xs__pr+5 xs__pb+5 xs__pl+5">
+    padding-top, padding-right, padding-bottom, padding-left has base margin multiplied by 5
 </div>
-<div class="xs__p-l">all padding has size of l</div>
+<div class="xs__p+5">base padding multiplied by 5</div>
+<div class="xs__p-5">base padding multipled by -5</div>
 ```
 
 ### Currently available paddings/margins sizes
 
--   xxs
--   xs
--   s
--   m
--   l
--   xl
--   xxl
+-   0
+-   -1/+1
+-   -2/+2
+-   -3/+3
+-   -4/+4
+-   -5/+5
+-   -6/+6
+-   -7/+7
+-   -8/+8
+
+### Currently available paddings/margins directions
+
+-   p: all paddings
+-   pt: padding top
+-   pr: padding right
+-   pb: padding bottom
+-   pl: padding left
+-   m: all margins
+-   mt: margin top
+-   mr: margin right
+-   mb: margin bottom
+-   ml: margin left
 
 ## Known issues
 
