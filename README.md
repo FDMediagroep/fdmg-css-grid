@@ -173,10 +173,12 @@ Example:
     padding-top, padding-right, padding-bottom, padding-left has base margin multiplied by 5
 </div>
 <div class="xs__p+5">base padding multiplied by 5</div>
-<div class="xs__p-5">base padding multipled by -5</div>
+<div class="xs__m-5">base margin multipled by -5</div>
 ```
 
-### Currently available paddings/margins sizes
+### Currently available paddings/margins multipliers
+
+Paddings can't have negative values.
 
 -   0
 -   -1/+1
