@@ -10,155 +10,275 @@
     }
 
     /**
-     * xxs
+     * 1
      */
-    .l__m-xxs {
+    .l__m\+1 {
         margin: #{$marginAtom}rem;
     }
-    .l__mt-xxs {
+    .l__mt\+1 {
         margin-top: #{$marginAtom}rem;
     }
-    .l__mr-xxs {
+    .l__mr\+1 {
         margin-right: #{$marginAtom}rem;
     }
-    .l__mb-xxs {
+    .l__mb\+1 {
         margin-bottom: #{$marginAtom}rem;
     }
-    .l__ml-xxs {
+    .l__ml\+1 {
         margin-left: #{$marginAtom}rem;
     }
+    .l__m-1 {
+        margin: -#{$marginAtom}rem;
+    }
+    .l__mt-1 {
+        margin-top: -#{$marginAtom}rem;
+    }
+    .l__mr-1 {
+        margin-right: -#{$marginAtom}rem;
+    }
+    .l__mb-1 {
+        margin-bottom: -#{$marginAtom}rem;
+    }
+    .l__ml-1 {
+        margin-left: -#{$marginAtom}rem;
+    }
 
     /**
-     * xs
+     * 2
      */
-    .l__m-xs {
+    .l__m\+2 {
         margin: #{$marginAtom * 2}rem;
     }
-    .l__mt-xs {
+    .l__mt\+2 {
         margin-top: #{$marginAtom * 2}rem;
     }
-    .l__mr-xs {
+    .l__mr\+2 {
         margin-right: #{$marginAtom * 2}rem;
     }
-    .l__mb-xs {
+    .l__mb\+2 {
         margin-bottom: #{$marginAtom * 2}rem;
     }
-    .l__ml-xs {
+    .l__ml\+2 {
         margin-left: #{$marginAtom * 2}rem;
     }
+    .l__m-2 {
+        margin: -#{$marginAtom * 2}rem;
+    }
+    .l__mt-2 {
+        margin-top: -#{$marginAtom * 2}rem;
+    }
+    .l__mr-2 {
+        margin-right: -#{$marginAtom * 2}rem;
+    }
+    .l__mb-2 {
+        margin-bottom: -#{$marginAtom * 2}rem;
+    }
+    .l__ml-2 {
+        margin-left: -#{$marginAtom * 2}rem;
+    }
 
     /**
-     * s
+     * 3
      */
-    .l__m-s {
+    .l__m\+3 {
         margin: #{$marginAtom * 3}rem;
     }
-    .l__mt-s {
+    .l__mt\+3 {
         margin-top: #{$marginAtom * 3}rem;
     }
-    .l__mr-s {
+    .l__mr\+3 {
         margin-right: #{$marginAtom * 3}rem;
     }
-    .l__mb-s {
+    .l__mb\+3 {
         margin-bottom: #{$marginAtom * 3}rem;
     }
-    .l__ml-s {
+    .l__ml\+3 {
         margin-left: #{$marginAtom * 3}rem;
     }
+    .l__m-3 {
+        margin: -#{$marginAtom * 3}rem;
+    }
+    .l__mt-3 {
+        margin-top: -#{$marginAtom * 3}rem;
+    }
+    .l__mr-3 {
+        margin-right: -#{$marginAtom * 3}rem;
+    }
+    .l__mb-3 {
+        margin-bottom: -#{$marginAtom * 3}rem;
+    }
+    .l__ml-3 {
+        margin-left: -#{$marginAtom * 3}rem;
+    }
 
     /**
-     * m
+     * 4
      */
-    .l__m-m {
+    .l__m\+4 {
         margin: #{$marginAtom * 4}rem;
     }
-    .l__mt-m {
+    .l__mt\+4 {
         margin-top: #{$marginAtom * 4}rem;
     }
-    .l__mr-m {
+    .l__mr\+4 {
         margin-right: #{$marginAtom * 4}rem;
     }
-    .l__mb-m {
+    .l__mb\+4 {
         margin-bottom: #{$marginAtom * 4}rem;
     }
-    .l__ml-m {
+    .l__ml\+4 {
         margin-left: #{$marginAtom * 4}rem;
     }
+    .l__m-4 {
+        margin: -#{$marginAtom * 4}rem;
+    }
+    .l__mt-4 {
+        margin-top: -#{$marginAtom * 4}rem;
+    }
+    .l__mr-4 {
+        margin-right: -#{$marginAtom * 4}rem;
+    }
+    .l__mb-4 {
+        margin-bottom: -#{$marginAtom * 4}rem;
+    }
+    .l__ml-4 {
+        margin-left: -#{$marginAtom * 4}rem;
+    }
 
     /**
-     * l
+     * 5
      */
-    .l__m-l {
+    .l__m\+5 {
         margin: #{$marginAtom * 5}rem;
     }
-    .l__mt-l {
+    .l__mt\+5 {
         margin-top: #{$marginAtom * 5}rem;
     }
-    .l__mr-l {
+    .l__mr\+5 {
         margin-right: #{$marginAtom * 5}rem;
     }
-    .l__mb-l {
+    .l__mb\+5 {
         margin-bottom: #{$marginAtom * 5}rem;
     }
-    .l__ml-l {
+    .l__ml\+5 {
         margin-left: #{$marginAtom * 5}rem;
     }
+    .l__m-5 {
+        margin: -#{$marginAtom * 5}rem;
+    }
+    .l__mt-5 {
+        margin-top: -#{$marginAtom * 5}rem;
+    }
+    .l__mr-5 {
+        margin-right: -#{$marginAtom * 5}rem;
+    }
+    .l__mb-5 {
+        margin-bottom: -#{$marginAtom * 5}rem;
+    }
+    .l__ml-5 {
+        margin-left: -#{$marginAtom * 5}rem;
+    }
 
     /**
-     * xl
+     * 6
      */
-    .l__m-xl {
+    .l__m\+6 {
         margin: #{$marginAtom * 6}rem;
     }
-    .l__mt-xl {
+    .l__mt\+6 {
         margin-top: #{$marginAtom * 6}rem;
     }
-    .l__mr-xl {
+    .l__mr\+6 {
         margin-right: #{$marginAtom * 6}rem;
     }
-    .l__mb-xl {
+    .l__mb\+6 {
         margin-bottom: #{$marginAtom * 6}rem;
     }
-    .l__ml-xl {
+    .l__ml\+6 {
         margin-left: #{$marginAtom * 6}rem;
     }
+    .l__m-6 {
+        margin: -#{$marginAtom * 6}rem;
+    }
+    .l__mt-6 {
+        margin-top: -#{$marginAtom * 6}rem;
+    }
+    .l__mr-6 {
+        margin-right: -#{$marginAtom * 6}rem;
+    }
+    .l__mb-6 {
+        margin-bottom: -#{$marginAtom * 6}rem;
+    }
+    .l__ml-6 {
+        margin-left: -#{$marginAtom * 6}rem;
+    }
 
     /**
-     * xxl
+     * 7
      */
-    .l__m-xxl {
+    .l__m\+7 {
         margin: #{$marginAtom * 7}rem;
     }
-    .l__mt-xxl {
+    .l__mt\+7 {
         margin-top: #{$marginAtom * 7}rem;
     }
-    .l__mr-xxl {
+    .l__mr\+7 {
         margin-right: #{$marginAtom * 7}rem;
     }
-    .l__mb-xxl {
+    .l__mb\+7 {
         margin-bottom: #{$marginAtom * 7}rem;
     }
-    .l__ml-xxl {
+    .l__ml\+7 {
         margin-left: #{$marginAtom * 7}rem;
+    }
+    .l__m-7 {
+        margin: -#{$marginAtom * 7}rem;
+    }
+    .l__mt-7 {
+        margin-top: -#{$marginAtom * 7}rem;
+    }
+    .l__mr-7 {
+        margin-right: -#{$marginAtom * 7}rem;
+    }
+    .l__mb-7 {
+        margin-bottom: -#{$marginAtom * 7}rem;
+    }
+    .l__ml-7 {
+        margin-left: -#{$marginAtom * 7}rem;
     }
 
     /**
-     * xxxl
+     * 8
      */
-    .l__m-xxxl {
+    .l__m\+8 {
         margin: #{$marginAtom * 8}rem;
     }
-    .l__mt-xxxl {
+    .l__mt\+8 {
         margin-top: #{$marginAtom * 8}rem;
     }
-    .l__mr-xxxl {
+    .l__mr\+8 {
         margin-right: #{$marginAtom * 8}rem;
     }
-    .l__mb-xxxl {
+    .l__mb\+8 {
         margin-bottom: #{$marginAtom * 8}rem;
     }
-    .l__ml-xxxl {
+    .l__ml\+8 {
         margin-left: #{$marginAtom * 8}rem;
+    }
+    .l__m-8 {
+        margin: -#{$marginAtom * 8}rem;
+    }
+    .l__mt-8 {
+        margin-top: -#{$marginAtom * 8}rem;
+    }
+    .l__mr-8 {
+        margin-right: -#{$marginAtom * 8}rem;
+    }
+    .l__mb-8 {
+        margin-bottom: -#{$marginAtom * 8}rem;
+    }
+    .l__ml-8 {
+        margin-left: -#{$marginAtom * 8}rem;
     }
 
     /**

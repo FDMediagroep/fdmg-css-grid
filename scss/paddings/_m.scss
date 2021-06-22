@@ -5,156 +5,277 @@
     .m__p-0 {
         padding: 0;
     }
+
     /**
-     * xxs
+     * 1
      */
-    .m__p-xxs {
+    .m__p\+1 {
         padding: #{$paddingAtom}rem;
     }
-    .m__pt-xxs {
+    .m__pt\+1 {
         padding-top: #{$paddingAtom}rem;
     }
-    .m__pr-xxs {
+    .m__pr\+1 {
         padding-right: #{$paddingAtom}rem;
     }
-    .m__pb-xxs {
+    .m__pb\+1 {
         padding-bottom: #{$paddingAtom}rem;
     }
-    .m__pl-xxs {
+    .m__pl\+1 {
         padding-left: #{$paddingAtom}rem;
     }
+    .m__p-1 {
+        padding: -#{$paddingAtom}rem;
+    }
+    .m__pt-1 {
+        padding-top: -#{$paddingAtom}rem;
+    }
+    .m__pr-1 {
+        padding-right: -#{$paddingAtom}rem;
+    }
+    .m__pb-1 {
+        padding-bottom: -#{$paddingAtom}rem;
+    }
+    .m__pl-1 {
+        padding-left: -#{$paddingAtom}rem;
+    }
 
     /**
-     * xs
+     * 2
      */
-    .m__p-xs {
+    .m__p\+2 {
         padding: #{$paddingAtom * 2}rem;
     }
-    .m__pt-xs {
+    .m__pt\+2 {
         padding-top: #{$paddingAtom * 2}rem;
     }
-    .m__pr-xs {
+    .m__pr\+2 {
         padding-right: #{$paddingAtom * 2}rem;
     }
-    .m__pb-xs {
+    .m__pb\+2 {
         padding-bottom: #{$paddingAtom * 2}rem;
     }
-    .m__pl-xs {
+    .m__pl\+2 {
         padding-left: #{$paddingAtom * 2}rem;
     }
+    .m__p-2 {
+        padding: -#{$paddingAtom * 2}rem;
+    }
+    .m__pt-2 {
+        padding-top: -#{$paddingAtom * 2}rem;
+    }
+    .m__pr-2 {
+        padding-right: -#{$paddingAtom * 2}rem;
+    }
+    .m__pb-2 {
+        padding-bottom: -#{$paddingAtom * 2}rem;
+    }
+    .m__pl-2 {
+        padding-left: -#{$paddingAtom * 2}rem;
+    }
 
     /**
-     * s
+     * 3
      */
-    .m__p-s {
+    .m__p\+3 {
         padding: #{$paddingAtom * 3}rem;
     }
-    .m__pt-s {
+    .m__pt\+3 {
         padding-top: #{$paddingAtom * 3}rem;
     }
-    .m__pr-s {
+    .m__pr\+3 {
         padding-right: #{$paddingAtom * 3}rem;
     }
-    .m__pb-s {
+    .m__pb\+3 {
         padding-bottom: #{$paddingAtom * 3}rem;
     }
-    .m__pl-s {
+    .m__pl\+3 {
         padding-left: #{$paddingAtom * 3}rem;
     }
+    .m__p-3 {
+        padding: -#{$paddingAtom * 3}rem;
+    }
+    .m__pt-3 {
+        padding-top: -#{$paddingAtom * 3}rem;
+    }
+    .m__pr-3 {
+        padding-right: -#{$paddingAtom * 3}rem;
+    }
+    .m__pb-3 {
+        padding-bottom: -#{$paddingAtom * 3}rem;
+    }
+    .m__pl-3 {
+        padding-left: -#{$paddingAtom * 3}rem;
+    }
 
     /**
-     * m
+     * 4
      */
-    .m__p-m {
+    .m__p\+4 {
         padding: #{$paddingAtom * 4}rem;
     }
-    .m__pt-m {
+    .m__pt\+4 {
         padding-top: #{$paddingAtom * 4}rem;
     }
-    .m__pr-m {
+    .m__pr\+4 {
         padding-right: #{$paddingAtom * 4}rem;
     }
-    .m__pb-m {
+    .m__pb\+4 {
         padding-bottom: #{$paddingAtom * 4}rem;
     }
-    .m__pl-m {
+    .m__pl\+4 {
         padding-left: #{$paddingAtom * 4}rem;
     }
+    .m__p-4 {
+        padding: -#{$paddingAtom * 4}rem;
+    }
+    .m__pt-4 {
+        padding-top: -#{$paddingAtom * 4}rem;
+    }
+    .m__pr-4 {
+        padding-right: -#{$paddingAtom * 4}rem;
+    }
+    .m__pb-4 {
+        padding-bottom: -#{$paddingAtom * 4}rem;
+    }
+    .m__pl-4 {
+        padding-left: -#{$paddingAtom * 4}rem;
+    }
 
     /**
-     * l
+     * 5
      */
-    .m__p-l {
+    .m__p\+5 {
         padding: #{$paddingAtom * 5}rem;
     }
-    .m__pt-l {
+    .m__pt\+5 {
         padding-top: #{$paddingAtom * 5}rem;
     }
-    .m__pr-l {
+    .m__pr\+5 {
         padding-right: #{$paddingAtom * 5}rem;
     }
-    .m__pb-l {
+    .m__pb\+5 {
         padding-bottom: #{$paddingAtom * 5}rem;
     }
-    .m__pl-l {
+    .m__pl\+5 {
         padding-left: #{$paddingAtom * 5}rem;
     }
+    .m__p-5 {
+        padding: -#{$paddingAtom * 5}rem;
+    }
+    .m__pt-5 {
+        padding-top: -#{$paddingAtom * 5}rem;
+    }
+    .m__pr-5 {
+        padding-right: -#{$paddingAtom * 5}rem;
+    }
+    .m__pb-5 {
+        padding-bottom: -#{$paddingAtom * 5}rem;
+    }
+    .m__pl-5 {
+        padding-left: -#{$paddingAtom * 5}rem;
+    }
 
     /**
-     * xl
+     * 6
      */
-    .m__p-xl {
+    .m__p\+6 {
         padding: #{$paddingAtom * 6}rem;
     }
-    .m__pt-xl {
+    .m__pt\+6 {
         padding-top: #{$paddingAtom * 6}rem;
     }
-    .m__pr-xl {
+    .m__pr\+6 {
         padding-right: #{$paddingAtom * 6}rem;
     }
-    .m__pb-xl {
+    .m__pb\+6 {
         padding-bottom: #{$paddingAtom * 6}rem;
     }
-    .m__pl-xl {
+    .m__pl\+6 {
         padding-left: #{$paddingAtom * 6}rem;
     }
+    .m__p-6 {
+        padding: -#{$paddingAtom * 6}rem;
+    }
+    .m__pt-6 {
+        padding-top: -#{$paddingAtom * 6}rem;
+    }
+    .m__pr-6 {
+        padding-right: -#{$paddingAtom * 6}rem;
+    }
+    .m__pb-6 {
+        padding-bottom: -#{$paddingAtom * 6}rem;
+    }
+    .m__pl-6 {
+        padding-left: -#{$paddingAtom * 6}rem;
+    }
 
     /**
-     * xxl
+     * 7
      */
-    .m__p-xxl {
+    .m__p\+7 {
         padding: #{$paddingAtom * 7}rem;
     }
-    .m__pt-xxl {
+    .m__pt\+7 {
         padding-top: #{$paddingAtom * 7}rem;
     }
-    .m__pr-xxl {
+    .m__pr\+7 {
         padding-right: #{$paddingAtom * 7}rem;
     }
-    .m__pb-xxl {
+    .m__pb\+7 {
         padding-bottom: #{$paddingAtom * 7}rem;
     }
-    .m__pl-xxl {
+    .m__pl\+7 {
         padding-left: #{$paddingAtom * 7}rem;
+    }
+    .m__p-7 {
+        padding: -#{$paddingAtom * 7}rem;
+    }
+    .m__pt-7 {
+        padding-top: -#{$paddingAtom * 7}rem;
+    }
+    .m__pr-7 {
+        padding-right: -#{$paddingAtom * 7}rem;
+    }
+    .m__pb-7 {
+        padding-bottom: -#{$paddingAtom * 7}rem;
+    }
+    .m__pl-7 {
+        padding-left: -#{$paddingAtom * 7}rem;
     }
 
     /**
-     * xxxl
+     * 8
      */
-    .m__p-xxxl {
+    .m__p\+8 {
         padding: #{$paddingAtom * 8}rem;
     }
-    .m__pt-xxxl {
+    .m__pt\+8 {
         padding-top: #{$paddingAtom * 8}rem;
     }
-    .m__pr-xxxl {
+    .m__pr\+8 {
         padding-right: #{$paddingAtom * 8}rem;
     }
-    .m__pb-xxxl {
+    .m__pb\+8 {
         padding-bottom: #{$paddingAtom * 8}rem;
     }
-    .m__pl-xxxl {
+    .m__pl\+8 {
         padding-left: #{$paddingAtom * 8}rem;
+    }
+    .m__p-8 {
+        padding: -#{$paddingAtom * 8}rem;
+    }
+    .m__pt-8 {
+        padding-top: -#{$paddingAtom * 8}rem;
+    }
+    .m__pr-8 {
+        padding-right: -#{$paddingAtom * 8}rem;
+    }
+    .m__pb-8 {
+        padding-bottom: -#{$paddingAtom * 8}rem;
+    }
+    .m__pl-8 {
+        padding-left: -#{$paddingAtom * 8}rem;
     }
 
     /**

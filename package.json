@@ -1,6 +1,6 @@
 {
     "name": "@fdmg/css-grid",
-    "version": "2.0.11",
+    "version": "2.0.12",
     "description": "FDMG CSS Grid with Flexbox fallback",
     "style": "css/grid.css",
     "types": "GridContainer.d.ts",
