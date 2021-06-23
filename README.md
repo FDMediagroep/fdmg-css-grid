@@ -160,17 +160,19 @@ Each increment is `+0.25rem`. So if `<device size>__<padding|margin>+1` is `0.25
 
 Example:
 
-```
+```html
 <div class="xs__m-0">sets margin to 0 for device sizes xs and up</div>
 
 <div class="l__m+6">base margin multiplied by 6 for device sizes l and up</div>
 
 <div class="xs__m-0 l__m+6">
-    devices smaller than l will have margin 0 larger devices have a base margin multiplied by 6
+    devices smaller than l will have margin 0 larger devices have a base margin
+    multiplied by 6
 </div>
 
 <div class="xs__pt+5 xs__pr+5 xs__pb+5 xs__pl+5">
-    padding-top, padding-right, padding-bottom, padding-left has base margin multiplied by 5
+    padding-top, padding-right, padding-bottom, padding-left has base margin
+    multiplied by 5
 </div>
 <div class="xs__p+5">base padding multiplied by 5</div>
 <div class="xs__m-5">base margin multipled by -5</div>
