@@ -31,7 +31,7 @@
         "@types/fetch-jsonp": "^1.1.0",
         "@types/micro-cors": "^0.1.1",
         "@types/node": "^15.12.5",
-        "@types/react": "^17.0.12",
+        "@types/react": "^17.0.14",
         "@types/react-dom": "^17.0.8",
         "@typescript-eslint/eslint-plugin": "^4.28.1",
         "@typescript-eslint/parser": "^4.28.1",
