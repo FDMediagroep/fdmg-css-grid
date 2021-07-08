@@ -28,7 +28,7 @@
     },
     "devDependencies": {
         "@fdmg/design-system": "^0.4.42",
-        "@types/fetch-jsonp": "^1.0.0",
+        "@types/fetch-jsonp": "^1.1.0",
         "@types/micro-cors": "^0.1.1",
         "@types/node": "^16.0.0",
         "@types/react": "^17.0.13",
