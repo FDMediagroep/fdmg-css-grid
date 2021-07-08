@@ -1,7 +1,8 @@
 ![Build](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Build/badge.svg)
 ![Publish](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Publish/badge.svg)
 ![CodeQL](https://github.com/FDMediagroep/fdmg-css-grid/workflows/CodeQL/badge.svg)
-[![npm version](https://badge.fury.io/js/%40fdmg%2Fcss-grid.svg)](https://badge.fury.io/js/%40fdmg%2Fcss-grid)
+[![Bundle-size minified+gzip](https://img.shields.io/bundlephobia/minzip/@fdmg/css-grid)](https://bundlephobia.com/result?p=@fdmg/css-grid)
+[![NPM](https://img.shields.io/npm/v/@fdmg/css-grid?color=blue)](https://npmjs.com/package/@fdmg%2Fcss-grid)
 
 # fdmg-css-grid
 
