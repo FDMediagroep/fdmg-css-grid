@@ -34,7 +34,7 @@
         "@types/react": "^17.0.14",
         "@types/react-dom": "^17.0.9",
         "@typescript-eslint/eslint-plugin": "^4.28.4",
-        "@typescript-eslint/parser": "^4.28.4",
+        "@typescript-eslint/parser": "^4.28.5",
         "@typescript-eslint/typescript-estree": "^4.28.4",
         "@webcomponents/webcomponentsjs": "^2.5.0",
         "autoprefixer": "^10.3.1",
