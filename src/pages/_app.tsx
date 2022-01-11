@@ -4,7 +4,6 @@ import '../../scss/grid.scss';
 import '../../scss/flex.scss'; // IE11
 import './_app.scss';
 import './index.scss';
-import styles from './_app.module.scss';
 import '@fdmg/design-system/components/design-tokens/design-tokens.css';
 import '@fdmg/design-system/components/card/HybridCard1.css';
 import '@fdmg/design-system/components/card/HybridCard2.css';
@@ -31,9 +30,6 @@ import '@fdmg/design-system/components/youtube/Youtube.css';
 import '@fdmg/design-system/components/bullet-point/BulletPoint.css';
 
 import '../components/article/fd-article-progress-bar.scss';
-import { Menu } from '@fdmg/design-system/components/menu/Menu';
-import { Themes } from '../components/Themes';
-import Link from 'next/link';
 import { debounce } from '../utils/debounce';
 
 declare let document: any;
@@ -111,106 +107,6 @@ export default function App({ Component, pageProps }) {
             </Head>
 
             <div className="dummy-menu" />
-
-            <Menu
-                className={`${styles.menu} menu`}
-                contentClassName={styles.menuContent}
-                ariaLabel="Main menu"
-                menuItems={[
-                    {
-                        component: (
-                            <Link href="/">
-                                <a>Home</a>
-                            </Link>
-                        ),
-                    },
-                    {
-                        text: 'Articles',
-                        isToggle: true,
-                        menuItems: [
-                            {
-                                component: (
-                                    <Link href="/fixed-ad">
-                                        <a>Fixed ad</a>
-                                    </Link>
-                                ),
-                            },
-                            {
-                                component: (
-                                    <Link href="/all-grid">
-                                        <a>All grid</a>
-                                    </Link>
-                                ),
-                            },
-                            {
-                                component: (
-                                    <Link href="/no-ad">
-                                        <a>No ad</a>
-                                    </Link>
-                                ),
-                            },
-                            {
-                                component: (
-                                    <Link href="/no-grid">
-                                        <a>No grid</a>
-                                    </Link>
-                                ),
-                            },
-                        ],
-                    },
-                ]}
-                moreMenuItems={[
-                    {
-                        text: 'About',
-                        isToggle: true,
-                        menuItems: [
-                            {
-                                component: (
-                                    <a
-                                        href="https://github.com/FDMediagroep/fdmg-css-grid"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`${styles.invertable} ${styles.github}`}
-                                        title="Open GitHub"
-                                    >
-                                        <figure>
-                                            <picture>
-                                                <source
-                                                    media="(max-width: 640px)"
-                                                    srcSet={`/assets/github/GitHub-Mark-32px.png, /assets/github/GitHub-Mark-64px.png 2x`}
-                                                />
-                                                <source
-                                                    media="(min-width:641px)"
-                                                    srcSet={`/assets/github/GitHub-Mark-32px.png, /assets/github/GitHub-Mark-64px.png 2x, /assets/github/GitHub-Mark-120px-plus.png 3x`}
-                                                />
-                                                <img
-                                                    alt="GitHub"
-                                                    src={`/assets/github/GitHub-Mark-32px.png`}
-                                                />
-                                            </picture>
-                                            <figcaption>GitHub</figcaption>
-                                        </figure>
-                                    </a>
-                                ),
-                            },
-                            {
-                                component: (
-                                    <Themes
-                                        className={styles.themes}
-                                        groupName="sub-menu-themes"
-                                    />
-                                ),
-                            },
-                            {
-                                text: 'Test',
-                                href: '/test',
-                            },
-                        ],
-                    },
-                ]}
-            >
-                <span>Placeholder</span>
-            </Menu>
 
             <Component {...pageProps} />
         </>
