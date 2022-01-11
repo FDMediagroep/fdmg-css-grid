@@ -29,8 +29,12 @@ import '@fdmg/design-system/components/vimeo/Vimeo.css';
 import '@fdmg/design-system/components/youtube/Youtube.css';
 import '@fdmg/design-system/components/bullet-point/BulletPoint.css';
 
+import { Menu } from '@fdmg/design-system/components/menu/Menu';
+
 import '../components/article/fd-article-progress-bar.scss';
 import { debounce } from '../utils/debounce';
+import { Aside } from '../components/menu/Aside';
+import { Profile } from '../components/menu/Profile';
 
 declare let document: any;
 
@@ -106,7 +110,7 @@ export default function App({ Component, pageProps }) {
                 />
             </Head>
 
-            <div className="dummy-menu" />
+            <Menu aside={<Aside />} profile={<Profile />} />
 
             <Component {...pageProps} />
         </>
