@@ -34,7 +34,7 @@
         "@types/micro-cors": "^0.1.2",
         "@types/node": "^17.0.31",
         "@types/react": "^18.0.8",
-        "@types/react-dom": "^18.0.3",
+        "@types/react-dom": "^18.0.4",
         "@webcomponents/webcomponentsjs": "^2.6.0",
         "autoprefixer": "^10.4.7",
         "copy-webpack-plugin": "^10.2.4",
