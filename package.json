@@ -33,7 +33,7 @@
         "@types/fetch-jsonp": "^1.1.0",
         "@types/micro-cors": "^0.1.2",
         "@types/node": "^18.0.0",
-        "@types/react": "^18.0.14",
+        "@types/react": "^18.0.15",
         "@types/react-dom": "^18.0.5",
         "@webcomponents/webcomponentsjs": "^2.6.0",
         "autoprefixer": "^10.4.7",
