@@ -46,7 +46,7 @@
         "eslint-config-next": "^12.2.5",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.2.1",
-        "fetch-jsonp": "^1.2.1",
+        "fetch-jsonp": "^1.2.2",
         "js-cookie": "^3.0.1",
         "json-to-scss": "^1.6.2",
         "micro-cors": "^0.1.1",
