@@ -96,7 +96,6 @@ export default function Page() {
                                         intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
                                         isRead
                                         label="Fiscaal"
-                                        onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
                                         url="/all-grid"
@@ -120,7 +119,6 @@ export default function Page() {
                                         imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
                                         intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
                                         label="Detailhandel"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
                                         url="/all-grid"
@@ -145,7 +143,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
                                         intro="Scherpe stijging met 17% tot 292.000 uitkeringen, blijkt uit cijfers van het UWV. Tijdens de kredietcrisis in 2008 liep de werkloosheid veel geleidelijker op."
                                         label="Arbeidsmarkt"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
                                         url="/all-grid"
@@ -169,7 +166,6 @@ export default function Page() {
                                         imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
                                         intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
                                         label="Detailhandel"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
                                         url="/all-grid"
@@ -194,7 +190,6 @@ export default function Page() {
                                         intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
                                         isRead
                                         label="Fiscaal"
-                                        onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
                                         url="/all-grid"
@@ -219,7 +214,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
                                         intro="Scherpe stijging met 17% tot 292.000 uitkeringen, blijkt uit cijfers van het UWV. Tijdens de kredietcrisis in 2008 liep de werkloosheid veel geleidelijker op."
                                         label="Arbeidsmarkt"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="Lockdown leidt tot recordstijging aantal WW-uitkeringen in april"
                                         url="/all-grid"
@@ -243,7 +237,6 @@ export default function Page() {
                                         imageUrlS="https://fd-external-development.imgix.net/b2ee977d67c3a1b815ed2855a5ae02f2357e6062.jpg?rect=.0%2c.0018761726078799%2c.9999999999999999%2c.99812382739212&fit=crop&crop=faces&auto=format&q=45&w=599&h=399"
                                         intro="Het Rijk sluit overheidsingrijpen niet uit om een akkoord tussen verhuurders en winkeliers af te dwingen, nu onderhandelingen moeizaam verlopen."
                                         label="Detailhandel"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Den Haag zet druk op verhuurders om huurverlaging te slikken"
                                         url="/all-grid"
@@ -268,7 +261,6 @@ export default function Page() {
                                         intro="Nederlands bedrijf met aandelenportefeuille betaalt het gelag."
                                         isRead
                                         label="Fiscaal"
-                                        onBookmark={console.log}
                                         readingTime={2}
                                         title="Kabinet verwacht bijna €1 mrd aan dividendbelasting te moeten terugbetalen"
                                         url="/all-grid"
@@ -311,9 +303,7 @@ export default function Page() {
                                     <HybridCard2
                                         className="full-height"
                                         id="1345386"
-                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -333,12 +323,9 @@ export default function Page() {
                                     <HybridCard2
                                         className={`full-height`}
                                         id="1345186"
-                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -356,11 +343,8 @@ export default function Page() {
                                         caption="Ed Groot"
                                         className={`full-height`}
                                         id="1345406"
-                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -381,10 +365,8 @@ export default function Page() {
                                         id="1345444"
                                         isRead
                                         label="Arbeidsmarkt"
-                                        onBookmark={console.log}
                                         readingTime={11}
                                         title="Bulk van de werklozen komt in de komende maanden"
-                                        intro=""
                                         url="/all-grid"
                                     />
                                 </GridContainer>
@@ -402,9 +384,7 @@ export default function Page() {
                                     <HybridCard2
                                         className="full-height"
                                         id="1345386"
-                                        intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -424,12 +404,9 @@ export default function Page() {
                                     <HybridCard2
                                         className={`full-height`}
                                         id="1345186"
-                                        intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -447,11 +424,8 @@ export default function Page() {
                                         caption="Ed Groot"
                                         className={`full-height`}
                                         id="1345406"
-                                        intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -472,10 +446,8 @@ export default function Page() {
                                         id="1345444"
                                         isRead
                                         label="Arbeidsmarkt"
-                                        onBookmark={console.log}
                                         readingTime={11}
                                         title="Bulk van de werklozen komt in de komende maanden"
-                                        intro=""
                                         url="/all-grid"
                                     />
                                 </GridContainer>
@@ -511,7 +483,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -537,11 +508,9 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -562,9 +531,7 @@ export default function Page() {
                                         imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -588,9 +555,7 @@ export default function Page() {
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         isRead
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -627,7 +592,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -653,11 +617,9 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -678,9 +640,7 @@ export default function Page() {
                                         imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -704,9 +664,7 @@ export default function Page() {
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         isRead
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -743,7 +701,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -769,11 +726,9 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -794,9 +749,7 @@ export default function Page() {
                                         imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -820,9 +773,7 @@ export default function Page() {
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         isRead
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -859,7 +810,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -885,11 +835,9 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -910,9 +858,7 @@ export default function Page() {
                                         imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -936,9 +882,7 @@ export default function Page() {
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         isRead
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -975,7 +919,6 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/2V1xFJ-1OddgzcJgKmiPOv0t4yY.jpg?fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Een tweede coronagolf staat bovenaan de lijst met zorgen van fondsmanagers, volgens een enquête van Bank of America."
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={3}
                                         title="'Beleggers verwachten nieuwe klap op beurzen'"
                                         url="/all-grid"
@@ -1001,11 +944,9 @@ export default function Page() {
                                         imageUrlS="https://images.fd.nl/MtOzOM5dkRKSllJlW5ZAjzO82yQ.jpg?rect=.21625%2c.1125703564727955%2c.50625%2c.7598499061913696&fit=crop&crop=faces&auto=format&q=45&w=300"
                                         intro="Na een kortstondig avontuur bij het ruziënde Centric vindt financieel bestuurder Rianne Jans onderdak bij accountants. "
                                         label="Markten"
-                                        onBookmark={console.log}
                                         readingTime={5}
                                         title="Deloitte krijgt met Rianne Jans een onverstoorbare cfo in huis"
                                         url="/all-grid"
-                                        variant="variant-1"
                                     />
                                 </GridContainer>
                                 <GridContainer
@@ -1026,9 +967,7 @@ export default function Page() {
                                         imageUrl="https://images.fd.nl/cc2bdc81cff5f4f5a1a466e977ff41c8c43c13fe.jpg?fit=crop&crop=faces&auto=format&q=45&w=300&h=300"
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
@@ -1052,9 +991,7 @@ export default function Page() {
                                         intro="De staalindustrie is misschien wel belangrijker voor de bv Nederland dan de KLM."
                                         isRead
                                         label="Kleintje Groot"
-                                        onBookmark={console.log}
                                         readingTime={7}
-                                        theme="theme-7"
                                         title="Hoogovens of KLM?"
                                         url="/all-grid"
                                     />
