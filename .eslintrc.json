@@ -8,6 +8,7 @@
         "es6": true
     },
     "rules": {
+        "@next/next/no-img-element": "off",
         "prettier/prettier": ["error"],
         "@typescript-eslint/array-type": "off",
         "@typescript-eslint/camelcase": "off",
