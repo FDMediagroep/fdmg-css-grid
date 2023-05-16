@@ -94,7 +94,7 @@ jobs:
       continue-on-error: true
     - name: Publish GPR (canary)
       if: contains(github.ref, 'canary')
-      run: npm publish --provenance ./dist --tag next
+      run: npm publish --tag next --provenance ./dist
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       continue-on-error: true
