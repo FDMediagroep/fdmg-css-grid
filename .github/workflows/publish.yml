@@ -54,13 +54,13 @@ jobs:
       run: npm run build:ci --if-present
     - name: Publish NPMJS @fdmg
       if: contains(github.ref, 'canary') == false
-      run: npm publish --provenance dist
+      run: npm publish --provenance ./dist
       env:
         NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
       continue-on-error: true
     - name: Publish NPMJS @fdmg (canary)
       if: contains(github.ref, 'canary')
-      run: npm publish --provenance dist --tag next
+      run: npm publish --provenance ./dist --tag next
       env:
         NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
       continue-on-error: true
@@ -68,13 +68,13 @@ jobs:
       run: cp ./dist/package.github.json ./dist/package.json
     - name: Publish NPMJS @fdmediagroep
       if: contains(github.ref, 'canary') == false
-      run: npm publish --provenance dist
+      run: npm publish --provenance ./dist
       env:
         NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
       continue-on-error: true
     - name: Publish NPMJS @fdmediagroep (canary)
       if: contains(github.ref, 'canary')
-      run: npm publish --provenance dist --tag next
+      run: npm publish --provenance ./dist --tag next
       env:
         NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
       continue-on-error: true
@@ -88,13 +88,13 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Publish GPR
       if: contains(github.ref, 'canary') == false
-      run: npm publish --provenance dist
+      run: npm publish --provenance ./dist
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       continue-on-error: true
     - name: Publish GPR (canary)
       if: contains(github.ref, 'canary')
-      run: npm publish --provenance dist --tag next
+      run: npm publish --provenance ./dist --tag next
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       continue-on-error: true
