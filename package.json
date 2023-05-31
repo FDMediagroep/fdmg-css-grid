@@ -32,7 +32,7 @@
         "@fdmg/design-system": "^0.60.7",
         "@types/fetch-jsonp": "^1.1.0",
         "@types/micro-cors": "^0.1.3",
-        "@types/node": "^20.2.3",
+        "@types/node": "^20.2.5",
         "@types/react": "^18.2.6",
         "@types/react-dom": "^18.2.4",
         "@webcomponents/webcomponentsjs": "^2.8.0",
