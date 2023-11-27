@@ -7,7 +7,7 @@ import {
     addProgressBar,
     removeProgressBar,
 } from '../components/article/FDArticleProgressBar';
-import { DOMParser } from 'xmldom';
+import { DOMParser } from '@xmldom/xmldom';
 
 import { mergeInlineContent } from '../utils/articleContent';
 import { OEmbedLoader } from '../utils/OEmbedLoader';
