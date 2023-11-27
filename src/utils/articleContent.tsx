@@ -11,7 +11,7 @@ import { TextFrame } from '@fdmg/design-system/components/textframe/TextFrame';
 import { LinkBlock } from '@fdmg/design-system/components/article-link-block/LinkBlock';
 import { Vimeo } from '@fdmg/design-system/components/vimeo/Vimeo';
 import { Youtube } from '@fdmg/design-system/components/youtube/Youtube';
-import { XMLSerializer } from 'xmldom';
+import { XMLSerializer } from '@xmldom/xmldom';
 import {
     BulletPoint,
     Alignment,

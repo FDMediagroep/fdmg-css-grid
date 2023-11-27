@@ -9,7 +9,7 @@ import {
     addProgressBar,
     removeProgressBar,
 } from '../components/article/FDArticleProgressBar';
-import { DOMParser } from 'xmldom';
+import { DOMParser } from '@xmldom/xmldom';
 
 import { ArticleMeta } from '@fdmg/design-system/components/article-meta/ArticleMeta';
 import { mergeInlineContent } from '../utils/articleContent';
