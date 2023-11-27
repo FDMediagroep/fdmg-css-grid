@@ -59,7 +59,9 @@ export default function Page(props: Props) {
         const trackedElement = document.querySelector('.articleProgressTrack');
 
         console.log(containerElement);
-        addProgressBar(containerElement, trackedElement);
+        if (containerElement) {
+            addProgressBar(containerElement, trackedElement);
+        }
 
         return () => {
             removeProgressBar();
