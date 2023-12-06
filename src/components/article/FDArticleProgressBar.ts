@@ -32,7 +32,7 @@ export function addProgressBar(
     progressionBar.classList.add('fd-article-progression-bar');
     progressBar.appendChild(progressionBar);
 
-    containerElement.appendChild(progressBar);
+    containerElement?.appendChild(progressBar);
     if (!prevScrollHandler) {
         prevScrollHandler = handleScroll.bind(
             null,
