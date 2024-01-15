@@ -39,7 +39,7 @@
         "@webcomponents/webcomponentsjs": "^2.8.0",
         "@xmldom/xmldom": "^0.8.10",
         "autoprefixer": "^10.4.16",
-        "copy-webpack-plugin": "^11.0.0",
+        "copy-webpack-plugin": "^12.0.0",
         "copyfiles": "^2.4.1",
         "cross-env": "^7.0.3",
         "css-loader": "^6.8.1",
