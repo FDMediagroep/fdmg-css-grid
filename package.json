@@ -29,7 +29,7 @@
         "access": "public"
     },
     "devDependencies": {
-        "@fdmg/design-system": "^0.60.26",
+        "@fdmg/design-system": "^0.60.27",
         "@types/fetch-jsonp": "^1.1.0",
         "@types/micro-cors": "^0.1.5",
         "@types/node": "^20.11.14",
