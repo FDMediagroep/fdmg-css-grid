@@ -162,11 +162,11 @@ function GridContainer(props: Props) {
                 props?.attributes?.length
                     ? ` ${props?.attributes?.join?.(' ')}`
                     : ''
-            }${props.debug ? ` ${styles.debug}` : ''}`}
+            }${props?.debug ? ` ${styles['debug']}` : ''}`}
             style={props.style}
         >
             {props?.debug && (
-                <span className={styles.content}>
+                <span className={styles['content']}>
                     {props?.className ?? ''}
                     {props?.attributes?.length
                         ? ` ${props?.attributes.join(' ')}`
@@ -180,7 +180,7 @@ function GridContainer(props: Props) {
 
 function getCssClassNames(): string[] {
     return [
-        styles.content,
+        styles['content'],
         ...Object.keys(GapDict),
         ...Object.keys(XSDict),
         ...Object.keys(SDict),
