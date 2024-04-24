@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './GridContainer.module.scss';
+import * as styles from './GridContainer.module.scss';
 
 /**
  * Gap attributes is only for Flex-box (IE11 support).

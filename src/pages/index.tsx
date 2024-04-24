@@ -5,7 +5,7 @@ import { StockTicker } from '@fdmg/design-system/components/stockticker/StockTic
 import { HybridCard1 } from '@fdmg/design-system/components/card/HybridCard1';
 import { HybridCard2 } from '@fdmg/design-system/components/card/HybridCard2';
 import { VerticalCard1 } from '@fdmg/design-system/components/card/VerticalCard1';
-import styles from './index.module.scss';
+import * as styles from './index.module.scss';
 
 export default function Page() {
     useEffect(() => {
@@ -17,7 +17,7 @@ export default function Page() {
             <section className={`app-main section`}>
                 <main>
                     <StockTicker
-                        className={styles.stockTicker}
+                        className={styles['stockTicker']}
                         stocks={[
                             {
                                 href: '/',
@@ -269,11 +269,11 @@ export default function Page() {
                             </GridContainer>
                         </GridContainer>
                         <GridContainer
-                            className={`${styles.sideContent} full-height`}
+                            className={`${styles['sideContent']} full-height`}
                             attributes={['xs-12', 'l-3', 'gap-1', 'gap-bottom']}
                         >
                             <div
-                                className={`dummy-card full-width ${styles.content}`}
+                                className={`dummy-card full-width ${styles['content']}`}
                             >
                                 latest news
                             </div>

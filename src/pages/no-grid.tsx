@@ -12,8 +12,8 @@ import { DOMParser } from '@xmldom/xmldom';
 import { mergeInlineContent } from '../utils/articleContent';
 import { OEmbedLoader } from '../utils/OEmbedLoader';
 import { getPayload } from './api/[section]/[id]/[title]';
-import styles from './article.module.scss';
-import articleStyles from '../components/article/Article.module.scss';
+import * as styles from './article.module.scss';
+import * as articleStyles from '../components/article/Article.module.scss';
 
 const metaTitle = 'No grid';
 const metaDescription = 'Article page layout freely styled without a grid';
@@ -66,7 +66,7 @@ export default function Page(props: Props) {
     }, []);
 
     return (
-        <div className={articleStyles.article}>
+        <div className={articleStyles['article']}>
             <Head>
                 <title>
                     {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
@@ -83,9 +83,11 @@ export default function Page(props: Props) {
 
             <div className=" articleProgressTrack">
                 <section className={`app-main article`}>
-                    <section className={`hide-lt-m ${styles.leftSection}`} />
+                    <section className={`hide-lt-m ${styles['leftSection']}`} />
                     <main>
-                        <div className={`full-height ${styles.noGridContent}`}>
+                        <div
+                            className={`full-height ${styles['noGridContent']}`}
+                        >
                             <header>
                                 <ArticleMeta
                                     authors={props.authors}
@@ -93,7 +95,7 @@ export default function Page(props: Props) {
                                 />
 
                                 <h1>{props.article.title}</h1>
-                                <p className={articleStyles.intro}>
+                                <p className={articleStyles['intro']}>
                                     {props.article.intro}
                                 </p>
                             </header>
@@ -103,7 +105,7 @@ export default function Page(props: Props) {
                 </section>
 
                 <section className={`app-main article`}>
-                    <section className={`hide-lt-m ${styles.leftSection}`}>
+                    <section className={`hide-lt-m ${styles['leftSection']}`}>
                         <VerticalToolbar
                             id="12345"
                             className="left sticky"
@@ -113,7 +115,7 @@ export default function Page(props: Props) {
                     </section>
                     <main>
                         <div
-                            className={`${articleStyles.articleBody} ${styles.noGridContent}`}
+                            className={`${articleStyles['articleBody']} ${styles['noGridContent']}`}
                         >
                             {jsxContent}
                         </div>

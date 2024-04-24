@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ThemeStore, { Theme } from '../stores/ThemeStore';
 import { Radio } from '@fdmg/design-system/components/input/Radio';
-import styles from './Themes.module.scss';
+import * as styles from './Themes.module.scss';
 
 interface Props {
     groupName?: string;
@@ -62,7 +62,7 @@ function Themes(props: Props) {
     return (
         <section
             data-checked={theme}
-            className={`${styles.themeControls}${
+            className={`${styles['themeControls']}${
                 props.className ? ` ${props.className}` : ''
             }`}
         >
