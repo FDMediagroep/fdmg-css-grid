@@ -1,4 +1,4 @@
-import styles from './Menu.module.scss';
+import * as styles from './Menu.module.scss';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
@@ -38,7 +38,7 @@ function Aside(props: Props) {
                     <ul className="xs__p-0  xs__p+4">
                         <li className=" xs__mb+4">
                             <h3
-                                className={`heading sans xxs xs__m-0 ${styles.label}`}
+                                className={`heading sans xxs xs__m-0 ${styles['label']}`}
                             >
                                 SECTIES
                             </h3>

@@ -1,12 +1,12 @@
-import styles from './grid-debug.module.scss';
-import { GridContainer, getCssClassNames } from '../components/GridContainer';
+import * as styles from './grid-debug.module.scss';
+import { GridContainer } from '../components/GridContainer';
 
 export default function Page() {
     return (
         <GridContainer attributes={['grid']}>
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-12',
@@ -19,7 +19,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-6',
@@ -32,7 +32,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-6',
@@ -46,7 +46,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -61,7 +61,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -76,7 +76,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -91,7 +91,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -105,7 +105,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -119,7 +119,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -133,7 +133,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -148,7 +148,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     'xs-hide',
@@ -162,7 +162,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-6',
@@ -175,7 +175,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-6',
@@ -189,7 +189,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-4',
@@ -202,7 +202,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-4',
@@ -215,7 +215,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-4',
@@ -229,7 +229,7 @@ export default function Page() {
 
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-3',
@@ -242,7 +242,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-3',
@@ -255,7 +255,7 @@ export default function Page() {
             />
             <GridContainer
                 debug={true}
-                className={styles.dummyElement}
+                className={styles['dummyElement']}
                 attributes={[
                     'xs-12',
                     's-3',
@@ -280,7 +280,7 @@ export default function Page() {
             >
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-12',
@@ -293,7 +293,7 @@ export default function Page() {
 
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-6',
@@ -306,7 +306,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-6',
@@ -320,7 +320,7 @@ export default function Page() {
 
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-4',
@@ -333,7 +333,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-4',
@@ -346,7 +346,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-4',
@@ -360,7 +360,7 @@ export default function Page() {
 
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-3',
@@ -373,7 +373,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-3',
@@ -386,7 +386,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-3',
@@ -399,7 +399,7 @@ export default function Page() {
                 />
                 <GridContainer
                     debug={true}
-                    className={styles.dummyElement}
+                    className={styles['dummyElement']}
                     attributes={[
                         'xs-12',
                         's-3',

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { GridContainer } from '../components/GridContainer';
 import { VerticalToolbar } from '@fdmg/design-system/components/toolbar/VerticalToolbar';
-import styles from './article.module.scss';
-import articleStyles from '../components/article/Article.module.scss';
+import * as styles from './article.module.scss';
+import * as articleStyles from '../components/article/Article.module.scss';
 import { Ad300x600 } from '../components/article/Ad300x600';
 import Head from 'next/head';
 import {
@@ -68,7 +68,7 @@ export default function Page(props: Props) {
     }, []);
 
     return (
-        <div className={articleStyles.article}>
+        <div className={articleStyles['article']}>
             <Head>
                 <title>
                     {metaTitle} - FDMG CSS Grid - Het Financieele Dagblad
@@ -84,7 +84,7 @@ export default function Page(props: Props) {
             </Head>
 
             <div className="articleProgressTrack">
-                <section className={`app-main article ${styles.intro}`}>
+                <section className={`app-main article ${styles['intro']}`}>
                     <main>
                         <GridContainer attributes={['grid']}>
                             <GridContainer
@@ -94,7 +94,7 @@ export default function Page(props: Props) {
                                 attributes={['xs-12', 's-12', 'm-10', 'gap-1']}
                             >
                                 <GridContainer
-                                    className={styles.content}
+                                    className={styles['content']}
                                     attributes={['grid']}
                                 >
                                     <GridContainer
@@ -109,7 +109,11 @@ export default function Page(props: Props) {
                                             />
 
                                             <h1>{props.article.title}</h1>
-                                            <p className={articleStyles.intro}>
+                                            <p
+                                                className={
+                                                    articleStyles['intro']
+                                                }
+                                            >
                                                 {props.article.intro}
                                             </p>
                                         </header>
@@ -138,11 +142,11 @@ export default function Page(props: Props) {
                                 attributes={['xs-12', 's-12', 'm-10', 'gap-1']}
                             >
                                 <GridContainer
-                                    className={styles.content}
+                                    className={styles['content']}
                                     attributes={['grid']}
                                 >
                                     <GridContainer
-                                        className={articleStyles.articleBody}
+                                        className={articleStyles['articleBody']}
                                         attributes={['xs-12', 'gap-bottom']}
                                     >
                                         {jsxContent}
