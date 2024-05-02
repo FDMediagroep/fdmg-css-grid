@@ -62,7 +62,7 @@
         "prettier": "^3.2.5",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "sass": "^1.75.0",
+        "sass": "^1.76.0",
         "sass-loader": "^14.2.1",
         "ts-loader": "^9.5.1",
         "typescript": "^5.4.5",
