@@ -11,7 +11,7 @@ import { TextFrame } from '@fdmg/design-system/components/textframe/TextFrame';
 import { LinkBlock } from '@fdmg/design-system/components/article-link-block/LinkBlock';
 import { Vimeo } from '@fdmg/design-system/components/vimeo/Vimeo';
 import { Youtube } from '@fdmg/design-system/components/youtube/Youtube';
-import { XMLSerializer } from '@xmldom/xmldom';
+import { XMLSerializer, Node } from '@xmldom/xmldom';
 import {
     BulletPoint,
     Alignment,
@@ -25,12 +25,14 @@ function innerHTML(node: Element, tagName?: string) {
             return '';
         }
         return new XMLSerializer()
-            .serializeToString(node.getElementsByTagName(tagName).item(0))
+            .serializeToString(
+                node.getElementsByTagName(tagName).item(0) as unknown as Node
+            )
             .replace(`<${tagName}>`, '')
             .replace(`</${tagName}>`, '');
     } else {
         return new XMLSerializer()
-            .serializeToString(node)
+            .serializeToString(node as unknown as Node)
             .replace(`<${node.nodeName}>`, '')
             .replace(`</${node.nodeName}>`, '');
     }
@@ -273,7 +275,9 @@ export function mergeInlineContent(doc: any) {
                         );
                     } else {
                         console.log(
-                            new XMLSerializer().serializeToString(childNode)
+                            new XMLSerializer().serializeToString(
+                                childNode as unknown as Node
+                            )
                         );
                     }
             }
