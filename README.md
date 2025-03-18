@@ -1,3 +1,5 @@
+> :exclamation: **DEPRECATED** :exclamation: : No longer maintained.
+
 ![Build](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Build/badge.svg)
 ![Publish](https://github.com/FDMediagroep/fdmg-css-grid/workflows/Publish/badge.svg)
 ![CodeQL](https://github.com/FDMediagroep/fdmg-css-grid/workflows/CodeQL/badge.svg)
