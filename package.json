@@ -17,7 +17,8 @@
         "release:flex": "sass --no-source-map --style=compressed scss/flex.scss dist/css/flex.css",
         "start": "next start",
         "test": "echo \"No tests specified\" && exit 0",
-        "webpack:prod": "npx cross-env NODE_ENV=production webpack --mode=production"
+        "webpack:prod": "npx cross-env NODE_ENV=production webpack --mode=production",
+        "vc:rm": "vc rm fdmg-css-grid --safe --yes"
     },
     "author": "Willem Liu",
     "license": "ISC",
@@ -53,7 +54,7 @@
         "json-to-scss": "^1.6.2",
         "micro-cors": "^0.1.1",
         "mini-css-extract-plugin": "^2.9.2",
-        "next": "15.1.7",
+        "next": "^15.1.9",
         "nookies": "^2.5.2",
         "postcss-flexbugs-fixes": "^5.0.2",
         "postcss-loader": "^8.1.1",
