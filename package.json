@@ -54,7 +54,7 @@
     "json-to-scss": "^1.6.2",
     "micro-cors": "^0.1.1",
     "mini-css-extract-plugin": "^2.9.2",
-    "next": "15.1.11",
+    "next": "16.0.10",
     "nookies": "^2.5.2",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^8.1.1",
